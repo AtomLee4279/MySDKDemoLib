@@ -1,0 +1,38 @@
+//
+//  GlobalDefine.pch
+//  MySDKDemo
+//
+//  Created by 李一贤 on 2018/7/6.
+//  Copyright © 2018年 李一贤. All rights reserved.
+//
+
+
+
+#ifndef GlobalDefine_pch
+#define GlobalDefine_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// 打开或者关闭Debug Log: 生成动态库之前 测试用，不对外公开
+#define OPEN_LOG @"主动关闭Log ： 把这一行注释掉"
+
+#ifdef OPEN_LOG // 开启log
+#define DBLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala DEBUG# " fmt), __func__, ##__VA_ARGS__)
+#define NetLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala NET# " fmt),  __func__,##__VA_ARGS__)
+#else // 关闭log
+#define DBLog(fmt,...)
+#define NetLog(fmt,...)
+#endif
+
+// 对外公开的log，由cp来决定是否打印（这里主要用于打印主要流程和必要的错误提示等）
+extern _Bool DEBUG_FOR_CP;
+#define KKLog(fmt,...) if (DEBUG_FOR_CP) NSLog((@"# === Koala log === # " fmt), ##__VA_ARGS__)
+
+#import "MyToast.h"
+
+#define Toast(message,time) [MyToast showAlertMessageWithMessage:message duration:time]
+
+
+#endif /* GlobalDefine_pch */

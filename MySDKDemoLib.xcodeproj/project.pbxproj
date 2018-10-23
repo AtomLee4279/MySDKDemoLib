@@ -7,8 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */; };
 		677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */; };
 		677BB60B217EBFE800C1ED76 /* MySDKDemoLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */; };
+		677BB619217EC2D800C1ED76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB618217EC2D800C1ED76 /* AppDelegate.m */; };
+		677BB61C217EC2D800C1ED76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB61B217EC2D800C1ED76 /* ViewController.m */; };
+		677BB61F217EC2D800C1ED76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677BB61D217EC2D800C1ED76 /* Main.storyboard */; };
+		677BB621217EC2DA00C1ED76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677BB620217EC2DA00C1ED76 /* Assets.xcassets */; };
+		677BB624217EC2DA00C1ED76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677BB622217EC2DA00C1ED76 /* LaunchScreen.storyboard */; };
+		677BB627217EC2DA00C1ED76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB626217EC2DA00C1ED76 /* main.m */; };
+		677BB65B217EC6D300C1ED76 /* MySDKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB62D217EC6D200C1ED76 /* MySDKLoginController.m */; };
+		677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB631217EC6D200C1ED76 /* ParamsRegLogOn.m */; };
+		677BB65D217EC6D300C1ED76 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB635217EC6D200C1ED76 /* LoginView.m */; };
+		677BB65E217EC6D300C1ED76 /* MyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB63B217EC6D200C1ED76 /* MyToast.m */; };
+		677BB65F217EC6D300C1ED76 /* MySDKNetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB63F217EC6D200C1ED76 /* MySDKNetWorkController.m */; };
+		677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB641217EC6D200C1ED76 /* NetWorkRespondModel.m */; };
+		677BB661217EC6D300C1ED76 /* NSString+Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB644217EC6D200C1ED76 /* NSString+Sign.m */; };
+		677BB662217EC6D300C1ED76 /* NSString+UniqueStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */; };
+		677BB663217EC6D300C1ED76 /* APICommonParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB64A217EC6D200C1ED76 /* APICommonParams.m */; };
+		677BB664217EC6D300C1ED76 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB64F217EC6D200C1ED76 /* LogoView.m */; };
+		677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB654217EC6D300C1ED76 /* MySDKInitController.m */; };
+		677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB656217EC6D300C1ED76 /* MySDKConfig.m */; };
+		677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB657217EC6D300C1ED76 /* MySDKInitData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,13 +45,65 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16DCDF932DEA97C0F2D75EA4 /* Pods-MySDKDemoLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.debug.xcconfig"; sourceTree = "<group>"; };
 		677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMySDKDemoLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKDemoLib.h; sourceTree = "<group>"; };
 		677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKDemoLib.m; sourceTree = "<group>"; };
+		677BB615217EC2D800C1ED76 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		677BB617217EC2D800C1ED76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		677BB618217EC2D800C1ED76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		677BB61A217EC2D800C1ED76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		677BB61B217EC2D800C1ED76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		677BB61E217EC2D800C1ED76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		677BB620217EC2DA00C1ED76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		677BB623217EC2DA00C1ED76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		677BB625217EC2DA00C1ED76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677BB626217EC2DA00C1ED76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		677BB62D217EC6D200C1ED76 /* MySDKLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKLoginController.m; sourceTree = "<group>"; };
+		677BB62E217EC6D200C1ED76 /* MySDKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKLoginController.h; sourceTree = "<group>"; };
+		677BB630217EC6D200C1ED76 /* ParamsRegLogOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamsRegLogOn.h; sourceTree = "<group>"; };
+		677BB631217EC6D200C1ED76 /* ParamsRegLogOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParamsRegLogOn.m; sourceTree = "<group>"; };
+		677BB633217EC6D200C1ED76 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		677BB634217EC6D200C1ED76 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		677BB635217EC6D200C1ED76 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		677BB637217EC6D200C1ED76 /* GlobalDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.pch; sourceTree = "<group>"; };
+		677BB63A217EC6D200C1ED76 /* MyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyToast.h; sourceTree = "<group>"; };
+		677BB63B217EC6D200C1ED76 /* MyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyToast.m; sourceTree = "<group>"; };
+		677BB63E217EC6D200C1ED76 /* MySDKNetWorkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorkController.h; sourceTree = "<group>"; };
+		677BB63F217EC6D200C1ED76 /* MySDKNetWorkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKNetWorkController.m; sourceTree = "<group>"; };
+		677BB641217EC6D200C1ED76 /* NetWorkRespondModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRespondModel.m; sourceTree = "<group>"; };
+		677BB642217EC6D200C1ED76 /* NetWorkRespondModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRespondModel.h; sourceTree = "<group>"; };
+		677BB644217EC6D200C1ED76 /* NSString+Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sign.m"; sourceTree = "<group>"; };
+		677BB645217EC6D200C1ED76 /* NSString+UniqueStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UniqueStrings.h"; sourceTree = "<group>"; };
+		677BB646217EC6D200C1ED76 /* NSString+Sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sign.h"; sourceTree = "<group>"; };
+		677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UniqueStrings.m"; sourceTree = "<group>"; };
+		677BB649217EC6D200C1ED76 /* KKDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDebug.h; sourceTree = "<group>"; };
+		677BB64A217EC6D200C1ED76 /* APICommonParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICommonParams.m; sourceTree = "<group>"; };
+		677BB64D217EC6D200C1ED76 /* LogoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoView.xib; sourceTree = "<group>"; };
+		677BB64E217EC6D200C1ED76 /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
+		677BB64F217EC6D200C1ED76 /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
+		677BB650217EC6D200C1ED76 /* APICommonParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommonParams.h; sourceTree = "<group>"; };
+		677BB653217EC6D300C1ED76 /* MySDKInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKInitController.h; sourceTree = "<group>"; };
+		677BB654217EC6D300C1ED76 /* MySDKInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKInitController.m; sourceTree = "<group>"; };
+		677BB656217EC6D300C1ED76 /* MySDKConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKConfig.m; sourceTree = "<group>"; };
+		677BB657217EC6D300C1ED76 /* MySDKInitData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKInitData.m; sourceTree = "<group>"; };
+		677BB658217EC6D300C1ED76 /* MySDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKConfig.h; sourceTree = "<group>"; };
+		677BB659217EC6D300C1ED76 /* MySDKInitData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKInitData.h; sourceTree = "<group>"; };
+		677BB65A217EC6D300C1ED76 /* MySDKDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MySDKDemo.bundle; sourceTree = "<group>"; };
+		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
+		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		677BB602217EBFE800C1ED76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677BB612217EC2D800C1ED76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				677BB607217EBFE800C1ED76 /* MySDKDemoLib */,
+				677BB616217EC2D800C1ED76 /* MySDKDemo */,
 				677BB606217EBFE800C1ED76 /* Products */,
+				C8211CFA13158CAC8B346991 /* Pods */,
+				9CC5C67F71A4C6EC09E502F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */,
+				677BB615217EC2D800C1ED76 /* MySDKDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +138,208 @@
 			children = (
 				677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */,
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
+				677BB636217EC6D200C1ED76 /* Common */,
+				677BB651217EC6D300C1ED76 /* Init */,
+				677BB62B217EC6D200C1ED76 /* Login */,
+				677BB65A217EC6D300C1ED76 /* MySDKDemo.bundle */,
 			);
 			path = MySDKDemoLib;
+			sourceTree = "<group>";
+		};
+		677BB616217EC2D800C1ED76 /* MySDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				677BB617217EC2D800C1ED76 /* AppDelegate.h */,
+				677BB618217EC2D800C1ED76 /* AppDelegate.m */,
+				677BB61A217EC2D800C1ED76 /* ViewController.h */,
+				677BB61B217EC2D800C1ED76 /* ViewController.m */,
+				677BB61D217EC2D800C1ED76 /* Main.storyboard */,
+				677BB620217EC2DA00C1ED76 /* Assets.xcassets */,
+				677BB622217EC2DA00C1ED76 /* LaunchScreen.storyboard */,
+				677BB625217EC2DA00C1ED76 /* Info.plist */,
+				677BB626217EC2DA00C1ED76 /* main.m */,
+			);
+			path = MySDKDemo;
+			sourceTree = "<group>";
+		};
+		677BB62B217EC6D200C1ED76 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				677BB62C217EC6D200C1ED76 /* Controller */,
+				677BB62F217EC6D200C1ED76 /* Model */,
+				677BB632217EC6D200C1ED76 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		677BB62C217EC6D200C1ED76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				677BB62D217EC6D200C1ED76 /* MySDKLoginController.m */,
+				677BB62E217EC6D200C1ED76 /* MySDKLoginController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		677BB62F217EC6D200C1ED76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				677BB630217EC6D200C1ED76 /* ParamsRegLogOn.h */,
+				677BB631217EC6D200C1ED76 /* ParamsRegLogOn.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		677BB632217EC6D200C1ED76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				677BB633217EC6D200C1ED76 /* LoginView.h */,
+				677BB634217EC6D200C1ED76 /* LoginView.xib */,
+				677BB635217EC6D200C1ED76 /* LoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		677BB636217EC6D200C1ED76 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				677BB637217EC6D200C1ED76 /* GlobalDefine.pch */,
+				677BB638217EC6D200C1ED76 /* Tools */,
+				677BB648217EC6D200C1ED76 /* GlobalDefine */,
+				677BB64A217EC6D200C1ED76 /* APICommonParams.m */,
+				677BB64B217EC6D200C1ED76 /* Logo */,
+				677BB650217EC6D200C1ED76 /* APICommonParams.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		677BB638217EC6D200C1ED76 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				677BB639217EC6D200C1ED76 /* Toast */,
+				677BB63C217EC6D200C1ED76 /* NetWork */,
+				677BB643217EC6D200C1ED76 /* NSString */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		677BB639217EC6D200C1ED76 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				677BB63A217EC6D200C1ED76 /* MyToast.h */,
+				677BB63B217EC6D200C1ED76 /* MyToast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		677BB63C217EC6D200C1ED76 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				677BB63D217EC6D200C1ED76 /* Controller */,
+				677BB640217EC6D200C1ED76 /* Model */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		677BB63D217EC6D200C1ED76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				677BB63E217EC6D200C1ED76 /* MySDKNetWorkController.h */,
+				677BB63F217EC6D200C1ED76 /* MySDKNetWorkController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		677BB640217EC6D200C1ED76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				677BB641217EC6D200C1ED76 /* NetWorkRespondModel.m */,
+				677BB642217EC6D200C1ED76 /* NetWorkRespondModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		677BB643217EC6D200C1ED76 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				677BB644217EC6D200C1ED76 /* NSString+Sign.m */,
+				677BB645217EC6D200C1ED76 /* NSString+UniqueStrings.h */,
+				677BB646217EC6D200C1ED76 /* NSString+Sign.h */,
+				677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		677BB648217EC6D200C1ED76 /* GlobalDefine */ = {
+			isa = PBXGroup;
+			children = (
+				677BB649217EC6D200C1ED76 /* KKDebug.h */,
+			);
+			path = GlobalDefine;
+			sourceTree = "<group>";
+		};
+		677BB64B217EC6D200C1ED76 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				677BB64C217EC6D200C1ED76 /* View */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+		677BB64C217EC6D200C1ED76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				677BB64D217EC6D200C1ED76 /* LogoView.xib */,
+				677BB64E217EC6D200C1ED76 /* LogoView.h */,
+				677BB64F217EC6D200C1ED76 /* LogoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		677BB651217EC6D300C1ED76 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				677BB652217EC6D300C1ED76 /* Controller */,
+				677BB655217EC6D300C1ED76 /* Model */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		677BB652217EC6D300C1ED76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				677BB653217EC6D300C1ED76 /* MySDKInitController.h */,
+				677BB654217EC6D300C1ED76 /* MySDKInitController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		677BB655217EC6D300C1ED76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				677BB656217EC6D300C1ED76 /* MySDKConfig.m */,
+				677BB657217EC6D300C1ED76 /* MySDKInitData.m */,
+				677BB658217EC6D300C1ED76 /* MySDKConfig.h */,
+				677BB659217EC6D300C1ED76 /* MySDKInitData.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CC5C67F71A4C6EC09E502F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8211CFA13158CAC8B346991 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16DCDF932DEA97C0F2D75EA4 /* Pods-MySDKDemoLib.debug.xcconfig */,
+				6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 677BB60E217EBFE800C1ED76 /* Build configuration list for PBXNativeTarget "MySDKDemoLib" */;
 			buildPhases = (
+				48EB2F919560CE9F188E7689 /* [CP] Check Pods Manifest.lock */,
 				677BB601217EBFE800C1ED76 /* Sources */,
 				677BB602217EBFE800C1ED76 /* Frameworks */,
 				677BB603217EBFE800C1ED76 /* CopyFiles */,
@@ -86,6 +363,23 @@
 			productReference = 677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		677BB614217EC2D800C1ED76 /* MySDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677BB628217EC2DA00C1ED76 /* Build configuration list for PBXNativeTarget "MySDKDemo" */;
+			buildPhases = (
+				677BB611217EC2D800C1ED76 /* Sources */,
+				677BB612217EC2D800C1ED76 /* Frameworks */,
+				677BB613217EC2D800C1ED76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySDKDemo;
+			productName = MySDKDemo;
+			productReference = 677BB615217EC2D800C1ED76 /* MySDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +392,9 @@
 					677BB604217EBFE800C1ED76 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					677BB614217EC2D800C1ED76 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 677BB600217EBFE800C1ED76 /* Build configuration list for PBXProject "MySDKDemoLib" */;
@@ -106,6 +403,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 677BB5FC217EBFE800C1ED76;
 			productRefGroup = 677BB606217EBFE800C1ED76 /* Products */;
@@ -113,20 +411,97 @@
 			projectRoot = "";
 			targets = (
 				677BB604217EBFE800C1ED76 /* MySDKDemoLib */,
+				677BB614217EC2D800C1ED76 /* MySDKDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		677BB613217EC2D800C1ED76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677BB624217EC2DA00C1ED76 /* LaunchScreen.storyboard in Resources */,
+				677BB621217EC2DA00C1ED76 /* Assets.xcassets in Resources */,
+				677BB61F217EC2D800C1ED76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48EB2F919560CE9F188E7689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySDKDemoLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		677BB601217EBFE800C1ED76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
+				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
+				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
+				677BB65B217EC6D300C1ED76 /* MySDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
+				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
+				677BB65D217EC6D300C1ED76 /* LoginView.m in Sources */,
+				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
+				677BB664217EC6D300C1ED76 /* LogoView.m in Sources */,
+				677BB65E217EC6D300C1ED76 /* MyToast.m in Sources */,
+				677BB662217EC6D300C1ED76 /* NSString+UniqueStrings.m in Sources */,
+				677BB663217EC6D300C1ED76 /* APICommonParams.m in Sources */,
+				677BB661217EC6D300C1ED76 /* NSString+Sign.m in Sources */,
+				677BB65F217EC6D300C1ED76 /* MySDKNetWorkController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		677BB611217EC2D800C1ED76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677BB61C217EC2D800C1ED76 /* ViewController.m in Sources */,
+				677BB627217EC2DA00C1ED76 /* main.m in Sources */,
+				677BB619217EC2D800C1ED76 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		677BB61D217EC2D800C1ED76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				677BB61E217EC2D800C1ED76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		677BB622217EC2DA00C1ED76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				677BB623217EC2DA00C1ED76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		677BB60C217EBFE800C1ED76 /* Debug */ = {
@@ -243,8 +618,10 @@
 		};
 		677BB60F217EBFE800C1ED76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16DCDF932DEA97C0F2D75EA4 /* Pods-MySDKDemoLib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/Common/GlobalDefine.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -254,11 +631,49 @@
 		};
 		677BB610217EBFE800C1ED76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/Common/GlobalDefine.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		677BB629217EC2DA00C1ED76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CH78CKY35H;
+				INFOPLIST_FILE = MySDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AtomLee.-MySDKDemo.MySDKDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		677BB62A217EC2DA00C1ED76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CH78CKY35H;
+				INFOPLIST_FILE = MySDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AtomLee.-MySDKDemo.MySDKDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -280,6 +695,15 @@
 			buildConfigurations = (
 				677BB60F217EBFE800C1ED76 /* Debug */,
 				677BB610217EBFE800C1ED76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677BB628217EC2DA00C1ED76 /* Build configuration list for PBXNativeTarget "MySDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677BB629217EC2DA00C1ED76 /* Debug */,
+				677BB62A217EC2DA00C1ED76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
