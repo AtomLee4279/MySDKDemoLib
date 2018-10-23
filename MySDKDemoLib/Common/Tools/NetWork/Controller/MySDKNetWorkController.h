@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NetWorkRespondModel.h"
-#import <AFNetworking.h>
+
 
 @class MySDKNetWorkController;
 @protocol MySDKNetWorkDelegate <NSObject>
@@ -24,8 +24,6 @@
 @interface MySDKNetWorkController : NSObject
 
 + (instancetype)shareInstance;
-
-@property(strong, nonatomic) AFHTTPSessionManager *manager;
 
 @property(weak,nonatomic) id<MySDKNetWorkDelegate> delegate;
 

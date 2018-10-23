@@ -37,10 +37,10 @@
 /**
  初始化
  */
-+ (void)Kola_Init;
+- (void)Kola_Init;
 
--(BOOL)checkInitParam;
+- (BOOL)checkInitParam;
 
-+ (void)Kola_Login;
+- (void)Kola_Login;
 
 @end

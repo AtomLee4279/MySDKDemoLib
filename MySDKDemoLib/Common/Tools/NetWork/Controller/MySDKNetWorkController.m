@@ -12,6 +12,7 @@
 #import "NSString+Sign.h"
 //#import "KKDebug.h"
 #import <MJExtension.h>
+#import <AFNetworking.h>
 
 // 正式服 -- 最新2018.05.30开始使用
 static NSString * const myBaseURLString = @"https://api.sdk.gzkaola.com";
@@ -23,6 +24,8 @@ static NSString * const Init_URL = @"App/Basic/Init";
 static NSString * const RegLogOn_URL = @"App/Accounts/RegLogOn";
 
 @interface MySDKNetWorkController()
+
+@property(strong, nonatomic) AFHTTPSessionManager *manager;
 
 @end
 
