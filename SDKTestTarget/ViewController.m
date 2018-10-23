@@ -28,6 +28,7 @@
 
 
 - (IBAction)test_Login:(id)sender {
+    
     [[MySDKDemoLib shareInstance] Kola_Login];
 }
 
