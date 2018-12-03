@@ -12,7 +12,7 @@
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
 #import "MySDKLoginController.h"
-
+#import "LoginView.h"
 
 @implementation MySDKDemoLib
 
@@ -47,7 +47,15 @@
 - (void)Kola_Login{
     
     
-    [[MySDKLoginController shareInstance] mySDKLogin];
+//    [[MySDKLoginController shareInstance] mySDKLogin];
+    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    UIStoryboard *user = [UIStoryboard storyboardWithName:@"MySDKDemoLibStoryBoard" bundle:nil];
+//    UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"MySDKDemoLibStoryBoard"];
+    UIViewController *userVC = [user instantiateInitialViewController];
+    [userVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    
+    [viewController presentViewController:userVC animated:YES completion:nil];
     
 }
 

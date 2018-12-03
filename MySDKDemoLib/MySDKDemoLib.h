@@ -27,9 +27,11 @@
 
 
 
-@interface MySDKDemoLib : NSObject
+@interface MySDKDemoLib : UIViewController
 
 @property(weak,nonatomic) id<KolaDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UIView *loginView;
 
 //单例
 + (instancetype)shareInstance;

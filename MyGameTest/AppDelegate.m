@@ -1,12 +1,20 @@
 //
 //  AppDelegate.m
-//  SDKTestTarget
+//  KoalaGameKitDEMO
 //
-//  Created by 李一贤 on 2018/10/23.
-//  Copyright © 2018 李一贤. All rights reserved.
+//  Created by kaola  on 2018/5/11.
+//  Copyright © 2018年 kaola . All rights reserved.
 //
 
 #import "AppDelegate.h"
+//#import "JueQiSanGuo.h"
+//#import "HuaTuoZhiNu.h"
+
+//#import "DouHunSanGuo.h"
+//#import "HaoMenShouFu.h"
+//#import "TianXianJie.h"
+//#import "BaoJiSanGuo.h"
+
 
 @interface AppDelegate ()
 
@@ -14,10 +22,53 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    // debug时可以开启打印，发布时要关闭打印
+//#ifdef DEBUG
+//    [Koala kgk_openLog:YES];
+//#endif
+//
+//    // 初始化
+//    [KKConfig sharedConfig].appid = @"100000"; // app id
+//    [KKConfig sharedConfig].channel = @"appstore100000";
+//    [KKConfig sharedConfig].appkey = @"123456";  // 签名的key
+//
+//    __weak typeof(self) weakSelf = self;
+//    [Koala kgk_initGameKitWithCompletionHandler:^(KKResult *result) {
+//
+//        if (result.result.boolValue) {
+//
+//            NSLog(@"初始化成功：%@", result.msg);
+//
+//            [weakSelf demo_autologin];
+//        }
+//        else {
+//
+//            NSLog(@"初始化失败：%@", result.msg);
+//        }
+//    }];
+//
+//    return YES;
     return YES;
+}
+
+- (void)demo_autologin {
+    
+//    [Koala kgk_loginWithViewController:NULL isAllowUserAutologin:YES floatBallInitStyle:FloatBallStyleDefault isRememberFloatBallLocation:YES completeHandler:^(KKResult * _Nonnull result) {
+//
+//        if (result.isSucc) {
+//            // 登录成功，data是一个user模型：KKUser
+//            KKUser *user = result.data;
+//            NSLog(@"登录成功：%@", user);
+//        }
+//        else {
+//
+//            // 登录失败: 并不会有登录失败的回调，如网络错误，密码错误等，sdk已自行处理。
+//            NSLog(@"登录失败:%@", result.msg);
+//        }
+//    }];
 }
 
 

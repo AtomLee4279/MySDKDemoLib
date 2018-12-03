@@ -20,6 +20,7 @@
 
 - (void)drawRect:(CGRect)rect {
     NSLog(@"drawRecttttt");
+
     [[UIColor blueColor] set];
 }
 

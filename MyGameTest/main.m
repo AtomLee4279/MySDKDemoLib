@@ -1,9 +1,9 @@
 //
 //  main.m
-//  SDKTestTarget
+//  KoalaGameKitDEMO
 //
-//  Created by 李一贤 on 2018/10/23.
-//  Copyright © 2018 李一贤. All rights reserved.
+//  Created by kaola  on 2018/5/11.
+//  Copyright © 2018年 kaola . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
