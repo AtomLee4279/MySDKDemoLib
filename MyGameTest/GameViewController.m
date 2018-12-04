@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "MySDKDemoLib.h"
 //#import "JueQiSanGuo.h"
 //#import "DouHunSanGuo.h"
 //#import "HaoMenShouFu.h"
@@ -80,6 +81,7 @@ static NSString *DemoSEL = @"demo_sel";
 - (void)demo_login {
     
         NSLog(@"===demo_login===");
+    [[MySDKDemoLib shareInstance] Kola_Login];
 //    [Koala kgk_loginWithViewController:NULL isAllowUserAutologin:NO floatBallInitStyle:FloatBallStyleDefault isRememberFloatBallLocation:YES completeHandler:^(KKResult * _Nonnull result) {
 //
 //        if (result.isSucc) {

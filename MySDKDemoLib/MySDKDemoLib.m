@@ -11,7 +11,7 @@
 #import <MJExtension.h>
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
-#import "MySDKLoginController.h"
+#import "SDKLoginController.h"
 #import "LoginView.h"
 
 @implementation MySDKDemoLib
@@ -22,7 +22,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //        instance = [super new];
-        instance = [[self alloc]init];
+        instance = [[self alloc] init];
     });
     return instance;
 }
@@ -47,15 +47,16 @@
 - (void)Kola_Login{
     
     
-//    [[MySDKLoginController shareInstance] mySDKLogin];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
+    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"Login" bundle:SDKBundle];
+    UIViewController *loginVC = [loginSB instantiateViewControllerWithIdentifier:@"Login"];
+    
+    [loginVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    
-    UIStoryboard *user = [UIStoryboard storyboardWithName:@"MySDKDemoLibStoryBoard" bundle:nil];
-//    UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"MySDKDemoLibStoryBoard"];
-    UIViewController *userVC = [user instantiateInitialViewController];
-    [userVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
-    
-    [viewController presentViewController:userVC animated:YES completion:nil];
+    [viewController presentViewController:loginVC animated:YES completion:nil];
     
 }
 
