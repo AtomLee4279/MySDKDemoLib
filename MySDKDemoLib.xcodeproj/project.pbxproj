@@ -101,7 +101,6 @@
 		6716FC0021B6BC62001720E2 /* Root.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6716FBA221B6BC62001720E2 /* Root.strings */; };
 		6716FC0121B6BC62001720E2 /* 账号框_删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6716FBA421B6BC62001720E2 /* 账号框_删除@2x.png */; };
 		6716FC0221B6BC62001720E2 /* kl_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6716FBA521B6BC62001720E2 /* kl_checkbox.png */; };
-		6716FC0421B6BC89001720E2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6716FC0321B6BC89001720E2 /* Login.storyboard */; };
 		6716FC0B21B6CB4F001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC0C21B6CB77001720E2 /* SDKBundle.bundle in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC1321B6CBCA001720E2 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
@@ -136,6 +135,8 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
+		67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */; };
+		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -256,7 +257,6 @@
 		6716FBA321B6BC62001720E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Root.strings; sourceTree = "<group>"; };
 		6716FBA421B6BC62001720E2 /* 账号框_删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号框_删除@2x.png"; sourceTree = "<group>"; };
 		6716FBA521B6BC62001720E2 /* kl_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_checkbox.png; sourceTree = "<group>"; };
-		6716FC0321B6BC89001720E2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		6716FC0D21B6CBCA001720E2 /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "../../../Desktop/cocoPods备份/libMJExtension.a"; sourceTree = "<group>"; };
 		6716FC0E21B6CBCA001720E2 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../Desktop/cocoPods备份/libMasonry.a"; sourceTree = "<group>"; };
 		6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICKeyChainStore.a; path = "../../../Desktop/cocoPods备份/libUICKeyChainStore.a"; sourceTree = "<group>"; };
@@ -310,6 +310,8 @@
 		67939FB121B531B200E0A641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67939FB321B531B200E0A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67939FB421B531B200E0A641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SDKLoginStoryboard.storyboard; sourceTree = "<group>"; };
+		67F6331721B6DB8900395266 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,9 +352,10 @@
 		6716F9C321B6BB3E001720E2 /* SDKBundle */ = {
 			isa = PBXGroup;
 			children = (
+				67F6331721B6DB8900395266 /* login.png */,
 				6716FBA421B6BC62001720E2 /* 账号框_删除@2x.png */,
-				6716FC0321B6BC89001720E2 /* Login.storyboard */,
 				6716FB4721B6BC61001720E2 /* 账号框_删除@3x.png */,
+				67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */,
 				6716FB6521B6BC61001720E2 /* bg.png */,
 				6716FB4521B6BC61001720E2 /* button_sel_default@2x.png */,
 				6716FB4621B6BC61001720E2 /* button_sel_default@3x.png */,
@@ -826,6 +829,7 @@
 				6716FBC521B6BC62001720E2 /* bg.png in Resources */,
 				6716FBD821B6BC62001720E2 /* 键盘@3x.png in Resources */,
 				6716FBFC21B6BC62001720E2 /* 免费注册@3x.png in Resources */,
+				67F6331821B6DB8900395266 /* login.png in Resources */,
 				6716FBCE21B6BC62001720E2 /* 推荐@3x.png in Resources */,
 				6716FBF621B6BC62001720E2 /* 按钮@2x.png in Resources */,
 				6716FBFD21B6BC62001720E2 /* 闭眼@3x.png in Resources */,
@@ -838,6 +842,7 @@
 				6716FBF121B6BC62001720E2 /* 修改密码@3x.png in Resources */,
 				6716FBF721B6BC62001720E2 /* 使用许可@3x.png in Resources */,
 				6716FBE521B6BC62001720E2 /* 问号@2x.png in Resources */,
+				67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */,
 				6716FBEE21B6BC62001720E2 /* 输入框@3x.png in Resources */,
 				6716FBEA21B6BC62001720E2 /* 时间@2x.png in Resources */,
 				6716FBD721B6BC62001720E2 /* 找回秘密@3x.png in Resources */,
@@ -874,7 +879,6 @@
 				6716FBAF21B6BC62001720E2 /* 平台点击@2x.png in Resources */,
 				6716FC0221B6BC62001720E2 /* kl_checkbox.png in Resources */,
 				6716FBE821B6BC62001720E2 /* 找回秘密@2x.png in Resources */,
-				6716FC0421B6BC89001720E2 /* Login.storyboard in Resources */,
 				6716FBF221B6BC62001720E2 /* 电话@2x.png in Resources */,
 				6716FBC321B6BC62001720E2 /* 客服@3x.png in Resources */,
 				6716FC0021B6BC62001720E2 /* Root.strings in Resources */,
