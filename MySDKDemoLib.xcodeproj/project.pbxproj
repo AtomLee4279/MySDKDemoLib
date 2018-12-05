@@ -10,12 +10,6 @@
 		10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */; };
 		6716FC0B21B6CB4F001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC0C21B6CB77001720E2 /* SDKBundle.bundle in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
-		6716FC1321B6CBCA001720E2 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
-		6716FC1421B6CBCA001720E2 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
-		6716FC1521B6CBCA001720E2 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
-		6716FC1621B6CBCB001720E2 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
-		6716FC1721B6CBCB001720E2 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
-		6716FC1821B6CBCB001720E2 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
 		6716FC1921B6CC95001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC1A21B6CD5F001720E2 /* libMySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */; };
 		677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */; };
@@ -54,6 +48,12 @@
 		6793A25021B75EF400E0A641 /* button_sel_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24521B75EF300E0A641 /* button_sel_default@3x.png */; };
 		6793A25121B75EF400E0A641 /* kl_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24621B75EF300E0A641 /* kl_bar.png */; };
 		6793A25F21B7612100E0A641 /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6793A25E21B7612100E0A641 /* bundleInfo.plist */; };
+		6793A26021B7785600E0A641 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
+		6793A26121B7785600E0A641 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
+		6793A26221B7785600E0A641 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
+		6793A26321B7785600E0A641 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
+		6793A26421B7785600E0A641 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
+		6793A26521B7785600E0A641 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
 		67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */; };
 		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
 /* End PBXBuildFile section */
@@ -166,12 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				6716FC1321B6CBCA001720E2 /* libMJExtension.a in Frameworks */,
-				6716FC1421B6CBCA001720E2 /* libMasonry.a in Frameworks */,
-				6716FC1521B6CBCA001720E2 /* libUICKeyChainStore.a in Frameworks */,
-				6716FC1621B6CBCB001720E2 /* libAFNetworking.a in Frameworks */,
-				6716FC1721B6CBCB001720E2 /* libKSToastView.a in Frameworks */,
-				6716FC1821B6CBCB001720E2 /* libSDWebImage.a in Frameworks */,
+				6793A26021B7785600E0A641 /* libAFNetworking.a in Frameworks */,
+				6793A26121B7785600E0A641 /* libKSToastView.a in Frameworks */,
+				6793A26221B7785600E0A641 /* libMasonry.a in Frameworks */,
+				6793A26321B7785600E0A641 /* libMJExtension.a in Frameworks */,
+				6793A26421B7785600E0A641 /* libSDWebImage.a in Frameworks */,
+				6793A26521B7785600E0A641 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,7 +828,8 @@
 			baseConfigurationReference = 16DCDF932DEA97C0F2D75EA4 /* Pods-MySDKDemoLib.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/xcode_test/MySDKDemoLib/MySDKDemoLib/Common/GlobalDefine.pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoLib/Common/GlobalDefine.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,7 +843,8 @@
 			baseConfigurationReference = 6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/xcode_test/MySDKDemoLib/MySDKDemoLib/Common/GlobalDefine.pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoLib/Common/GlobalDefine.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
