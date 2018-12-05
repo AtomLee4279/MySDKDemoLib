@@ -20,21 +20,23 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-Kh-Mhr" userLabel="ContainerView">
-                    <rect key="frame" x="-1" y="149" width="322" height="270"/>
+                    <rect key="frame" x="18" y="149" width="284" height="270"/>
                     <subviews>
                         <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-Iv-Iek" userLabel="TableView">
-                            <rect key="frame" x="0.0" y="0.0" width="322" height="270"/>
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="270"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="322" id="4bi-33-ES6"/>
-                        <constraint firstAttribute="bottom" secondItem="r9f-Iv-Iek" secondAttribute="bottom" id="4uu-y5-jFm"/>
-                        <constraint firstAttribute="height" constant="270" id="GW6-pu-eGu"/>
-                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="leading" secondItem="JxC-Kh-Mhr" secondAttribute="leading" id="Iig-xC-bbT"/>
-                        <constraint firstAttribute="trailing" secondItem="r9f-Iv-Iek" secondAttribute="trailing" id="O1G-ME-s5h"/>
-                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="top" secondItem="JxC-Kh-Mhr" secondAttribute="top" id="Qdk-Oj-heS"/>
-                        <constraint firstAttribute="width" secondItem="JxC-Kh-Mhr" secondAttribute="height" multiplier="161:135" id="Vit-bv-jhF"/>
+                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="leading" secondItem="JxC-Kh-Mhr" secondAttribute="leading" id="2fS-pa-KwC"/>
+                        <constraint firstAttribute="height" constant="270" id="5Iv-mj-Xg0"/>
+                        <constraint firstAttribute="width" secondItem="JxC-Kh-Mhr" secondAttribute="height" multiplier="142:135" id="CZ8-cc-FgO"/>
+                        <constraint firstAttribute="bottom" secondItem="r9f-Iv-Iek" secondAttribute="bottom" id="G6i-sq-Zr4"/>
+                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="top" secondItem="JxC-Kh-Mhr" secondAttribute="top" id="JT4-yb-Q7p"/>
+                        <constraint firstAttribute="trailing" secondItem="r9f-Iv-Iek" secondAttribute="trailing" id="KhL-Gf-iLG"/>
+                        <constraint firstAttribute="width" constant="284" id="ZEr-kb-Fkx"/>
+                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="centerX" secondItem="JxC-Kh-Mhr" secondAttribute="centerX" id="bld-6M-oJD"/>
+                        <constraint firstItem="r9f-Iv-Iek" firstAttribute="centerY" secondItem="JxC-Kh-Mhr" secondAttribute="centerY" id="mfo-1b-eRL"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -45,8 +47,8 @@
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerY" secondItem="eZK-gn-6e1" secondAttribute="centerY" id="0hl-Qu-cC7"/>
-                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerX" secondItem="eZK-gn-6e1" secondAttribute="centerX" id="Gb2-Se-CE5"/>
+                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerX" secondItem="eZK-gn-6e1" secondAttribute="centerX" id="5lA-NS-Vpt"/>
+                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerY" secondItem="eZK-gn-6e1" secondAttribute="centerY" id="wu2-5C-HQb"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
