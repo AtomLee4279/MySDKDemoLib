@@ -34,7 +34,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GrK-em-VC9" firstAttribute="centerY" secondItem="vrt-do-vqa" secondAttribute="centerY" id="QsG-RL-VaZ"/>
                             <constraint firstItem="GrK-em-VC9" firstAttribute="centerX" secondItem="vrt-do-vqa" secondAttribute="centerX" id="wCp-Tk-pyl"/>
@@ -47,6 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login.png" width="788" height="1464"/>
+        <image name="login.png" width="874" height="1616"/>
     </resources>
 </document>
