@@ -56,9 +56,10 @@
 //    [loginVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     
     BaseView* baseView = [BaseView loadXib];
-    
+    baseView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
 //    [viewController presentViewController:loginVC animated:YES completion:nil];
+    
     [viewController.view addSubview:baseView];
     
 }
