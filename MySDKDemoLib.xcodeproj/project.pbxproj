@@ -42,6 +42,17 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
+		6793A24721B75EF400E0A641 /* kl_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A23C21B75EF200E0A641 /* kl_checkbox.png */; };
+		6793A24821B75EF400E0A641 /* 账号框_删除@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A23D21B75EF300E0A641 /* 账号框_删除@3x.png */; };
+		6793A24921B75EF400E0A641 /* button_sel_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A23E21B75EF300E0A641 /* button_sel_default@2x.png */; };
+		6793A24A21B75EF400E0A641 /* Root.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6793A23F21B75EF300E0A641 /* Root.plist */; };
+		6793A24B21B75EF400E0A641 /* 账号框_删除@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24021B75EF300E0A641 /* 账号框_删除@2x.png */; };
+		6793A24C21B75EF400E0A641 /* float30 in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24121B75EF300E0A641 /* float30 */; };
+		6793A24D21B75EF400E0A641 /* kl_reisterphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24221B75EF300E0A641 /* kl_reisterphone.png */; };
+		6793A24E21B75EF400E0A641 /* temp30 in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24321B75EF300E0A641 /* temp30 */; };
+		6793A24F21B75EF400E0A641 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24421B75EF300E0A641 /* bg.png */; };
+		6793A25021B75EF400E0A641 /* button_sel_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24521B75EF300E0A641 /* button_sel_default@3x.png */; };
+		6793A25121B75EF400E0A641 /* kl_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24621B75EF300E0A641 /* kl_bar.png */; };
 		67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */; };
 		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
 /* End PBXBuildFile section */
@@ -123,6 +134,17 @@
 		67939FB121B531B200E0A641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67939FB321B531B200E0A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67939FB421B531B200E0A641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6793A23C21B75EF200E0A641 /* kl_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_checkbox.png; sourceTree = "<group>"; };
+		6793A23D21B75EF300E0A641 /* 账号框_删除@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号框_删除@3x.png"; sourceTree = "<group>"; };
+		6793A23E21B75EF300E0A641 /* button_sel_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_sel_default@2x.png"; sourceTree = "<group>"; };
+		6793A23F21B75EF300E0A641 /* Root.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
+		6793A24021B75EF300E0A641 /* 账号框_删除@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号框_删除@2x.png"; sourceTree = "<group>"; };
+		6793A24121B75EF300E0A641 /* float30 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = float30; sourceTree = "<group>"; };
+		6793A24221B75EF300E0A641 /* kl_reisterphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_reisterphone.png; sourceTree = "<group>"; };
+		6793A24321B75EF300E0A641 /* temp30 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = temp30; sourceTree = "<group>"; };
+		6793A24421B75EF300E0A641 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		6793A24521B75EF300E0A641 /* button_sel_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_sel_default@3x.png"; sourceTree = "<group>"; };
+		6793A24621B75EF300E0A641 /* kl_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_bar.png; sourceTree = "<group>"; };
 		67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SDKLoginStoryboard.storyboard; sourceTree = "<group>"; };
 		67F6331721B6DB8900395266 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +188,17 @@
 			isa = PBXGroup;
 			children = (
 				67F6331721B6DB8900395266 /* login.png */,
+				6793A24021B75EF300E0A641 /* 账号框_删除@2x.png */,
+				6793A23D21B75EF300E0A641 /* 账号框_删除@3x.png */,
+				6793A24421B75EF300E0A641 /* bg.png */,
+				6793A23E21B75EF300E0A641 /* button_sel_default@2x.png */,
+				6793A24521B75EF300E0A641 /* button_sel_default@3x.png */,
+				6793A24121B75EF300E0A641 /* float30 */,
+				6793A24621B75EF300E0A641 /* kl_bar.png */,
+				6793A23C21B75EF200E0A641 /* kl_checkbox.png */,
+				6793A24221B75EF300E0A641 /* kl_reisterphone.png */,
+				6793A23F21B75EF300E0A641 /* Root.plist */,
+				6793A24321B75EF300E0A641 /* temp30 */,
 				67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */,
 			);
 			path = SDKBundle;
@@ -518,7 +551,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6793A25121B75EF400E0A641 /* kl_bar.png in Resources */,
+				6793A24C21B75EF400E0A641 /* float30 in Resources */,
+				6793A24D21B75EF400E0A641 /* kl_reisterphone.png in Resources */,
+				6793A25021B75EF400E0A641 /* button_sel_default@3x.png in Resources */,
 				67F6331821B6DB8900395266 /* login.png in Resources */,
+				6793A24821B75EF400E0A641 /* 账号框_删除@3x.png in Resources */,
+				6793A24921B75EF400E0A641 /* button_sel_default@2x.png in Resources */,
+				6793A24E21B75EF400E0A641 /* temp30 in Resources */,
+				6793A24721B75EF400E0A641 /* kl_checkbox.png in Resources */,
+				6793A24B21B75EF400E0A641 /* 账号框_删除@2x.png in Resources */,
+				6793A24A21B75EF400E0A641 /* Root.plist in Resources */,
+				6793A24F21B75EF400E0A641 /* bg.png in Resources */,
 				67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
