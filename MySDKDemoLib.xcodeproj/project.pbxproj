@@ -53,7 +53,7 @@
 		6793A24F21B75EF400E0A641 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24421B75EF300E0A641 /* bg.png */; };
 		6793A25021B75EF400E0A641 /* button_sel_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24521B75EF300E0A641 /* button_sel_default@3x.png */; };
 		6793A25121B75EF400E0A641 /* kl_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24621B75EF300E0A641 /* kl_bar.png */; };
-		6793A25F21B7612100E0A641 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6793A25E21B7612100E0A641 /* Info.plist */; };
+		6793A25F21B7612100E0A641 /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6793A25E21B7612100E0A641 /* bundleInfo.plist */; };
 		67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */; };
 		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
 /* End PBXBuildFile section */
@@ -146,7 +146,7 @@
 		6793A24421B75EF300E0A641 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		6793A24521B75EF300E0A641 /* button_sel_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_sel_default@3x.png"; sourceTree = "<group>"; };
 		6793A24621B75EF300E0A641 /* kl_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_bar.png; sourceTree = "<group>"; };
-		6793A25E21B7612100E0A641 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6793A25E21B7612100E0A641 /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
 		67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SDKLoginStoryboard.storyboard; sourceTree = "<group>"; };
 		67F6331721B6DB8900395266 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 				6793A24021B75EF300E0A641 /* 账号框_删除@2x.png */,
 				6793A23D21B75EF300E0A641 /* 账号框_删除@3x.png */,
 				6793A24421B75EF300E0A641 /* bg.png */,
-				6793A25E21B7612100E0A641 /* Info.plist */,
+				6793A25E21B7612100E0A641 /* bundleInfo.plist */,
 				6793A23E21B75EF300E0A641 /* button_sel_default@2x.png */,
 				6793A24521B75EF300E0A641 /* button_sel_default@3x.png */,
 				6793A24121B75EF300E0A641 /* float30 */,
@@ -561,7 +561,7 @@
 				67F6331821B6DB8900395266 /* login.png in Resources */,
 				6793A24821B75EF400E0A641 /* 账号框_删除@3x.png in Resources */,
 				6793A24921B75EF400E0A641 /* button_sel_default@2x.png in Resources */,
-				6793A25F21B7612100E0A641 /* Info.plist in Resources */,
+				6793A25F21B7612100E0A641 /* bundleInfo.plist in Resources */,
 				6793A24E21B75EF400E0A641 /* temp30 in Resources */,
 				6793A24721B75EF400E0A641 /* kl_checkbox.png in Resources */,
 				6793A24B21B75EF400E0A641 /* 账号框_删除@2x.png in Resources */,
@@ -683,7 +683,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = SDKBundle/Info.plist;
+				INFOPLIST_FILE = SDKBundle/bundleInfo.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.SDKBundle;
@@ -700,7 +700,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
-				INFOPLIST_FILE = SDKBundle/Info.plist;
+				INFOPLIST_FILE = SDKBundle/bundleInfo.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.SDKBundle;
