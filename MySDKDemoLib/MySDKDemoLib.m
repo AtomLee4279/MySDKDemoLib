@@ -12,7 +12,7 @@
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
 #import "SDKLoginController.h"
-#import "LoginView.h"
+#import "BaseView.h"
 
 @implementation MySDKDemoLib
 
@@ -48,15 +48,18 @@
     
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+//    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+//
+//    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"SDKLogin" bundle:SDKBundle];
+//    UIViewController *loginVC = [loginSB instantiateViewControllerWithIdentifier:@"Login"];
+//    [loginVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     
-    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"Login" bundle:SDKBundle];
-    UIViewController *loginVC = [loginSB instantiateViewControllerWithIdentifier:@"Login"];
+    BaseView* baseView = [BaseView loadXib];
     
-    [loginVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    [viewController presentViewController:loginVC animated:YES completion:nil];
+//    [viewController presentViewController:loginVC animated:YES completion:nil];
+    [viewController.view addSubview:baseView];
     
 }
 

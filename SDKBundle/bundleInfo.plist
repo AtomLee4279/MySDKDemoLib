@@ -22,5 +22,9 @@
 	<string>Copyright © 2018 李一贤. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<true/>
 </dict>
 </plist>

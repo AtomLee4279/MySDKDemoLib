@@ -16,7 +16,6 @@
 		677BB60B217EBFE800C1ED76 /* MySDKDemoLib.h in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */; };
 		677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB62D217EC6D200C1ED76 /* SDKLoginController.m */; };
 		677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB631217EC6D200C1ED76 /* ParamsRegLogOn.m */; };
-		677BB65D217EC6D300C1ED76 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB635217EC6D200C1ED76 /* LoginView.m */; };
 		677BB65E217EC6D300C1ED76 /* MyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB63B217EC6D200C1ED76 /* MyToast.m */; };
 		677BB65F217EC6D300C1ED76 /* MySDKNetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB63F217EC6D200C1ED76 /* MySDKNetWorkController.m */; };
 		677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB641217EC6D200C1ED76 /* NetWorkRespondModel.m */; };
@@ -54,7 +53,8 @@
 		6793A26321B7785600E0A641 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
 		6793A26421B7785600E0A641 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
 		6793A26521B7785600E0A641 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
-		67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */; };
+		6793A26721B7821900E0A641 /* BaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6793A26621B7821900E0A641 /* BaseView.xib */; };
+		6793A27921B7C09900E0A641 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793A27821B7C09900E0A641 /* BaseView.m */; };
 		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
 /* End PBXBuildFile section */
 
@@ -95,9 +95,6 @@
 		677BB62E217EC6D200C1ED76 /* SDKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKLoginController.h; sourceTree = "<group>"; };
 		677BB630217EC6D200C1ED76 /* ParamsRegLogOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamsRegLogOn.h; sourceTree = "<group>"; };
 		677BB631217EC6D200C1ED76 /* ParamsRegLogOn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParamsRegLogOn.m; sourceTree = "<group>"; };
-		677BB633217EC6D200C1ED76 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
-		677BB634217EC6D200C1ED76 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		677BB635217EC6D200C1ED76 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		677BB637217EC6D200C1ED76 /* GlobalDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.pch; sourceTree = "<group>"; };
 		677BB63A217EC6D200C1ED76 /* MyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyToast.h; sourceTree = "<group>"; };
 		677BB63B217EC6D200C1ED76 /* MyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyToast.m; sourceTree = "<group>"; };
@@ -147,7 +144,9 @@
 		6793A24521B75EF300E0A641 /* button_sel_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_sel_default@3x.png"; sourceTree = "<group>"; };
 		6793A24621B75EF300E0A641 /* kl_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_bar.png; sourceTree = "<group>"; };
 		6793A25E21B7612100E0A641 /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
-		67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SDKLoginStoryboard.storyboard; sourceTree = "<group>"; };
+		6793A26621B7821900E0A641 /* BaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseView.xib; sourceTree = "<group>"; };
+		6793A27721B7C09900E0A641 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		6793A27821B7C09900E0A641 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		67F6331721B6DB8900395266 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +192,7 @@
 				6793A24021B75EF300E0A641 /* 账号框_删除@2x.png */,
 				6793A23D21B75EF300E0A641 /* 账号框_删除@3x.png */,
 				6793A24421B75EF300E0A641 /* bg.png */,
+				6793A26621B7821900E0A641 /* BaseView.xib */,
 				6793A25E21B7612100E0A641 /* bundleInfo.plist */,
 				6793A23E21B75EF300E0A641 /* button_sel_default@2x.png */,
 				6793A24521B75EF300E0A641 /* button_sel_default@3x.png */,
@@ -202,7 +202,6 @@
 				6793A24221B75EF300E0A641 /* kl_reisterphone.png */,
 				6793A23F21B75EF300E0A641 /* Root.plist */,
 				6793A24321B75EF300E0A641 /* temp30 */,
-				67F6331221B6D7A700395266 /* SDKLoginStoryboard.storyboard */,
 			);
 			path = SDKBundle;
 			sourceTree = "<group>";
@@ -234,6 +233,8 @@
 			children = (
 				677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */,
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
+				6793A27721B7C09900E0A641 /* BaseView.h */,
+				6793A27821B7C09900E0A641 /* BaseView.m */,
 				677BB636217EC6D200C1ED76 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -272,9 +273,6 @@
 		677BB632217EC6D200C1ED76 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				677BB633217EC6D200C1ED76 /* LoginView.h */,
-				677BB634217EC6D200C1ED76 /* LoginView.xib */,
-				677BB635217EC6D200C1ED76 /* LoginView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -567,7 +565,7 @@
 				6793A24B21B75EF400E0A641 /* 账号框_删除@2x.png in Resources */,
 				6793A24A21B75EF400E0A641 /* Root.plist in Resources */,
 				6793A24F21B75EF400E0A641 /* bg.png in Resources */,
-				67F6331321B6D7A700395266 /* SDKLoginStoryboard.storyboard in Resources */,
+				6793A26721B7821900E0A641 /* BaseView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,11 +627,11 @@
 			files = (
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
 				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
+				6793A27921B7C09900E0A641 /* BaseView.m in Sources */,
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
-				677BB65D217EC6D300C1ED76 /* LoginView.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				677BB664217EC6D300C1ED76 /* LogoView.m in Sources */,
 				677BB65E217EC6D300C1ED76 /* MyToast.m in Sources */,
@@ -685,6 +683,7 @@
 				COMBINE_HIDPI_IMAGES = NO;
 				INFOPLIST_FILE = SDKBundle/bundleInfo.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.SDKBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,6 +701,7 @@
 				COMBINE_HIDPI_IMAGES = NO;
 				INFOPLIST_FILE = SDKBundle/bundleInfo.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.SDKBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
