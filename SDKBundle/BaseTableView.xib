@@ -51,6 +51,7 @@
                 <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerX" secondItem="6jr-jS-uGI" secondAttribute="centerX" id="10X-W5-cbx"/>
                 <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerY" secondItem="6jr-jS-uGI" secondAttribute="centerY" id="EYB-39-XM3"/>
             </constraints>
+            <point key="canvasLocation" x="309.375" y="-200.70422535211267"/>
         </view>
     </objects>
 </document>

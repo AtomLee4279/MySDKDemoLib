@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "TitleViewCell.h"
+
 
 @interface BaseViewController () {
     
@@ -44,22 +46,29 @@
 //    {
 //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
 //    }
-    UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-    cell.textLabel.text = @"aaa";
-//    cell.accessoryType = UITableViewCellAccessoryNone;
-//    //设置cell选中状态
-//    if ([self.selectedDict objectForKey:@(indexPath.section)]) {
-//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//    }
-//    //设置数据
-//    NSLog(@"%ld==%ld",(long)indexPath.section,(long)indexPath.row);
-//    HeroGroup * group = self.heroGroups[indexPath.section];
-//    cell.textLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"name"];
-//    cell.detailTextLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"info"];
-//    cell.imageView.image = [UIImage imageNamed:[group getHeroParamWithIndex:indexPath.row andkey:@"icon"]];
+    //    cell.accessoryType = UITableViewCellAccessoryNone;
+    //    //设置cell选中状态
+    //    if ([self.selectedDict objectForKey:@(indexPath.section)]) {
+    //        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    //    }
+    //    //设置数据
+    //    NSLog(@"%ld==%ld",(long)indexPath.section,(long)indexPath.row);
+    //    HeroGroup * group = self.heroGroups[indexPath.section];
+    //    cell.textLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"name"];
+    //    cell.detailTextLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"info"];
+    //    cell.imageView.image = [UIImage imageNamed:[group getHeroParamWithIndex:indexPath.row andkey:@"icon"]];
+    
+    TitleViewCell* cell = [[TitleViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+//    cell.logo.image = [UIImage imageNamed:@"login"];
+//    [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
 
+
+- (void)backBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===backBtnDidClick===");
+}
 
 
 @end

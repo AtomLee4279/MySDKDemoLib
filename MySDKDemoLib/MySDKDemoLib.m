@@ -50,7 +50,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
-    BaseViewController *baseVC = [[BaseViewController alloc] initWithNibName:@"BaseView" bundle:SDKBundle];
+    BaseViewController *baseVC = [[BaseViewController alloc] initWithNibName:@"BaseTableView" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     [baseVC setModalPresentationStyle:UIModalPresentationCustom];
     
