@@ -1,8 +1,8 @@
 //
-//  BaseView.h
+//  BaseViewController.h
 //  MySDKDemoLib
 //
-//  Created by 李一贤 on 2018/12/5.
+//  Created by 李一贤 on 2018/12/6.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
@@ -10,12 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseView : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface BaseViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-+(instancetype)loadXib;
+
+//+(void)normalLogin;
 
 
 @end
+
+
 
 NS_ASSUME_NONNULL_END

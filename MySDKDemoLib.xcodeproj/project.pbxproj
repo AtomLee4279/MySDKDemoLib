@@ -48,14 +48,14 @@
 		6793A25121B75EF400E0A641 /* kl_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6793A24621B75EF300E0A641 /* kl_bar.png */; };
 		6793A25F21B7612100E0A641 /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6793A25E21B7612100E0A641 /* bundleInfo.plist */; };
 		6793A26721B7821900E0A641 /* BaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6793A26621B7821900E0A641 /* BaseView.xib */; };
-		6793A27921B7C09900E0A641 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793A27821B7C09900E0A641 /* BaseView.m */; };
+		67DFADD321B8C0D5009E0C92 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
+		67DFADD421B8C0D5009E0C92 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
+		67DFADD521B8C0D5009E0C92 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
+		67DFADD621B8C0D5009E0C92 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
+		67DFADD721B8C0D5009E0C92 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
+		67DFADD821B8C0D5009E0C92 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
+		67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */; };
 		67F6331821B6DB8900395266 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6331721B6DB8900395266 /* login.png */; };
-		67F6331F21B7EBED00395266 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
-		67F6332021B7EBED00395266 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
-		67F6332121B7EBED00395266 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
-		67F6332221B7EBED00395266 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
-		67F6332321B7EBED00395266 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
-		67F6332421B7EBED00395266 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
 		67F6332621B8190900395266 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6332521B8190900395266 /* TitleView.xib */; };
 		67F6334221B8233500395266 /* 平台@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6332721B8233200395266 /* 平台@3x.png */; };
 		67F6334321B8233500395266 /* 客服点击@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67F6332821B8233300395266 /* 客服点击@3x.png */; };
@@ -229,8 +229,8 @@
 		6793A24621B75EF300E0A641 /* kl_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kl_bar.png; sourceTree = "<group>"; };
 		6793A25E21B7612100E0A641 /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
 		6793A26621B7821900E0A641 /* BaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseView.xib; sourceTree = "<group>"; };
-		6793A27721B7C09900E0A641 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-		6793A27821B7C09900E0A641 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		67DFADD921B8C4D9009E0C92 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		67F6331721B6DB8900395266 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		67F6332521B8190900395266 /* TitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
 		67F6332721B8233200395266 /* 平台@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "平台@3x.png"; path = "float30/平台@3x.png"; sourceTree = "<group>"; };
@@ -333,12 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				67F6331F21B7EBED00395266 /* libAFNetworking.a in Frameworks */,
-				67F6332021B7EBED00395266 /* libKSToastView.a in Frameworks */,
-				67F6332121B7EBED00395266 /* libMasonry.a in Frameworks */,
-				67F6332221B7EBED00395266 /* libMJExtension.a in Frameworks */,
-				67F6332321B7EBED00395266 /* libSDWebImage.a in Frameworks */,
-				67F6332421B7EBED00395266 /* libUICKeyChainStore.a in Frameworks */,
+				67DFADD321B8C0D5009E0C92 /* libAFNetworking.a in Frameworks */,
+				67DFADD421B8C0D5009E0C92 /* libKSToastView.a in Frameworks */,
+				67DFADD521B8C0D5009E0C92 /* libMasonry.a in Frameworks */,
+				67DFADD621B8C0D5009E0C92 /* libMJExtension.a in Frameworks */,
+				67DFADD721B8C0D5009E0C92 /* libSDWebImage.a in Frameworks */,
+				67DFADD821B8C0D5009E0C92 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,8 +485,8 @@
 			children = (
 				677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */,
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
-				6793A27721B7C09900E0A641 /* BaseView.h */,
-				6793A27821B7C09900E0A641 /* BaseView.m */,
+				67DFADD921B8C4D9009E0C92 /* BaseViewController.h */,
+				67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */,
 				677BB636217EC6D200C1ED76 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -963,10 +963,10 @@
 			files = (
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
 				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
-				6793A27921B7C09900E0A641 /* BaseView.m in Sources */,
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
+				67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				677BB664217EC6D300C1ED76 /* LogoView.m in Sources */,

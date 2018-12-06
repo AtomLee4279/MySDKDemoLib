@@ -9,20 +9,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
+            <connections>
+                <outlet property="tableView" destination="r9f-Iv-Iek" id="w5u-HY-keg"/>
+                <outlet property="view" destination="6jr-jS-uGI" id="6xj-mu-UJ7"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="eZK-gn-6e1" userLabel="BaseView" customClass="BaseView">
+        <view contentMode="scaleToFill" id="6jr-jS-uGI" userLabel="BaseView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLC-82-e8N">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-Kh-Mhr" userLabel="ContainerView">
                     <rect key="frame" x="18" y="149" width="284" height="270"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-Iv-Iek" userLabel="TableView">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-Iv-Iek" userLabel="TableView">
                             <rect key="frame" x="0.0" y="0.0" width="284" height="270"/>
                             <color key="backgroundColor" red="0.82638564020000005" green="1" blue="0.51396444019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </tableView>
@@ -47,21 +48,9 @@
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerX" secondItem="eZK-gn-6e1" secondAttribute="centerX" id="5lA-NS-Vpt"/>
-                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerY" secondItem="eZK-gn-6e1" secondAttribute="centerY" id="wu2-5C-HQb"/>
+                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerX" secondItem="6jr-jS-uGI" secondAttribute="centerX" id="10X-W5-cbx"/>
+                <constraint firstItem="JxC-Kh-Mhr" firstAttribute="centerY" secondItem="6jr-jS-uGI" secondAttribute="centerY" id="EYB-39-XM3"/>
             </constraints>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="aLC-82-e8N"/>
-                </mask>
-            </variation>
-            <connections>
-                <outlet property="tableView" destination="r9f-Iv-Iek" id="DhS-ir-aPe"/>
-            </connections>
-            <point key="canvasLocation" x="312.80000000000001" y="-216.34182908545728"/>
         </view>
     </objects>
-    <resources>
-        <image name="login.png" width="874" height="1616"/>
-    </resources>
 </document>

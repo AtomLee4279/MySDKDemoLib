@@ -12,7 +12,7 @@
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
 #import "SDKLoginController.h"
-#import "BaseView.h"
+#import "BaseViewController.h"
 
 @implementation MySDKDemoLib
 
@@ -47,20 +47,17 @@
 - (void)Kola_Login{
     
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-//    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-//
-//    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"SDKLogin" bundle:SDKBundle];
-//    UIViewController *loginVC = [loginSB instantiateViewControllerWithIdentifier:@"Login"];
-//    [loginVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    BaseViewController *baseVC = [[BaseViewController alloc] initWithNibName:@"BaseView" bundle:SDKBundle];
+    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
     
-    BaseView* baseView = [BaseView loadXib];
-    baseView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-//    [viewController presentViewController:loginVC animated:YES completion:nil];
+    [viewController presentViewController:baseVC animated:YES completion:nil];
     
-    [viewController.view addSubview:baseView];
     
 }
 
