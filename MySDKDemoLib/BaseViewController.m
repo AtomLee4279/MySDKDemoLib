@@ -23,6 +23,9 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+//    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"title"];
     // Do any additional setup after loading the view.
 }
 
@@ -59,10 +62,13 @@
     //    cell.imageView.image = [UIImage imageNamed:[group getHeroParamWithIndex:indexPath.row andkey:@"icon"]];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+    
+    TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"title"];
     if (!cell) {
-        id tmp = [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil];
-        cell =  [SDKBundle loadNibNamed:@"TitleViewCell" owner:nil options:nil].firstObject;
+//        id tmp = [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil];
+        Class cls = [TitleViewCell class];
+//          [tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"title"];
+        cell =  [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil].firstObject;
     }
 //    cell.logo.image = [UIImage imageNamed:@"login"];
 //    [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
