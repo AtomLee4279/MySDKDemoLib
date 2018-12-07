@@ -7,6 +7,7 @@
 //
 
 #import "TitleViewCell.h"
+#import "UIImage+Resize.h"
 
 @implementation TitleViewCell
 
@@ -21,8 +22,10 @@
 
 - (void)prepareForUI {
     
-//    [self.contentView addSubview:self.logo];
-    [self.contentView addSubview:self.backBtn];
+
+    
+    [self.logo.image resizeWithResizeMode:ResizeModeHorizontal];
+
 }
 
 @end

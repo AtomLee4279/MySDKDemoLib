@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
 
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
 
 
 @end

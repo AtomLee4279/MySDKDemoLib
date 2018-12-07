@@ -57,8 +57,13 @@
     //    cell.textLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"name"];
     //    cell.detailTextLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"info"];
     //    cell.imageView.image = [UIImage imageNamed:[group getHeroParamWithIndex:indexPath.row andkey:@"icon"]];
-    
-    TitleViewCell* cell = [[TitleViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+    if (!cell) {
+        id tmp = [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil];
+        cell =  [SDKBundle loadNibNamed:@"TitleViewCell" owner:nil options:nil].firstObject;
+    }
 //    cell.logo.image = [UIImage imageNamed:@"login"];
 //    [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
