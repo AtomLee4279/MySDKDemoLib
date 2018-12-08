@@ -35,6 +35,10 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
+		67AAAB1421BBB02B00F83EF1 /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */; };
+		67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */; };
+		67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */; };
+		67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */; };
 		67B9DA5B21BA147A00FD725F /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
 		67B9DA5C21BA147A00FD725F /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
 		67B9DA5D21BA147A00FD725F /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
@@ -175,6 +179,11 @@
 		67939FB121B531B200E0A641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67939FB321B531B200E0A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67939FB421B531B200E0A641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67AAAB1021BBB02B00F83EF1 /* InputViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewCell.h; sourceTree = "<group>"; };
+		67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewCell.m; sourceTree = "<group>"; };
+		67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewCell.xib; sourceTree = "<group>"; };
+		67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉@3x.png"; sourceTree = "<group>"; };
+		67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉@2x.png"; sourceTree = "<group>"; };
 		67B9DA6621BA228400FD725F /* example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = example; sourceTree = "<group>"; };
 		67B9DA6721BA228400FD725F /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
 		67B9DA7221BA229F00FD725F /* Root.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
@@ -279,6 +288,10 @@
 			children = (
 				67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */,
 				67B9DA7C21BA2B3300FD725F /* TitleViewCell.xib */,
+				67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */,
+				67B9DA8921BA305000FD725F /* example */,
+				67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */,
+				67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */,
 				67B9DAAA21BA305500FD725F /* 按钮@2x.png */,
 				67B9DA9321BA305300FD725F /* 按钮@3x.png */,
 				67B9DA9221BA305300FD725F /* 背景4X4.png */,
@@ -320,7 +333,6 @@
 				67B9DA9421BA305300FD725F /* 账号@3x.png */,
 				67B9DA9F21BA305400FD725F /* 注销@2x.png */,
 				67B9DA7F21BA304F00FD725F /* 注销@3x.png */,
-				67B9DA8921BA305000FD725F /* example */,
 				67B9DAA721BA305500FD725F /* QQ@2x.png */,
 				67B9DAA921BA305500FD725F /* QQ@3x.png */,
 				67B9DA6621BA228400FD725F /* example */,
@@ -359,6 +371,8 @@
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
 				67DFADD921B8C4D9009E0C92 /* BaseViewController.h */,
 				67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */,
+				67AAAB1021BBB02B00F83EF1 /* InputViewCell.h */,
+				67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */,
 				67F633D121B9705100395266 /* TitleViewCell.h */,
 				67F633D221B9705100395266 /* TitleViewCell.m */,
 				677BB636217EC6D200C1ED76 /* Common */,
@@ -708,6 +722,7 @@
 				67B9DABB21BA305600FD725F /* 账号@2x.png in Resources */,
 				67B9DAB121BA305600FD725F /* 密码@3x.png in Resources */,
 				67B9DAC521BA305600FD725F /* 按钮@3x.png in Resources */,
+				67AAAB1421BBB02B00F83EF1 /* InputViewCell.xib in Resources */,
 				67B9DA7B21BA2B1F00FD725F /* BaseTableView.xib in Resources */,
 				67B9DAB321BA305600FD725F /* 刷新@2x.png in Resources */,
 				67B9DABC21BA305600FD725F /* 客服.jpg in Resources */,
@@ -740,9 +755,11 @@
 				67B9DAC221BA305600FD725F /* 当前账号.jpg in Resources */,
 				67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */,
 				67B9DA7D21BA2B3300FD725F /* TitleViewCell.xib in Resources */,
+				67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */,
 				67B9DAD121BA305600FD725F /* 注销@2x.png in Resources */,
 				67B9DAB521BA305600FD725F /* 分割线@2X.png in Resources */,
 				67B9DAC621BA305600FD725F /* 账号@3x.png in Resources */,
+				67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */,
 				67B9DADB21BA305600FD725F /* QQ@3x.png in Resources */,
 				67B9DAD321BA305600FD725F /* 浮标@3X.png in Resources */,
 				67B9DAD021BA305600FD725F /* 协议@3x.png in Resources */,
@@ -822,6 +839,7 @@
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
+				67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */,
 				67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,

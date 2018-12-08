@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 #import "TitleViewCell.h"
-
+#import "InputViewCell.h"
 
 @interface BaseViewController () {
     
@@ -23,9 +23,13 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    //注册nib文件关联的tableviewcell
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-//    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"title"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
+ 
     // Do any additional setup after loading the view.
 }
 
@@ -41,38 +45,21 @@
 //indexPath.row:获取对应的行号
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    static NSString *ID = @"BaseView";//使用静态局部变量static，避免每次调用该方法时都重复创建该局部变量,保证该变量的内存只分配一次
-//    //1.首先根据标识符去重用池中取cell
-//    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//    //2.如果不存在cell,才根据标识符新创建cell
-//    if(cell == nil)
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-//    }
-    //    cell.accessoryType = UITableViewCellAccessoryNone;
-    //    //设置cell选中状态
-    //    if ([self.selectedDict objectForKey:@(indexPath.section)]) {
-    //        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    //    }
-    //    //设置数据
-    //    NSLog(@"%ld==%ld",(long)indexPath.section,(long)indexPath.row);
-    //    HeroGroup * group = self.heroGroups[indexPath.section];
-    //    cell.textLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"name"];
-    //    cell.detailTextLabel.text = [group getHeroParamWithIndex:indexPath.row andkey:@"info"];
-    //    cell.imageView.image = [UIImage imageNamed:[group getHeroParamWithIndex:indexPath.row andkey:@"icon"]];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    
-    TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"title"];
-    if (!cell) {
-//        id tmp = [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil];
+    if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
-//          [tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"title"];
-        cell =  [SDKBundle loadNibNamed:@"TitleViewCell" owner:self options:nil].firstObject;
+        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+        return cell;
     }
-//    cell.logo.image = [UIImage imageNamed:@"login"];
-//    [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-    return cell;
+ 
+    if (indexPath.row==1) {
+        Class cls = [InputViewCell class];
+        InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
+        return cell;
+    }
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+//    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+//    [UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle];
+      return [UITableViewCell new];
 }
 
 

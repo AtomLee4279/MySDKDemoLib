@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 
 @end
 

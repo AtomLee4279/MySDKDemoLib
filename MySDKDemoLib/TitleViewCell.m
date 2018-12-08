@@ -11,21 +11,30 @@
 
 @implementation TitleViewCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+   // Initialization code
+- (void)awakeFromNib {
+    [super awakeFromNib];
+//    CGFloat imgW = self.logo.image.size.width;
+//    CGFloat imgCenterX = imgW * .5;
+//    UIEdgeInsets inset = UIEdgeInsetsMake(0, imgCenterX, 0, imgCenterX - 1);
+//    [self.logo.image resizableImageWithCapInsets:inset resizingMode:UIImageResizingModeStretch];
+//    self.logo.image = [[UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"标题栏"]] resizeWithResizeMode:ResizeModeHorizontal];
+//    [self.logo.image resizeWithResizeMode:ResizeModeHorizontal];
+//
     
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self prepareForUI];
-    }
-    
-    return self;
+ 
 }
 
-- (void)prepareForUI {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
     
+    // Configure the view for the selected state
+}
 
+
+- (IBAction)backBtnDidClick:(id)sender {
     
-    [self.logo.image resizeWithResizeMode:ResizeModeHorizontal];
-
+    NSLog(@"==aaa==");
 }
 
 @end
