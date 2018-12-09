@@ -12,7 +12,8 @@
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
 #import "SDKLoginController.h"
-#import "BaseViewController.h"
+#import "AccountRegisterViewController.h"
+#import "AccountLoginViewController.h"
 
 @implementation MySDKDemoLib
 
@@ -50,7 +51,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
-    BaseViewController *baseVC = [[BaseViewController alloc] initWithNibName:@"BaseTableView" bundle:SDKBundle];
+    AccountLoginViewController *baseVC = [[AccountLoginViewController alloc] initWithNibName:@"AccountLoginView" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     [baseVC setModalPresentationStyle:UIModalPresentationCustom];
     

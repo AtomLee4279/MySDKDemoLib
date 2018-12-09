@@ -41,7 +41,7 @@
 		67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */; };
 		67B9DA6C21BA228400FD725F /* example in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6621BA228400FD725F /* example */; };
 		67B9DA6D21BA228400FD725F /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6721BA228400FD725F /* bundleInfo.plist */; };
-		67B9DA7B21BA2B1F00FD725F /* BaseTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */; };
+		67B9DA7B21BA2B1F00FD725F /* AccountRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */; };
 		67B9DA7D21BA2B3300FD725F /* TitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7C21BA2B3300FD725F /* TitleViewCell.xib */; };
 		67B9DAB121BA305600FD725F /* 密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7E21BA304F00FD725F /* 密码@3x.png */; };
 		67B9DAB221BA305600FD725F /* 注销@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7F21BA304F00FD725F /* 注销@3x.png */; };
@@ -95,7 +95,6 @@
 		67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DAB021BA305600FD725F /* 隐藏点击@3x.png */; };
 		67B9DAE421BA4BD300FD725F /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DAE321BA4BD300FD725F /* register.png */; };
 		67B9DAE721BA622E00FD725F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9DAE621BA622E00FD725F /* UIImage+Resize.m */; };
-		67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */; };
 		67F633D321B9705100395266 /* TitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F633D221B9705100395266 /* TitleViewCell.m */; };
 		67F6341921BC00C300395266 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
 		67F6341A21BC00C300395266 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
@@ -105,6 +104,11 @@
 		67F6341E21BC00C300395266 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
 		67F6342921BCAAA300395266 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6342721BCAAA300395266 /* AgreementCell.xib */; };
 		67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342621BCAAA300395266 /* AgreementCell.m */; };
+		67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342B21BD521F00395266 /* AccountRegisterViewController.m */; };
+		67F6343B21BD59FE00395266 /* AccountLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6343921BD59FE00395266 /* AccountLoginView.xib */; };
+		67F6344521BD704F00395266 /* NewAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6344321BD704F00395266 /* NewAccountCell.xib */; };
+		67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6343821BD59FE00395266 /* AccountLoginViewController.m */; };
+		67F6344721BD722A00395266 /* NewAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6344221BD704F00395266 /* NewAccountCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -189,7 +193,7 @@
 		67B9DA6621BA228400FD725F /* example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = example; sourceTree = "<group>"; };
 		67B9DA6721BA228400FD725F /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
 		67B9DA7221BA229F00FD725F /* Root.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
-		67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableView.xib; sourceTree = "<group>"; };
+		67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountRegisterView.xib; sourceTree = "<group>"; };
 		67B9DA7C21BA2B3300FD725F /* TitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewCell.xib; sourceTree = "<group>"; };
 		67B9DA7E21BA304F00FD725F /* 密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@3x.png"; sourceTree = "<group>"; };
 		67B9DA7F21BA304F00FD725F /* 注销@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注销@3x.png"; sourceTree = "<group>"; };
@@ -244,13 +248,19 @@
 		67B9DAE321BA4BD300FD725F /* register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register.png; sourceTree = "<group>"; };
 		67B9DAE621BA622E00FD725F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		67B9DAE821BA634A00FD725F /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		67DFADD921B8C4D9009E0C92 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRegisterViewController.h; sourceTree = "<group>"; };
 		67F633D121B9705100395266 /* TitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewCell.h; sourceTree = "<group>"; };
 		67F633D221B9705100395266 /* TitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewCell.m; sourceTree = "<group>"; };
 		67F6342521BCAAA300395266 /* AgreementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreementCell.h; sourceTree = "<group>"; };
 		67F6342621BCAAA300395266 /* AgreementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreementCell.m; sourceTree = "<group>"; };
 		67F6342721BCAAA300395266 /* AgreementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementCell.xib; sourceTree = "<group>"; };
+		67F6342B21BD521F00395266 /* AccountRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountRegisterViewController.m; sourceTree = "<group>"; };
+		67F6343721BD59FE00395266 /* AccountLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountLoginViewController.h; sourceTree = "<group>"; };
+		67F6343821BD59FE00395266 /* AccountLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountLoginViewController.m; sourceTree = "<group>"; };
+		67F6343921BD59FE00395266 /* AccountLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountLoginView.xib; sourceTree = "<group>"; };
+		67F6344121BD704F00395266 /* NewAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewAccountCell.h; sourceTree = "<group>"; };
+		67F6344221BD704F00395266 /* NewAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAccountCell.m; sourceTree = "<group>"; };
+		67F6344321BD704F00395266 /* NewAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAccountCell.xib; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -291,7 +301,9 @@
 		6716F9C321B6BB3E001720E2 /* SDKBundle */ = {
 			isa = PBXGroup;
 			children = (
-				67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */,
+				67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */,
+				67F6343921BD59FE00395266 /* AccountLoginView.xib */,
+				67F6344321BD704F00395266 /* NewAccountCell.xib */,
 				67B9DA7C21BA2B3300FD725F /* TitleViewCell.xib */,
 				67F6342721BCAAA300395266 /* AgreementCell.xib */,
 				67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */,
@@ -375,14 +387,18 @@
 			children = (
 				677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */,
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
-				67DFADD921B8C4D9009E0C92 /* BaseViewController.h */,
-				67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */,
+				67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */,
+				67F6342B21BD521F00395266 /* AccountRegisterViewController.m */,
 				67AAAB1021BBB02B00F83EF1 /* InputViewCell.h */,
 				67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */,
 				67F633D121B9705100395266 /* TitleViewCell.h */,
 				67F633D221B9705100395266 /* TitleViewCell.m */,
 				67F6342521BCAAA300395266 /* AgreementCell.h */,
 				67F6342621BCAAA300395266 /* AgreementCell.m */,
+				67F6343721BD59FE00395266 /* AccountLoginViewController.h */,
+				67F6343821BD59FE00395266 /* AccountLoginViewController.m */,
+				67F6344121BD704F00395266 /* NewAccountCell.h */,
+				67F6344221BD704F00395266 /* NewAccountCell.m */,
 				677BB636217EC6D200C1ED76 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -731,7 +747,7 @@
 				67B9DAB121BA305600FD725F /* 密码@3x.png in Resources */,
 				67B9DAC521BA305600FD725F /* 按钮@3x.png in Resources */,
 				67AAAB1421BBB02B00F83EF1 /* InputViewCell.xib in Resources */,
-				67B9DA7B21BA2B1F00FD725F /* BaseTableView.xib in Resources */,
+				67B9DA7B21BA2B1F00FD725F /* AccountRegisterView.xib in Resources */,
 				67B9DAB321BA305600FD725F /* 刷新@2x.png in Resources */,
 				67B9DABC21BA305600FD725F /* 客服.jpg in Resources */,
 				67B9DAD721BA305600FD725F /* 协议@2x.png in Resources */,
@@ -761,6 +777,7 @@
 				67B9DACF21BA305600FD725F /* 协议选择@3x.png in Resources */,
 				67B9DAD921BA305600FD725F /* QQ@2x.png in Resources */,
 				67B9DABE21BA305600FD725F /* 修改密码.jpg in Resources */,
+				67F6343B21BD59FE00395266 /* AccountLoginView.xib in Resources */,
 				67B9DAC221BA305600FD725F /* 当前账号.jpg in Resources */,
 				67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */,
 				67B9DA7D21BA2B3300FD725F /* TitleViewCell.xib in Resources */,
@@ -782,6 +799,7 @@
 				67B9DAB221BA305600FD725F /* 注销@3x.png in Resources */,
 				67B9DADD21BA305600FD725F /* 刷新@3x.png in Resources */,
 				67B9DADC21BA305600FD725F /* 按钮@2x.png in Resources */,
+				67F6344521BD704F00395266 /* NewAccountCell.xib in Resources */,
 				67B9DABA21BA305600FD725F /* 个人中心点击@3X.png in Resources */,
 				67B9DAC821BA305600FD725F /* 浮标拖动@2X.png in Resources */,
 			);
@@ -844,14 +862,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
+				67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */,
+				67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */,
 				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
 				67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */,
 				67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */,
-				67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
+				67F6344721BD722A00395266 /* NewAccountCell.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				677BB664217EC6D300C1ED76 /* LogoView.m in Sources */,
 				67B9DAE721BA622E00FD725F /* UIImage+Resize.m in Sources */,

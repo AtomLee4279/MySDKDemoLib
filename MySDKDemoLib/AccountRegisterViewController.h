@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface AccountRegisterViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

@@ -6,16 +6,16 @@
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "AccountRegisterViewController.h"
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
 #import "AgreementCell.h"
-@interface BaseViewController () {
+@interface AccountRegisterViewController () {
     
 }
 @end
 
-@implementation BaseViewController
+@implementation AccountRegisterViewController
 
 - (void)viewDidLoad {
     

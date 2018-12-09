@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountLoginViewController">
+            <connections>
+                <outlet property="tableView" destination="gEw-25-Mvi" id="S2S-nr-lzM"/>
+                <outlet property="view" destination="yzR-d5-7Jr" id="kd3-Vh-WtI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yzR-d5-7Jr" userLabel="AccountLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-1S-Afq" userLabel="ContainerView">
+                    <rect key="frame" x="45.5" y="198.5" width="284" height="270"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-25-Mvi" userLabel="TableView">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="270"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="czm-Kb-FSQ"/>
+                                <outlet property="delegate" destination="-1" id="Dcv-86-Owb"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pWZ-1S-Afq" secondAttribute="height" multiplier="142:135" id="1bi-OI-lr9"/>
+                        <constraint firstItem="gEw-25-Mvi" firstAttribute="centerX" secondItem="pWZ-1S-Afq" secondAttribute="centerX" id="3a8-BG-q9t"/>
+                        <constraint firstItem="gEw-25-Mvi" firstAttribute="top" secondItem="pWZ-1S-Afq" secondAttribute="top" id="AzM-V5-dvO"/>
+                        <constraint firstItem="gEw-25-Mvi" firstAttribute="leading" secondItem="pWZ-1S-Afq" secondAttribute="leading" id="IGT-kz-xiT"/>
+                        <constraint firstAttribute="trailing" secondItem="gEw-25-Mvi" secondAttribute="trailing" id="Scb-pm-ef0"/>
+                        <constraint firstAttribute="height" constant="270" id="VIn-Vb-8aH"/>
+                        <constraint firstAttribute="width" constant="284" id="cCM-pv-hKS"/>
+                        <constraint firstAttribute="bottom" secondItem="gEw-25-Mvi" secondAttribute="bottom" id="nyL-37-tIU"/>
+                        <constraint firstItem="gEw-25-Mvi" firstAttribute="centerY" secondItem="pWZ-1S-Afq" secondAttribute="centerY" id="zVu-a6-RvS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pWZ-1S-Afq" firstAttribute="centerX" secondItem="yzR-d5-7Jr" secondAttribute="centerX" id="Tb1-2d-wdE"/>
+                <constraint firstItem="pWZ-1S-Afq" firstAttribute="centerY" secondItem="yzR-d5-7Jr" secondAttribute="centerY" id="UFx-RJ-1a0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1uv-RS-Y7M"/>
+            <point key="canvasLocation" x="309.375" y="-200.70422535211267"/>
+        </view>
+    </objects>
+</document>
