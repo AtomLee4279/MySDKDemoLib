@@ -39,12 +39,6 @@
 		67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */; };
 		67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */; };
 		67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */; };
-		67B9DA5B21BA147A00FD725F /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
-		67B9DA5C21BA147A00FD725F /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
-		67B9DA5D21BA147A00FD725F /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
-		67B9DA5E21BA147A00FD725F /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
-		67B9DA5F21BA147A00FD725F /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
-		67B9DA6021BA147A00FD725F /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
 		67B9DA6C21BA228400FD725F /* example in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6621BA228400FD725F /* example */; };
 		67B9DA6D21BA228400FD725F /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6721BA228400FD725F /* bundleInfo.plist */; };
 		67B9DA7B21BA2B1F00FD725F /* BaseTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */; };
@@ -103,6 +97,14 @@
 		67B9DAE721BA622E00FD725F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9DAE621BA622E00FD725F /* UIImage+Resize.m */; };
 		67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */; };
 		67F633D321B9705100395266 /* TitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F633D221B9705100395266 /* TitleViewCell.m */; };
+		67F6341921BC00C300395266 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
+		67F6341A21BC00C300395266 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
+		67F6341B21BC00C300395266 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
+		67F6341C21BC00C300395266 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
+		67F6341D21BC00C300395266 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
+		67F6341E21BC00C300395266 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
+		67F6342921BCAAA300395266 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6342721BCAAA300395266 /* AgreementCell.xib */; };
+		67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342621BCAAA300395266 /* AgreementCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -246,6 +248,9 @@
 		67DFADDA21B8C4D9009E0C92 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		67F633D121B9705100395266 /* TitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewCell.h; sourceTree = "<group>"; };
 		67F633D221B9705100395266 /* TitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewCell.m; sourceTree = "<group>"; };
+		67F6342521BCAAA300395266 /* AgreementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreementCell.h; sourceTree = "<group>"; };
+		67F6342621BCAAA300395266 /* AgreementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgreementCell.m; sourceTree = "<group>"; };
+		67F6342721BCAAA300395266 /* AgreementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementCell.xib; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -263,12 +268,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				67B9DA5B21BA147A00FD725F /* libAFNetworking.a in Frameworks */,
-				67B9DA5C21BA147A00FD725F /* libKSToastView.a in Frameworks */,
-				67B9DA5D21BA147A00FD725F /* libMasonry.a in Frameworks */,
-				67B9DA5E21BA147A00FD725F /* libMJExtension.a in Frameworks */,
-				67B9DA5F21BA147A00FD725F /* libSDWebImage.a in Frameworks */,
-				67B9DA6021BA147A00FD725F /* libUICKeyChainStore.a in Frameworks */,
+				67F6341921BC00C300395266 /* libAFNetworking.a in Frameworks */,
+				67F6341A21BC00C300395266 /* libKSToastView.a in Frameworks */,
+				67F6341B21BC00C300395266 /* libMasonry.a in Frameworks */,
+				67F6341C21BC00C300395266 /* libMJExtension.a in Frameworks */,
+				67F6341D21BC00C300395266 /* libSDWebImage.a in Frameworks */,
+				67F6341E21BC00C300395266 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +293,7 @@
 			children = (
 				67B9DA7921BA2B1F00FD725F /* BaseTableView.xib */,
 				67B9DA7C21BA2B3300FD725F /* TitleViewCell.xib */,
+				67F6342721BCAAA300395266 /* AgreementCell.xib */,
 				67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */,
 				67B9DA8921BA305000FD725F /* example */,
 				67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */,
@@ -375,6 +381,8 @@
 				67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */,
 				67F633D121B9705100395266 /* TitleViewCell.h */,
 				67F633D221B9705100395266 /* TitleViewCell.m */,
+				67F6342521BCAAA300395266 /* AgreementCell.h */,
+				67F6342621BCAAA300395266 /* AgreementCell.m */,
 				677BB636217EC6D200C1ED76 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -569,10 +577,10 @@
 				67B9DAE321BA4BD300FD725F /* register.png */,
 				67B9DA8A21BA305000FD725F /* 客服.jpg */,
 				67B9DA8B21BA305000FD725F /* 账号注册.jpg */,
+				67B9DA8F21BA305000FD725F /* 用户登录.jpg */,
 				67B9DA8C21BA305000FD725F /* 修改密码.jpg */,
 				67B9DA8D21BA305000FD725F /* 色值2.jpg */,
 				67B9DA8E21BA305000FD725F /* 色值.jpg */,
-				67B9DA8F21BA305000FD725F /* 用户登录.jpg */,
 				67B9DA9021BA305000FD725F /* 当前账号.jpg */,
 			);
 			path = example;
@@ -745,6 +753,7 @@
 				67B9DAE121BA305600FD725F /* 隐藏@3x.png in Resources */,
 				67B9DAC721BA305600FD725F /* 客服点击@3x.png in Resources */,
 				67B9DA6D21BA228400FD725F /* bundleInfo.plist in Resources */,
+				67F6342921BCAAA300395266 /* AgreementCell.xib in Resources */,
 				67B9DAE421BA4BD300FD725F /* register.png in Resources */,
 				67B9DAC321BA305600FD725F /* 时间@2x.png in Resources */,
 				67B9DACC21BA305600FD725F /* 个人中心点击@2X.png in Resources */,
@@ -840,6 +849,7 @@
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
 				67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */,
+				67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */,
 				67DFADDB21B8C4D9009E0C92 /* BaseViewController.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
