@@ -106,6 +106,7 @@
 		67DCC72921BE150000FAB9F4 /* CreateAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC72821BE150000FAB9F4 /* CreateAccountCell.m */; };
 		67DCC73321BE461900FAB9F4 /* AutoLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */; };
 		67DCC73421BE526700FAB9F4 /* AutoLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC73021BE461900FAB9F4 /* AutoLoginController.m */; };
+		67DCC73821BE66EF00FAB9F4 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC73621BE66EF00FAB9F4 /* UIColor+ColorChange.m */; };
 		67F633D321B9705100395266 /* TitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F633D221B9705100395266 /* TitleViewCell.m */; };
 		67F6342921BCAAA300395266 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6342721BCAAA300395266 /* AgreementCell.xib */; };
 		67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342621BCAAA300395266 /* AgreementCell.m */; };
@@ -259,6 +260,8 @@
 		67DCC72F21BE461900FAB9F4 /* AutoLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLoginController.h; sourceTree = "<group>"; };
 		67DCC73021BE461900FAB9F4 /* AutoLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLoginController.m; sourceTree = "<group>"; };
 		67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLoginView.xib; sourceTree = "<group>"; };
+		67DCC73621BE66EF00FAB9F4 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
+		67DCC73721BE66EF00FAB9F4 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
 		67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRegisterViewController.h; sourceTree = "<group>"; };
 		67F633D121B9705100395266 /* TitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewCell.h; sourceTree = "<group>"; };
 		67F633D221B9705100395266 /* TitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewCell.m; sourceTree = "<group>"; };
@@ -473,6 +476,7 @@
 		677BB638217EC6D200C1ED76 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC73521BE66CC00FAB9F4 /* UIColor */,
 				67B9DAE521BA621900FD725F /* UIImage */,
 				677BB639217EC6D200C1ED76 /* Toast */,
 				677BB63C217EC6D200C1ED76 /* NetWork */,
@@ -625,6 +629,15 @@
 				67B9DAE621BA622E00FD725F /* UIImage+Resize.m */,
 			);
 			name = UIImage;
+			sourceTree = "<group>";
+		};
+		67DCC73521BE66CC00FAB9F4 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				67DCC73721BE66EF00FAB9F4 /* UIColor+ColorChange.h */,
+				67DCC73621BE66EF00FAB9F4 /* UIColor+ColorChange.m */,
+			);
+			name = UIColor;
 			sourceTree = "<group>";
 		};
 		9CC5C67F71A4C6EC09E502F6 /* Frameworks */ = {
@@ -882,6 +895,7 @@
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
 				67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */,
 				67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */,
+				67DCC73821BE66EF00FAB9F4 /* UIColor+ColorChange.m in Sources */,
 				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
 				67DCC72721BE03A800FAB9F4 /* LoginBtnCell.m in Sources */,

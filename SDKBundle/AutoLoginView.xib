@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLoginController">
             <connections>
+                <outlet property="switchBtn" destination="LtL-L0-Nb1" id="cdE-j9-reM"/>
+                <outlet property="tipsLabel" destination="WzY-3Q-852" id="KHK-3w-7VO"/>
                 <outlet property="view" destination="EYU-8Y-mAD" id="00v-th-xBm"/>
             </connections>
         </placeholder>
@@ -22,24 +24,35 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-xc-VCa" userLabel="ContainerView">
                     <rect key="frame" x="25" y="55" width="270" height="35"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzY-3Q-852" userLabel="tipsLabel">
-                            <rect key="frame" x="10" y="7" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzY-3Q-852" userLabel="tipsLabel">
+                            <rect key="frame" x="10" y="10.5" width="31" height="14.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Label">
+                                    <attributes>
+                                        <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-L0-Nb1" userLabel="switchBtn">
-                            <rect key="frame" x="120" y="2" width="31" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-L0-Nb1" userLabel="switchBtn">
+                            <rect key="frame" x="41" y="2.5" width="219" height="30"/>
                             <state key="normal" title="切换"/>
+                            <connections>
+                                <action selector="switchBtnDidClick:" destination="-1" eventType="touchUpInside" id="whO-dX-SZC"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="WzY-3Q-852" firstAttribute="leading" secondItem="d3S-xc-VCa" secondAttribute="leading" constant="10" id="18E-8h-rLd"/>
                         <constraint firstAttribute="width" constant="270" id="7Ut-sG-Ylz"/>
                         <constraint firstAttribute="height" constant="35" id="GxJ-Z9-RKH"/>
+                        <constraint firstItem="LtL-L0-Nb1" firstAttribute="leading" relation="lessThanOrEqual" secondItem="WzY-3Q-852" secondAttribute="trailing" id="RnN-Ve-ofe"/>
+                        <constraint firstAttribute="trailing" secondItem="LtL-L0-Nb1" secondAttribute="trailing" constant="10" id="T5e-hU-7lZ"/>
                         <constraint firstAttribute="width" secondItem="d3S-xc-VCa" secondAttribute="height" multiplier="54:7" id="fXB-Xj-Gy0"/>
+                        <constraint firstItem="LtL-L0-Nb1" firstAttribute="centerY" secondItem="WzY-3Q-852" secondAttribute="centerY" id="ntI-sv-k0Q"/>
+                        <constraint firstItem="WzY-3Q-852" firstAttribute="centerY" secondItem="d3S-xc-VCa" secondAttribute="centerY" id="oJd-cQ-V3h"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

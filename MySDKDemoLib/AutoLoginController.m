@@ -17,7 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSString *userName = @"U8888";
+    NSString *txt = [NSString stringWithFormat:@"欢迎%@用户进入游戏",userName];
+    NSDictionary *baseAttr = @{
+                               NSForegroundColorAttributeName : [UIColor blackColor],
+//                               NSFontAttributeName : UIFont systemFontOfSize:<#(CGFloat)#>,
+                               };
+    NSMutableAttributedString *attrM = [[NSMutableAttributedString alloc] initWithString:txt attributes:baseAttr];
+    NSDictionary *attr = @{
+                           NSForegroundColorAttributeName : [UIColor redColor],
+                           };
+    NSRange ran = [txt rangeOfString:userName];
+    [attrM addAttributes:attr range:ran];
+    self.tipsLabel.attributedText = attrM;
 }
+
+
 
 /*
 #pragma mark - Navigation
@@ -28,5 +43,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)switchBtnDidClick:(id)sender {
+    
+    
+    
+}
 
 @end

@@ -14,6 +14,9 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import <UIKit/UIKit.h>
+#import "UIColor+ColorChange.h"      // 转换16进制色系为RGB格式
+#import "UIImage+Resize.h"
 
 // 打开或者关闭Debug Log: 生成动态库之前 测试用，不对外公开
 #define OPEN_LOG @"主动关闭Log ： 把这一行注释掉"
