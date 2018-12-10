@@ -10,6 +10,7 @@
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
 #import "AgreementCell.h"
+#import "AccountLoginViewController.h"
 @interface AccountRegisterViewController () {
     
 }
@@ -49,6 +50,7 @@
     if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
         TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+        [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
  
@@ -59,8 +61,8 @@
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"刷新"]];
         cell.logo.image = logo;
-        [cell.moreBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.moreBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -70,8 +72,8 @@
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
         cell.logo.image = logo;
-        [cell.moreBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -80,7 +82,7 @@
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
         cell.logo.image = logo;
-        cell.moreBtn = nil;
+        cell.rightBtn.hidden = YES;
         //        cell.logo.image = [UIImage imageNamed:@"密码"];
         //        [cell.moreBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
         //        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
@@ -90,6 +92,8 @@
     if (indexPath.row==4) {
         Class cls = [AgreementCell class];
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
+        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -99,6 +103,21 @@
       return [UITableViewCell new];
 }
 
+- (void)backBtnDidClick:(UIButton *)btn{
+    
+    NSLog(@"backBtnDidClick");
+    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
+    AccountLoginViewController *baseVC = [[AccountLoginViewController alloc] initWithNibName:@"AccountLoginView" bundle:SDKBundle];
+    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
+    
+    [viewController dismissViewControllerAnimated:YES completion:^{
+        [viewController presentViewController:baseVC animated:YES completion:nil];
+    }];
+}
 
 - (void)refreshAccount:(UIButton *)btn {
     
@@ -108,6 +127,18 @@
 - (void)deleteInput:(UIButton *)btn {
     
     NSLog(@"===deleteInput===");
+}
+
+
+- (void)checkBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===checkBtnDidClick===");
+}
+
+
+- (void)detailBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===detailBtnDidClick===");
 }
 
 @end

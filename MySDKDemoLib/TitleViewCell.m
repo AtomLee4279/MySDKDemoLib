@@ -32,21 +32,4 @@
     // Configure the view for the selected state
 }
 
-
-- (IBAction)backBtnDidClick:(id)sender {
-    
-    NSLog(@"==aaa==");
-    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    
-    AccountLoginViewController *baseVC = [[AccountLoginViewController alloc] initWithNibName:@"AccountLoginView" bundle:SDKBundle];
-    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
-    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
-    
-    [viewController dismissViewControllerAnimated:YES completion:^{
-        [viewController presentViewController:baseVC animated:YES completion:nil];
-    }];
-}
-
 @end

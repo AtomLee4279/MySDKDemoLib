@@ -10,7 +10,11 @@
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
 #import "AgreementCell.h"
-#import "NewAccountCell.h"
+#import "CreateAccountCell.h"
+#import "LoginBtnCell.h"
+#import "AccountRegisterViewController.h"
+#import "AutoLoginController.h"
+
 @interface AccountLoginViewController ()
 
 @end
@@ -19,18 +23,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"NewAccountCell" bundle:SDKBundle] forCellReuseIdentifier:@"NewAccountCell"];
+    [self regNib];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+/**
+ *  注册nib
+ */
+- (void)regNib {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CreateAccountCell" bundle:SDKBundle] forCellReuseIdentifier:@"CreateAccountCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"LoginBtnCell" bundle:SDKBundle] forCellReuseIdentifier:@"LoginBtnCell"];
+    
+}
+    
 
 #pragma mark - Table view data source
 
@@ -50,62 +65,112 @@
         cell.titleLabel.text = @"用户登录";
         return cell;
     }
-    
+//
     if (indexPath.row==1) {
         Class cls = [InputViewCell class];
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        
+
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
         cell.logo.image = logo;
-        [cell.moreBtn setImage:btnImage forState:UIControlStateNormal];
-//        [cell.moreBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    
+//
     if (indexPath.row==2) {
         Class cls = [InputViewCell class];
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
         cell.logo.image = logo;
-        [cell.moreBtn setImage:btnImage forState:UIControlStateNormal];
-//        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    
+////    注册新账号
     if (indexPath.row==3) {
-        Class cls = [InputViewCell class];
-        InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-//            NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-//            NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-//            [UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle];
-  
-        //        cell.logo.image = [UIImage imageNamed:@"密码"];
-        //        [cell.moreBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
-        //        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
+        Class cls = [CreateAccountCell class];
+        CreateAccountCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell"];
+        [cell.createAccountBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    
+//隐私政策：约束待调整
     if (indexPath.row==4) {
-        Class cls = [NewAccountCell class];
-        AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"NewAccountCell"];
-        return cell;
-    }
-    
-    if (indexPath.row==5) {
         Class cls = [AgreementCell class];
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
+        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    
-    //    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    //    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    //    [UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle];
+
+    if (indexPath.row==5) {
+        Class cls = [LoginBtnCell class];
+        LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell"];
+        [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        return cell;
+    }
     return [UITableViewCell new];
 }
 
 
+
+- (void)historyAccount:(UIButton *)btn {
+    
+    NSLog(@"===historyAccount===");
+}
+
+- (void)showPwd:(UIButton *)btn {
+    
+    NSLog(@"===showPwd===");
+}
+
+- (void)newAccount:(UIButton *)btn {
+    
+    NSLog(@"===newAccount===");
+    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
+    AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"AccountRegisterView" bundle:SDKBundle];
+    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [viewController presentViewController:baseVC animated:YES completion:nil];
+    }];
+}
+
+- (void)checkBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===checkBtnDidClick===");
+}
+
+
+- (void)detailBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===detailBtnDidClick===");
+}
+
+- (void)loginBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===loginBtnDidClick===");
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+        NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+        
+        AutoLoginController * autoVC = [[AutoLoginController alloc] initWithNibName:@"AutoLoginView" bundle:SDKBundle];
+        [autoVC setModalPresentationStyle:UIModalPresentationCustom];
+        
+        UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+        [rootVC presentViewController:autoVC animated:YES completion:nil];
+        
+        
+    }];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

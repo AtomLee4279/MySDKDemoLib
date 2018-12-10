@@ -28,9 +28,6 @@
                             <constraint firstAttribute="width" secondItem="dyW-1d-MT5" secondAttribute="height" multiplier="1:1" id="Uu6-XZ-ECE"/>
                         </constraints>
                         <state key="normal" backgroundImage="返回.png"/>
-                        <connections>
-                            <action selector="backBtnDidClick:" destination="tOA-E9-wJF" eventType="touchUpInside" id="Vli-fY-YYf"/>
-                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-0q-wWu" userLabel="TitleLable">
                         <rect key="frame" x="107" y="32.5" width="70" height="21"/>

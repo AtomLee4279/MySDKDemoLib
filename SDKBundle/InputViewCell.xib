@@ -71,7 +71,7 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="logo" destination="3qL-ZE-v8L" id="VgK-k8-oEZ"/>
-                <outlet property="moreBtn" destination="w5v-tp-Zfp" id="m38-aC-wVw"/>
+                <outlet property="rightBtn" destination="w5v-tp-Zfp" id="5hb-xl-Wba"/>
                 <outlet property="textField" destination="daI-1p-WbK" id="o9m-8m-q0N"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="131.33433283358323"/>

@@ -1,5 +1,5 @@
 //
-//  AgreementCell.h
+//  NewAccountCell.h
 //  SDKBundle
 //
 //  Created by 李一贤 on 2018/12/9.
@@ -10,12 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AgreementCell : UITableViewCell
+@interface CreateAccountCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIButton *checkBtn;
-
-@property (weak, nonatomic) IBOutlet UIButton *detailBtn;
-
+@property (weak, nonatomic) IBOutlet UIButton *createAccountBtn;
 
 @end
 

@@ -1,18 +1,18 @@
 //
-//  AgreementCell.m
+//  NewAccountCell.m
 //  SDKBundle
 //
 //  Created by 李一贤 on 2018/12/9.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
-#import "AgreementCell.h"
+#import "CreateAccountCell.h"
+#import "AccountRegisterViewController.h"
 
-@implementation AgreementCell
+@implementation CreateAccountCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     // Initialization code
 }
 

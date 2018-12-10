@@ -1,18 +1,17 @@
 //
-//  AgreementCell.m
+//  OnlyBtnCell.m
 //  SDKBundle
 //
-//  Created by 李一贤 on 2018/12/9.
+//  Created by 李一贤 on 2018/12/10.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
-#import "AgreementCell.h"
+#import "LoginBtnCell.h"
 
-@implementation AgreementCell
+@implementation LoginBtnCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     // Initialization code
 }
 
@@ -21,5 +20,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end
