@@ -6,14 +6,20 @@
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
+#import "AccountRegisterViewController.h"
 #import "AccountLoginViewController.h"
+#import "AutoLoginController.h"
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
 #import "AgreementCell.h"
 #import "CreateAccountCell.h"
 #import "LoginBtnCell.h"
-#import "AccountRegisterViewController.h"
-#import "AutoLoginController.h"
+
+#import "FloatBallController.h"
+#import "FloatLeftExtendView.h"
+#import "FloatRightExtendView.h"
+#import "KKFloatCollectView.h"
+
 
 @interface AccountLoginViewController ()
 
@@ -123,6 +129,7 @@
 - (void)showPwd:(UIButton *)btn {
     
     NSLog(@"===showPwd===");
+    
 }
 
 - (void)newAccount:(UIButton *)btn {

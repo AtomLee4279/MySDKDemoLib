@@ -22,7 +22,6 @@
 		677BB661217EC6D300C1ED76 /* NSString+Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB644217EC6D200C1ED76 /* NSString+Sign.m */; };
 		677BB662217EC6D300C1ED76 /* NSString+UniqueStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */; };
 		677BB663217EC6D300C1ED76 /* APICommonParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB64A217EC6D200C1ED76 /* APICommonParams.m */; };
-		677BB664217EC6D300C1ED76 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB64F217EC6D200C1ED76 /* LogoView.m */; };
 		677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB654217EC6D300C1ED76 /* MySDKInitController.m */; };
 		677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB656217EC6D300C1ED76 /* MySDKConfig.m */; };
 		677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB657217EC6D300C1ED76 /* MySDKInitData.m */; };
@@ -95,12 +94,6 @@
 		67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DAB021BA305600FD725F /* 隐藏点击@3x.png */; };
 		67B9DAE421BA4BD300FD725F /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DAE321BA4BD300FD725F /* register.png */; };
 		67B9DAE721BA622E00FD725F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B9DAE621BA622E00FD725F /* UIImage+Resize.m */; };
-		67DCC71921BDF51200FAB9F4 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
-		67DCC71A21BDF51200FAB9F4 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
-		67DCC71B21BDF51200FAB9F4 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
-		67DCC71C21BDF51200FAB9F4 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
-		67DCC71D21BDF51200FAB9F4 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
-		67DCC71E21BDF51200FAB9F4 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
 		67DCC72321BDF76F00FAB9F4 /* LoginBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DCC72121BDF76F00FAB9F4 /* LoginBtnCell.xib */; };
 		67DCC72721BE03A800FAB9F4 /* LoginBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC72521BE01A000FAB9F4 /* LoginBtnCell.m */; };
 		67DCC72921BE150000FAB9F4 /* CreateAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC72821BE150000FAB9F4 /* CreateAccountCell.m */; };
@@ -114,6 +107,24 @@
 		67F6343B21BD59FE00395266 /* AccountLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6343921BD59FE00395266 /* AccountLoginView.xib */; };
 		67F6344521BD704F00395266 /* CreateAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6344321BD704F00395266 /* CreateAccountCell.xib */; };
 		67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6343821BD59FE00395266 /* AccountLoginViewController.m */; };
+		67F9306B21BEAA8300AA4157 /* KKSdkFloatWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9305721BEAA8300AA4157 /* KKSdkFloatWebController.m */; };
+		67F9306D21BEAA8300AA4157 /* FloatBallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9305921BEAA8300AA4157 /* FloatBallController.m */; };
+		67F9306E21BEAA8300AA4157 /* FloatRightExtendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306121BEAA8300AA4157 /* FloatRightExtendView.m */; };
+		67F9306F21BEAA8300AA4157 /* FloatLeftExtendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306421BEAA8300AA4157 /* FloatLeftExtendView.m */; };
+		67F9307021BEAA8300AA4157 /* KKFloatSeparatorCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306521BEAA8300AA4157 /* KKFloatSeparatorCollectCell.m */; };
+		67F9307121BEAA8300AA4157 /* FloatBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306621BEAA8300AA4157 /* FloatBallView.m */; };
+		67F9307221BEAA8300AA4157 /* KKCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306721BEAA8300AA4157 /* KKCollectionView.m */; };
+		67F9307321BEAA8300AA4157 /* KKFloatCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9306921BEAA8300AA4157 /* KKFloatCollectView.m */; };
+		67F9307621BEAC7900AA4157 /* KKUIWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307521BEAC7900AA4157 /* KKUIWebController.m */; };
+		67F9307921BEACD000AA4157 /* KKUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307821BEACD000AA4157 /* KKUserHandler.m */; };
+		67F9307D21BEB44A00AA4157 /* KKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307B21BEB44A00AA4157 /* KKUser.m */; };
+		67F9308621BEB7CB00AA4157 /* KKUserFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9308521BEB7CB00AA4157 /* KKUserFloat.m */; };
+		67F9308721BEB97A00AA4157 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
+		67F9308821BEB97A00AA4157 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
+		67F9308921BEB97A00AA4157 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
+		67F9308A21BEB97A00AA4157 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
+		67F9308B21BEB97A00AA4157 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
+		67F9308C21BEB97A00AA4157 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -166,9 +177,6 @@
 		677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UniqueStrings.m"; sourceTree = "<group>"; };
 		677BB649217EC6D200C1ED76 /* KKDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDebug.h; sourceTree = "<group>"; };
 		677BB64A217EC6D200C1ED76 /* APICommonParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICommonParams.m; sourceTree = "<group>"; };
-		677BB64D217EC6D200C1ED76 /* LogoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoView.xib; sourceTree = "<group>"; };
-		677BB64E217EC6D200C1ED76 /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
-		677BB64F217EC6D200C1ED76 /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
 		677BB650217EC6D200C1ED76 /* APICommonParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICommonParams.h; sourceTree = "<group>"; };
 		677BB653217EC6D300C1ED76 /* MySDKInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKInitController.h; sourceTree = "<group>"; };
 		677BB654217EC6D300C1ED76 /* MySDKInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKInitController.m; sourceTree = "<group>"; };
@@ -274,6 +282,31 @@
 		67F6343921BD59FE00395266 /* AccountLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountLoginView.xib; sourceTree = "<group>"; };
 		67F6344121BD704F00395266 /* CreateAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateAccountCell.h; sourceTree = "<group>"; };
 		67F6344321BD704F00395266 /* CreateAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountCell.xib; sourceTree = "<group>"; };
+		67F9305721BEAA8300AA4157 /* KKSdkFloatWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSdkFloatWebController.m; sourceTree = "<group>"; };
+		67F9305921BEAA8300AA4157 /* FloatBallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatBallController.m; sourceTree = "<group>"; };
+		67F9305B21BEAA8300AA4157 /* KKSdkFloatWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSdkFloatWebController.h; sourceTree = "<group>"; };
+		67F9305C21BEAA8300AA4157 /* FloatBallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallController.h; sourceTree = "<group>"; };
+		67F9305F21BEAA8300AA4157 /* FloatBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallView.h; sourceTree = "<group>"; };
+		67F9306021BEAA8300AA4157 /* KKFloatSeparatorCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFloatSeparatorCollectCell.h; sourceTree = "<group>"; };
+		67F9306121BEAA8300AA4157 /* FloatRightExtendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatRightExtendView.m; sourceTree = "<group>"; };
+		67F9306221BEAA8300AA4157 /* KKCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionView.h; sourceTree = "<group>"; };
+		67F9306321BEAA8300AA4157 /* KKFloatCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFloatCollectView.h; sourceTree = "<group>"; };
+		67F9306421BEAA8300AA4157 /* FloatLeftExtendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatLeftExtendView.m; sourceTree = "<group>"; };
+		67F9306521BEAA8300AA4157 /* KKFloatSeparatorCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFloatSeparatorCollectCell.m; sourceTree = "<group>"; };
+		67F9306621BEAA8300AA4157 /* FloatBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatBallView.m; sourceTree = "<group>"; };
+		67F9306721BEAA8300AA4157 /* KKCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionView.m; sourceTree = "<group>"; };
+		67F9306821BEAA8300AA4157 /* FloatRightExtendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatRightExtendView.h; sourceTree = "<group>"; };
+		67F9306921BEAA8300AA4157 /* KKFloatCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFloatCollectView.m; sourceTree = "<group>"; };
+		67F9306A21BEAA8300AA4157 /* FloatLeftExtendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatLeftExtendView.h; sourceTree = "<group>"; };
+		67F9307421BEAC7900AA4157 /* KKUIWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUIWebController.h; sourceTree = "<group>"; };
+		67F9307521BEAC7900AA4157 /* KKUIWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUIWebController.m; sourceTree = "<group>"; };
+		67F9307721BEACD000AA4157 /* KKUserHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUserHandler.h; sourceTree = "<group>"; };
+		67F9307821BEACD000AA4157 /* KKUserHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUserHandler.m; sourceTree = "<group>"; };
+		67F9307A21BEB12A00AA4157 /* KKSizeAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSizeAssistant.h; sourceTree = "<group>"; };
+		67F9307B21BEB44A00AA4157 /* KKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUser.m; sourceTree = "<group>"; };
+		67F9307C21BEB44A00AA4157 /* KKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUser.h; sourceTree = "<group>"; };
+		67F9308421BEB7CB00AA4157 /* KKUserFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUserFloat.h; sourceTree = "<group>"; };
+		67F9308521BEB7CB00AA4157 /* KKUserFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUserFloat.m; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -291,12 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				67DCC71921BDF51200FAB9F4 /* libAFNetworking.a in Frameworks */,
-				67DCC71A21BDF51200FAB9F4 /* libKSToastView.a in Frameworks */,
-				67DCC71B21BDF51200FAB9F4 /* libMasonry.a in Frameworks */,
-				67DCC71C21BDF51200FAB9F4 /* libMJExtension.a in Frameworks */,
-				67DCC71D21BDF51200FAB9F4 /* libSDWebImage.a in Frameworks */,
-				67DCC71E21BDF51200FAB9F4 /* libUICKeyChainStore.a in Frameworks */,
+				67F9308721BEB97A00AA4157 /* libAFNetworking.a in Frameworks */,
+				67F9308821BEB97A00AA4157 /* libKSToastView.a in Frameworks */,
+				67F9308921BEB97A00AA4157 /* libMasonry.a in Frameworks */,
+				67F9308A21BEB97A00AA4157 /* libMJExtension.a in Frameworks */,
+				67F9308B21BEB97A00AA4157 /* libSDWebImage.a in Frameworks */,
+				67F9308C21BEB97A00AA4157 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +451,7 @@
 				67F6342621BCAAA300395266 /* AgreementCell.m */,
 				67F6344121BD704F00395266 /* CreateAccountCell.h */,
 				67DCC72821BE150000FAB9F4 /* CreateAccountCell.m */,
+				67F9305521BEAA8300AA4157 /* FloatBall */,
 				677BB636217EC6D200C1ED76 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -430,7 +464,6 @@
 			children = (
 				677BB62C217EC6D200C1ED76 /* Controller */,
 				677BB62F217EC6D200C1ED76 /* Model */,
-				677BB632217EC6D200C1ED76 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -453,22 +486,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		677BB632217EC6D200C1ED76 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		677BB636217EC6D200C1ED76 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				67F9307A21BEB12A00AA4157 /* KKSizeAssistant.h */,
+				677BB649217EC6D200C1ED76 /* KKDebug.h */,
 				677BB637217EC6D200C1ED76 /* GlobalDefine.pch */,
-				677BB638217EC6D200C1ED76 /* Tools */,
-				677BB648217EC6D200C1ED76 /* GlobalDefine */,
 				677BB64A217EC6D200C1ED76 /* APICommonParams.m */,
-				677BB64B217EC6D200C1ED76 /* Logo */,
 				677BB650217EC6D200C1ED76 /* APICommonParams.h */,
+				677BB638217EC6D200C1ED76 /* Tools */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -530,32 +556,6 @@
 				677BB647217EC6D200C1ED76 /* NSString+UniqueStrings.m */,
 			);
 			path = NSString;
-			sourceTree = "<group>";
-		};
-		677BB648217EC6D200C1ED76 /* GlobalDefine */ = {
-			isa = PBXGroup;
-			children = (
-				677BB649217EC6D200C1ED76 /* KKDebug.h */,
-			);
-			path = GlobalDefine;
-			sourceTree = "<group>";
-		};
-		677BB64B217EC6D200C1ED76 /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				677BB64C217EC6D200C1ED76 /* View */,
-			);
-			path = Logo;
-			sourceTree = "<group>";
-		};
-		677BB64C217EC6D200C1ED76 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				677BB64D217EC6D200C1ED76 /* LogoView.xib */,
-				677BB64E217EC6D200C1ED76 /* LogoView.h */,
-				677BB64F217EC6D200C1ED76 /* LogoView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		677BB651217EC6D300C1ED76 /* Init */ = {
@@ -638,6 +638,61 @@
 				67DCC73621BE66EF00FAB9F4 /* UIColor+ColorChange.m */,
 			);
 			name = UIColor;
+			sourceTree = "<group>";
+		};
+		67F9305521BEAA8300AA4157 /* FloatBall */ = {
+			isa = PBXGroup;
+			children = (
+				67F9305621BEAA8300AA4157 /* Controller */,
+				67F9305D21BEAA8300AA4157 /* Model */,
+				67F9305E21BEAA8300AA4157 /* View */,
+			);
+			path = FloatBall;
+			sourceTree = "<group>";
+		};
+		67F9305621BEAA8300AA4157 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67F9307421BEAC7900AA4157 /* KKUIWebController.h */,
+				67F9307521BEAC7900AA4157 /* KKUIWebController.m */,
+				67F9305721BEAA8300AA4157 /* KKSdkFloatWebController.m */,
+				67F9305921BEAA8300AA4157 /* FloatBallController.m */,
+				67F9305B21BEAA8300AA4157 /* KKSdkFloatWebController.h */,
+				67F9305C21BEAA8300AA4157 /* FloatBallController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67F9305D21BEAA8300AA4157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F9307721BEACD000AA4157 /* KKUserHandler.h */,
+				67F9307821BEACD000AA4157 /* KKUserHandler.m */,
+				67F9308421BEB7CB00AA4157 /* KKUserFloat.h */,
+				67F9308521BEB7CB00AA4157 /* KKUserFloat.m */,
+				67F9307C21BEB44A00AA4157 /* KKUser.h */,
+				67F9307B21BEB44A00AA4157 /* KKUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67F9305E21BEAA8300AA4157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67F9305F21BEAA8300AA4157 /* FloatBallView.h */,
+				67F9306021BEAA8300AA4157 /* KKFloatSeparatorCollectCell.h */,
+				67F9306121BEAA8300AA4157 /* FloatRightExtendView.m */,
+				67F9306221BEAA8300AA4157 /* KKCollectionView.h */,
+				67F9306321BEAA8300AA4157 /* KKFloatCollectView.h */,
+				67F9306421BEAA8300AA4157 /* FloatLeftExtendView.m */,
+				67F9306521BEAA8300AA4157 /* KKFloatSeparatorCollectCell.m */,
+				67F9306621BEAA8300AA4157 /* FloatBallView.m */,
+				67F9306721BEAA8300AA4157 /* KKCollectionView.m */,
+				67F9306821BEAA8300AA4157 /* FloatRightExtendView.h */,
+				67F9306921BEAA8300AA4157 /* KKFloatCollectView.m */,
+				67F9306A21BEAA8300AA4157 /* FloatLeftExtendView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9CC5C67F71A4C6EC09E502F6 /* Frameworks */ = {
@@ -896,23 +951,34 @@
 				67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */,
 				67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */,
 				67DCC73821BE66EF00FAB9F4 /* UIColor+ColorChange.m in Sources */,
+				67F9307621BEAC7900AA4157 /* KKUIWebController.m in Sources */,
 				677BB665217EC6D300C1ED76 /* MySDKInitController.m in Sources */,
+				67F9307121BEAA8300AA4157 /* FloatBallView.m in Sources */,
 				677BB660217EC6D300C1ED76 /* NetWorkRespondModel.m in Sources */,
+				67F9307021BEAA8300AA4157 /* KKFloatSeparatorCollectCell.m in Sources */,
+				67F9307321BEAA8300AA4157 /* KKFloatCollectView.m in Sources */,
 				67DCC72721BE03A800FAB9F4 /* LoginBtnCell.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
+				67F9306D21BEAA8300AA4157 /* FloatBallController.m in Sources */,
 				67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */,
+				67F9308621BEB7CB00AA4157 /* KKUserFloat.m in Sources */,
 				67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
+				67F9306B21BEAA8300AA4157 /* KKSdkFloatWebController.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
-				677BB664217EC6D300C1ED76 /* LogoView.m in Sources */,
+				67F9306E21BEAA8300AA4157 /* FloatRightExtendView.m in Sources */,
 				67B9DAE721BA622E00FD725F /* UIImage+Resize.m in Sources */,
+				67F9307221BEAA8300AA4157 /* KKCollectionView.m in Sources */,
 				677BB65E217EC6D300C1ED76 /* MyToast.m in Sources */,
 				677BB662217EC6D300C1ED76 /* NSString+UniqueStrings.m in Sources */,
+				67F9306F21BEAA8300AA4157 /* FloatLeftExtendView.m in Sources */,
 				67F633D321B9705100395266 /* TitleViewCell.m in Sources */,
 				67DCC72921BE150000FAB9F4 /* CreateAccountCell.m in Sources */,
 				677BB663217EC6D300C1ED76 /* APICommonParams.m in Sources */,
+				67F9307D21BEB44A00AA4157 /* KKUser.m in Sources */,
 				677BB661217EC6D300C1ED76 /* NSString+Sign.m in Sources */,
+				67F9307921BEACD000AA4157 /* KKUserHandler.m in Sources */,
 				67DCC73421BE526700FAB9F4 /* AutoLoginController.m in Sources */,
 				677BB65F217EC6D300C1ED76 /* MySDKNetWorkController.m in Sources */,
 			);

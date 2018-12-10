@@ -69,7 +69,7 @@ static NSString * const RegLogOn_URL = @"App/Accounts/RegLogOn";
     
 }
 
-//初始化
+//登录
 //param:参数
 +(void)requestRegisterAndLoginWithParam:(nullable id)param{
     

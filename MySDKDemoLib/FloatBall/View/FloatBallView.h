@@ -1,0 +1,80 @@
+//
+//  FloatBallView.h
+//  FloatBallDemo
+//
+//  Created by kaola  on 2018/3/13.
+//  Copyright © 2018年 kaola . All rights reserved.
+// 悬浮球
+
+#import <UIKit/UIKit.h>
+
+extern NSString * const kFloatBallCenterKey;
+
+typedef NS_ENUM(NSInteger, FloatBallPosition) {
+    
+    FloatBallPositionLeft,
+    FloatBallPositionRight,
+};
+
+typedef NS_ENUM(NSInteger, FloatBallStyle) {
+    
+    FloatBallStyleDefault,
+    FloatBallStyleCenterLeft,
+    FloatBallStyleCenterRight,
+    FloatBallStyleTopLeft,
+    FloatBallStyleTopRight,
+    FloatBallStyleBottomLeft,
+    FloatBallStyleBottomRight,
+};
+
+@interface FloatBallView : UIView
+
+@property(nonatomic, strong, readonly) UIButton *floatBtn;
+
+/** 用户拖动结束，球回到边上时 事件处理 */
+@property(nonatomic,copy) void(^floatBallFrameAdjustCompletedAction)(FloatBallView *ball);
+
+/** 球回到边上，并半隐起来时 事件处理 */
+@property(nonatomic,copy) void(^floatBallFadedCompletedAction)(FloatBallView *ball);
+
+/** 球的宽和高，用这个高度  */
+@property(nonatomic, assign) CGFloat floatBallHeight;
+
+/** pan begin事件开始前 事件处理 */
+@property(nonatomic,copy) void(^panGestureRecognizerBeganAction)(UIPanGestureRecognizer *pan);
+
+/** 点击事件处理 */
+@property(nonatomic,copy) void(^floatBallDidClickAction)(UIButton *ball);
+
+/** 初始化时的样式,如果是none，则按照frame来显示 */
+@property(nonatomic,assign) FloatBallStyle floatStyle;
+
+/** 悬浮球需要隐藏的时间（会在这个值的基础上加2s）  */
+@property(nonatomic,assign) NSTimeInterval waitTimeInterval;
+
+/** 悬浮球EdgeInsets */
+@property(nonatomic,assign) UIEdgeInsets edgeInsets;
+
+/** 左边或者右边  */
+@property(nonatomic, assign) FloatBallPosition position;
+
+/** float ball即将要隐藏  */
+@property(nonatomic, copy) void(^floatBallWillHiddenAction)(FloatBallView *floatBall);
+
+/** 是否记住用户操作悬浮球的位置 */
+@property(nonatomic,assign) BOOL isRememberUerOperation;
+
+/** 前缀，拼接在用户key的前面，用来区分不同用户的操作（操作悬浮球的位置） */
+@property(nonatomic,copy) NSString *userPrefix;
+
+/** 获取第一次展示的center */
+- (CGPoint)fetchInitCenter;
+
+/** 获得这个key  */
++ (NSString *)theRememberKeyWithUserPrefix:(NSString *)userPrefix;
+
+/** 倒计时的开始和停止  */
+- (void)startCountdown;
+- (void)stopCountdown;
+
+@end

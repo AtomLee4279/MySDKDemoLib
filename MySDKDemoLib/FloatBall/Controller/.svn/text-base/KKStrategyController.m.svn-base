@@ -1,0 +1,84 @@
+//
+//  KKStrategyController.m
+//  KoalaGameKit
+//
+//  Created by kaola  on 2018/5/11.
+//  Copyright © 2018年 kaola . All rights reserved.
+//
+
+#import "KKStrategyController.h"
+
+@interface KKStrategyController ()
+
+@property(nonatomic, strong) NSMutableArray<NSString *> *urlStringsM;
+
+@end
+
+@implementation KKStrategyController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:YES];
+    
+    self.isFitWebHeight = YES;
+    [self.backBtn layoutIfNeeded];
+    
+    weakSelf();
+    [self setBackBtnDidClickAction:^(UIButton *btn) {
+
+        if ([weakSelf.webView canGoBack]) {
+            [weakSelf.webView goBack];
+        }
+    }];
+}
+
+/** 设置web需要展示的高度  */
+- (CGFloat)kk_webHeightNeeded; {
+    
+    // web并没有很好的适应界面，如果高度过大，web不会自适应
+    return KKMainViewHeight();
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIWebViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
+    
+    [self.urlStringsM addObject:request.URL.absoluteString];
+    DBLog(@"urlStringsM : %@", self.urlStringsM);
+    if (self.urlStringsM.count % 2) {
+        self.backBtn.hidden = YES;
+    }
+    else {
+        self.backBtn.hidden = NO;
+    }
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    [super webViewDidFinishLoad:webView];
+    
+    // 第一次加载完毕，之后就不给自适应高度了
+    self.isFitWebHeight = NO;
+}
+
+#pragma mark - Getter & Setter
+- (NSMutableArray<NSString *> *)urlStringsM {
+    
+    if (_urlStringsM) {
+        return _urlStringsM;
+    }
+    
+    _urlStringsM = [NSMutableArray<NSString *> array];
+    
+    return _urlStringsM;
+}
+
+@end

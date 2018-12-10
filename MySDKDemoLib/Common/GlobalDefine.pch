@@ -29,6 +29,8 @@
 #define NetLog(fmt,...)
 #endif
 
+
+
 // 对外公开的log，由cp来决定是否打印（这里主要用于打印主要流程和必要的错误提示等）
 extern _Bool DEBUG_FOR_CP;
 #define KKLog(fmt,...) if (DEBUG_FOR_CP) NSLog((@"# === Koala log === # " fmt), ##__VA_ARGS__)
