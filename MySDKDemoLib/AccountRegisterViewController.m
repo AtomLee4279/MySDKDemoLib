@@ -58,8 +58,8 @@
         Class cls = [InputViewCell class];
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
         
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"刷新"]];
+        UIImage *logo = KK_ImageNamed(res_login_logo);
+        UIImage *btnImage = KK_ImageNamed(res_login_refresh);
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         [cell.rightBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
@@ -69,8 +69,8 @@
     if (indexPath.row==2) {
         Class cls = [InputViewCell class];
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
+        UIImage *logo = KK_ImageNamed(res_login_pwd);
+        UIImage *btnImage = KK_ImageNamed(res_login_delete);
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         [cell.rightBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
@@ -79,8 +79,8 @@
     
     if (indexPath.row==3) {
         Class cls = [InputViewCell class];
+        UIImage *logo = KK_ImageNamed(res_login_pwd);
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
         cell.logo.image = logo;
         cell.rightBtn.hidden = YES;
         //        cell.logo.image = [UIImage imageNamed:@"密码"];

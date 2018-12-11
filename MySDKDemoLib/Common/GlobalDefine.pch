@@ -17,6 +17,15 @@
 #import <UIKit/UIKit.h>
 #import "UIColor+ColorChange.h"      // 转换16进制色系为RGB格式
 #import "UIImage+Resize.h"
+#import "res_header.h"
+#import <Masonry.h>
+#import "KKSizeAssistant.h"
+#import "NSObject+Model.h"
+#import "UIView+ActivityIndicatorView.h"
+#import "UIView+BlurEffect.h"
+#import "KKMacros.h"
+#import "KKToast.h"
+#import "KKConstants.h"
 
 // 打开或者关闭Debug Log: 生成动态库之前 测试用，不对外公开
 #define OPEN_LOG @"主动关闭Log ： 把这一行注释掉"
@@ -30,6 +39,9 @@
 #endif
 
 
+#define weak(obj, weakName) __weak typeof(obj) weakName = obj
+#define weakSelf() weak(self, weakSelf)
+
 
 // 对外公开的log，由cp来决定是否打印（这里主要用于打印主要流程和必要的错误提示等）
 extern _Bool DEBUG_FOR_CP;
@@ -39,5 +51,12 @@ extern _Bool DEBUG_FOR_CP;
 
 #define Toast(message,time) [MyToast showAlertMessageWithMessage:message duration:time]
 
+// 对iphone x的处理
+#define KKSTATUSBAR_HEIGHT (IS_IPHONE_X?44.0:20.0)
+#define IS_IPHONE_X (IS_IPHONE && UIScreenMaxLine() == 812.0)
+#define IS_IPHONE   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+// 用户数组 key
+#define kKKUsersArrayKey @"com.koala.users_array.v1"
 
 #endif /* GlobalDefine_pch */

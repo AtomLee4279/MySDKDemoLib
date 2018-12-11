@@ -243,7 +243,7 @@
                                       @"is_portrait" : @(1),
                                       @"height"   : @(webHeight),
                                       };
-            KKNotiPost(KKNotiUpdateWindowHeightNoti, usrinfo);
+//            KKNotiPost(KKNotiUpdateWindowHeightNoti, usrinfo);
         }
     }];
 }

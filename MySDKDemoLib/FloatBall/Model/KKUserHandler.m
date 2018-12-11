@@ -38,18 +38,18 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
  @param keyValues 字典
  @return handler
  */
-+ (instancetype)kk_saveUserInfoAndFetchHandlerWithKeyValues:(id)keyValues {
-    
-    //先清除之前保存的handler状态
-    [[KKUserHandler sharedHandler] logoutAllDatas];
-    //字典转模型，注意此时得出来的handler模型对象,其成员“float_menu”将会是一个字典的数组
-    KKUserHandler *handler = [self kk_modelWithKeyValues:keyValues];
-    //handleFloatMenu里进一步处理handler对象内的“float_menu”，将字典的数组转换成为KKUserFloat模型的数组
-    [handler handleFloatMenu];
-    [handler saveUser];
-    
-    return handler;
-}
+//+ (instancetype)kk_saveUserInfoAndFetchHandlerWithKeyValues:(id)keyValues {
+//    
+//    //先清除之前保存的handler状态
+//    [[KKUserHandler sharedHandler] logoutAllDatas];
+//    //字典转模型，注意此时得出来的handler模型对象,其成员“float_menu”将会是一个字典的数组
+//    KKUserHandler *handler = [self kk_modelWithKeyValues:keyValues];
+//    //handleFloatMenu里进一步处理handler对象内的“float_menu”，将字典的数组转换成为KKUserFloat模型的数组
+//    [handler handleFloatMenu];
+//    [handler saveUser];
+//    
+//    return handler;
+//}
 
 /**
  检查是否可以自动登录

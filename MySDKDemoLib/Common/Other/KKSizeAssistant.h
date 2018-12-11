@@ -9,7 +9,7 @@
 #ifndef KKSizeAssistant_h
 #define KKSizeAssistant_h
 
-#import "KKRegisterController.h"
+//#import "KKRegisterController.h"
 
 // 适配字体
 /// 最小字体
@@ -99,11 +99,11 @@ static inline CGFloat KKMainViewX() {
 }
 
 /// 竖屏时main view最高的高度
-static inline CGFloat KKMainViewPortraitMaxHeight(void) {
-    
-    // 注册页面高度最高
-    return [[KKRegisterController new] kk_tableHeightNeeded];
-}
+//static inline CGFloat KKMainViewPortraitMaxHeight(void) {
+//
+//    // 注册页面高度最高
+//    return [[KKRegisterController new] kk_tableHeightNeeded];
+//}
 
 /// 横屏时main view最大的高度
 static inline CGFloat KKMainViewLandscapeMaxHeight(void) {

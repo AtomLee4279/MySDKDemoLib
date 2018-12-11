@@ -9,16 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FloatBallView.h"
 /* 悬浮球的初始位置 */
-typedef NS_ENUM(NSInteger, FloatBallStyle) {
-    
-    FloatBallStyleDefault,
-    FloatBallStyleCenterLeft,
-    FloatBallStyleCenterRight,
-    FloatBallStyleTopLeft,
-    FloatBallStyleTopRight,
-    FloatBallStyleBottomLeft,
-    FloatBallStyleBottomRight,
-};
+
 @interface FloatBallController : UIViewController
 
 @property(nonatomic, strong, readonly) FloatBallView *floatView;

@@ -62,9 +62,9 @@ static NSString * const LinkToQQ = @"mqq://im/chat?chat_type=wpa&uin=%@&version=
             
             // 去切换账号
             DBLog(@"去切换账号");
-            KKNotiPost(KKNotiGotoLogoutNoti, @{
-                                               kKKNotiGotoLogoutTypeKey : KKNotiGotoLogoutTypeValueLogout,
-                                               });
+//            KKNotiPost(KKNotiGotoLogoutNoti, @{
+//                                               kKKNotiGotoLogoutTypeKey : KKNotiGotoLogoutTypeValueLogout,
+//                                               });
         });
     };
     self.jsFunctionHandlers = @{

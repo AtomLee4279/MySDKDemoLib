@@ -14,6 +14,7 @@
 - (NSString *)description {
 
 //    return [NSString stringWithFormat:@"「 %@ 」", [self kk_keyValues]];
+    return @"";
 }
 
 @end
