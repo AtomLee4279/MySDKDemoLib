@@ -167,10 +167,10 @@
     DBLog(@"切换账号");
     if (btn.isSelected) {
         
-        [self.view addSubview:weakSelf.switchAccountsView];
+        [self.view addSubview:self.switchAccountsView];
         KKSwitchAccountsView *switchView = self.switchAccountsView;
         switchView.layer.anchorPoint = CGPointMake(0.5f, 0.f);
-        weakSelf.switchAccountsView.layer.transform = CATransform3DMakeScale(1.f, 0.1f, 0.f);
+        self.switchAccountsView.layer.transform = CATransform3DMakeScale(1.f, 0.1f, 0.f);
         
         [UIView animateWithDuration:.3f animations:^{
             
@@ -183,7 +183,7 @@
         }];
     }
     else {
-        KKSwitchAccountsView *switchView = weakSelf.switchAccountsView;
+        KKSwitchAccountsView *switchView = self.switchAccountsView;
         switchView.layer.transform = CATransform3DMakeScale(1.f, 1.f, 0.f);
         [UIView animateWithDuration:.3f animations:^{
             
@@ -198,7 +198,7 @@
 }
  
     
-}
+
 
 - (void)swtchBtnDidClick:(UIButton *)btn {
     

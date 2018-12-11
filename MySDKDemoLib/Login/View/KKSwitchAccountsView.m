@@ -36,7 +36,7 @@ CGFloat const KKSwitchAccountsCellHeight = 35.f;
     
     UIButton *btn = [UIButton new];
     btn.frame = CGRectMake(0, 0, KKWIDTH(15.f), KKWIDTH(15.f));
-    [btn setImage:res_del forState:UIControlStateNormal];
+    [btn setImage:res_login_delete forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(delBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
     
     return btn;
