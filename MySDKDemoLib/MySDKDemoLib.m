@@ -41,6 +41,10 @@
 
 - (void)Kola_Init
 {
+    
+    [MySDKConfig shareInstance].appid = @"100000";
+    [MySDKConfig shareInstance].channel = @"appstore100000";
+    [MySDKConfig shareInstance].appkey = @"123456";
 //    检查初始化参数
     if ([self checkInitParam]) {
         [[MySDKInitController shareInstance] mySDKInit];
