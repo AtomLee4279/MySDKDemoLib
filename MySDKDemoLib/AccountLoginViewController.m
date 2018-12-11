@@ -28,6 +28,10 @@
 
 @property(nonatomic,strong) KKSwitchAccountsView *switchAccountsView;
 
+@property(nonatomic,strong) InputViewCell *accountCell;
+
+@property(nonatomic,strong) InputViewCell *pwdCell;
+
 @end
 
 @implementation AccountLoginViewController
@@ -86,6 +90,7 @@
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
+        self.accountCell = cell;
         return cell;
     }
 //
@@ -129,39 +134,6 @@
 - (void)historyAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
-}
-
-- (void)showPwd:(UIButton *)btn {
-    
-    NSLog(@"===showPwd===");
-    
-}
-
-- (void)newAccount:(UIButton *)btn {
-    
-    NSLog(@"===newAccount===");
-    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    
-    AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"AccountRegisterView" bundle:SDKBundle];
-    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
-    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        [viewController presentViewController:baseVC animated:YES completion:nil];
-    }];
-}
-
-- (void)checkBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===checkBtnDidClick===");
-}
-
-
-- (void)detailBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===detailBtnDidClick===");
     btn.selected = !btn.selected;
     [self swtchBtnDidClick:btn]; // 按钮小动画
     DBLog(@"切换账号");
@@ -195,6 +167,40 @@
             [switchView removeFromSuperview];
         }];
     }
+}
+
+- (void)showPwd:(UIButton *)btn {
+    
+    NSLog(@"===showPwd===");
+    
+}
+
+- (void)newAccount:(UIButton *)btn {
+    
+    NSLog(@"===newAccount===");
+    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
+    AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"AccountRegisterView" bundle:SDKBundle];
+    [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+    [baseVC setModalPresentationStyle:UIModalPresentationCustom];
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [viewController presentViewController:baseVC animated:YES completion:nil];
+    }];
+}
+
+- (void)checkBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===checkBtnDidClick===");
+}
+
+
+- (void)detailBtnDidClick:(UIButton *)btn {
+    
+    NSLog(@"===detailBtnDidClick===");
+   
 }
  
     
@@ -445,14 +451,15 @@
 - (KKSwitchAccountsView *)switchAccountsView {
     
     _switchAccountsView = [self kk_initSwitchViewInstance];
-    
-    NSMutableArray *userM = [KKUserHandler kk_fetchAllLoginedUsernames];
-    if (userM.count && [userM.firstObject isEqualToString:self.accountCell.textFieldView.textField.text]) {
-        [userM removeObjectAtIndex:0];
-    }
+     NSArray *tmp = @[@"6.00", @"50.00", @"98.00", @"198.00"];
+//    NSMutableArray *userM = [KKUserHandler kk_fetchAllLoginedUsernames];
+    NSMutableArray *userM = (NSMutableArray*)tmp;
+//    if (userM.count && [userM.firstObject isEqualToString:self.accountCell.textFieldView.textField.text]) {
+//        [userM removeObjectAtIndex:0];
+//    }
     _switchAccountsView.dataSource = userM;
     
-    CGRect cellRect = [self.accountCell convertRect:self.accountCell.textFieldView.frame toView:self.view];
+    CGRect cellRect = [self.accountCell convertRect:self.accountCell.frame toView:self.view];
     CGFloat viewW = cellRect.size.width;
     NSInteger hCount = userM.count <= 3 ? (userM.count ? userM.count : 1) : 3;
     CGFloat viewH = KKHEIGHT(KKSwitchAccountsCellHeight) * hCount;
@@ -482,14 +489,15 @@
             
             // 切换到这个账号
 //            DBLog(@"切换到这个账号：%@", indexPath);
-            [weakSelf.accountCell.textFieldView.tailBtn sendActionsForControlEvents:UIControlEventTouchUpInside];
-            weakSelf.accountCell.textFieldView.textField.text = account;
-            weakSelf.pwdCell.textFieldView.textField.text = [KKUserHandler kk_fetchPwdFromKeychainWithUsername:account];
-            [weakSelf loginAccountWithBtn:weakSelf.accountCell.textFieldView.tailBtn success:^(KKResult * _Nonnull result) {
-                
-                // 发送登录成功通知
-                KKNotiPostLoginSuccessNoti(result);
-            }];
+            [weakSelf.accountCell.rightBtn sendActionsForControlEvents:UIControlEventTouchUpInside];
+            weakSelf.accountCell.textField.text = account;
+            weakSelf.pwdCell.textField.text = [KKUserHandler kk_fetchPwdFromKeychainWithUsername:account];
+            //走登录流程
+//            [weakSelf loginAccountWithBtn:weakSelf.accountCell.textFieldView.tailBtn success:^(KKResult * _Nonnull result) {
+//
+//                // 发送登录成功通知
+//                KKNotiPostLoginSuccessNoti(result);
+//            }];
         }];
     })
 }

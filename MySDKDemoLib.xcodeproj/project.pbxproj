@@ -95,12 +95,6 @@
 		67DCC74A21BF6C7C00FAB9F4 /* 边框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DCC74821BF6C7C00FAB9F4 /* 边框@2x.png */; };
 		67DCC74B21BF6C7C00FAB9F4 /* 边框@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67DCC74921BF6C7C00FAB9F4 /* 边框@3x.png */; };
 		67DCC74F21BF6DD300FAB9F4 /* KKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC74E21BF6DD300FAB9F4 /* KKToast.m */; };
-		67DCC75321BF6FC700FAB9F4 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B55217F12A100FBE7C3 /* libAFNetworking.a */; };
-		67DCC75421BF6FC700FAB9F4 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B57217F12A100FBE7C3 /* libKSToastView.a */; };
-		67DCC75521BF6FC700FAB9F4 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B58217F12A100FBE7C3 /* libMasonry.a */; };
-		67DCC75621BF6FC700FAB9F4 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B56217F12A100FBE7C3 /* libMJExtension.a */; };
-		67DCC75721BF6FC700FAB9F4 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B54217F12A100FBE7C3 /* libSDWebImage.a */; };
-		67DCC75821BF6FC700FAB9F4 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */; };
 		67DCC77D21BF727500FAB9F4 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC75A21BF727400FAB9F4 /* UIColor+ColorChange.m */; };
 		67DCC77E21BF727500FAB9F4 /* KKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC75E21BF727400FAB9F4 /* KKConstants.m */; };
 		67DCC77F21BF727500FAB9F4 /* MyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC76121BF727400FAB9F4 /* MyToast.m */; };
@@ -135,6 +129,12 @@
 		67F9307921BEACD000AA4157 /* KKUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307821BEACD000AA4157 /* KKUserHandler.m */; };
 		67F9307D21BEB44A00AA4157 /* KKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307B21BEB44A00AA4157 /* KKUser.m */; };
 		67F9308621BEB7CB00AA4157 /* KKUserFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9308521BEB7CB00AA4157 /* KKUserFloat.m */; };
+		67F9308D21BFFB4F00AA4157 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
+		67F9308E21BFFB4F00AA4157 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
+		67F9308F21BFFB4F00AA4157 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
+		67F9309021BFFB4F00AA4157 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
+		67F9309121BFFB4F00AA4157 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
+		67F9309221BFFB4F00AA4157 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -354,12 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				67DCC75321BF6FC700FAB9F4 /* libAFNetworking.a in Frameworks */,
-				67DCC75421BF6FC700FAB9F4 /* libKSToastView.a in Frameworks */,
-				67DCC75521BF6FC700FAB9F4 /* libMasonry.a in Frameworks */,
-				67DCC75621BF6FC700FAB9F4 /* libMJExtension.a in Frameworks */,
-				67DCC75721BF6FC700FAB9F4 /* libSDWebImage.a in Frameworks */,
-				67DCC75821BF6FC700FAB9F4 /* libUICKeyChainStore.a in Frameworks */,
+				67F9308D21BFFB4F00AA4157 /* libAFNetworking.a in Frameworks */,
+				67F9308E21BFFB4F00AA4157 /* libKSToastView.a in Frameworks */,
+				67F9308F21BFFB4F00AA4157 /* libMasonry.a in Frameworks */,
+				67F9309021BFFB4F00AA4157 /* libMJExtension.a in Frameworks */,
+				67F9309121BFFB4F00AA4157 /* libSDWebImage.a in Frameworks */,
+				67F9309221BFFB4F00AA4157 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

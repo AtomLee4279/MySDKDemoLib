@@ -19,44 +19,150 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MySDKDemoLib/MySDKDemoLib.m"
-            timestampString = "566213622.764087"
+            filePath = "MySDKDemoLib/AccountLoginViewController.m"
+            timestampString = "566231679.22655"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:"
+            startingLineNumber = "453"
+            endingLineNumber = "453"
+            landmarkName = "-switchAccountsView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySDKDemoLib/AccountLoginViewController.m"
+            timestampString = "566231679.22708"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "475"
+            endingLineNumber = "475"
+            landmarkName = "-kk_initSwitchViewInstance"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[MySDKDemoLib setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:]"
+                  symbolName = "-[AccountLoginViewController kk_initSwitchViewInstance]"
                   moduleName = "MyGameTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/MySDKDemoLib.m"
-                  timestampString = "566213622.8008209"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.366188"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "124">
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "116">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[MySDKDemoLib setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:]"
+                  symbolName = "__55-[AccountLoginViewController kk_initSwitchViewInstance]_block_invoke"
                   moduleName = "MyGameTest"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/MySDKDemoLib.m"
-                  timestampString = "566213622.802389"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.36812"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "140">
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__55-[AccountLoginViewController kk_initSwitchViewInstance]_block_invoke_2"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.370021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__55-[AccountLoginViewController kk_initSwitchViewInstance]_block_invoke_3"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.3718131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.319"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.373626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.320"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.375204"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.325"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.376828"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.326"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Desktop/SDKDemoLib/MySDKDemoLib/MySDKDemoLib/AccountLoginViewController.m"
+                  timestampString = "566231679.378782"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "475"
+                  endingLineNumber = "475"
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>
