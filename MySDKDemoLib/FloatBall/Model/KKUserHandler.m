@@ -39,7 +39,7 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
  @return handler
  */
 //+ (instancetype)kk_saveUserInfoAndFetchHandlerWithKeyValues:(id)keyValues {
-//    
+//
 //    //先清除之前保存的handler状态
 //    [[KKUserHandler sharedHandler] logoutAllDatas];
 //    //字典转模型，注意此时得出来的handler模型对象,其成员“float_menu”将会是一个字典的数组
@@ -47,7 +47,7 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
 //    //handleFloatMenu里进一步处理handler对象内的“float_menu”，将字典的数组转换成为KKUserFloat模型的数组
 //    [handler handleFloatMenu];
 //    [handler saveUser];
-//    
+//
 //    return handler;
 //}
 
@@ -113,7 +113,7 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
     }
     
     if (!self.pwd.length || [self.pwd isEqualToString:@"0"]) {
-        KKLog(@"后台返回密码为：%@", self.pwd ?: @"空");
+//        KKLog(@"后台返回密码为：%@", self.pwd ?: @"空");
     }
     
     if (self.pwd.length) {
@@ -128,7 +128,7 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
  //处理浮点数据
 -(void)handleFloatMenu{
     if (!self.float_menu.count) {
-        KKLog(@"后台返回浮点数据为空！");
+//        KKLog(@"后台返回浮点数据为空！");
         return;
     }
     //将字典的数组转换成KKUserFloat模型的数组，重新存进float_menu
@@ -194,7 +194,7 @@ static NSString * const kKKKeyChainStoreWithService = @"com.koala.kKKeyChainStor
 
 /** 保存pwd到key chain */
 + (void)kk_savePasswordToKeychainWithPwd:(NSString *)pwd {
-    KKLog(@"kk_savePasswordToKeychainWithPwd");
+//    KKLog(@"kk_savePasswordToKeychainWithPwd");
     if (!pwd.length || [[KKUserHandler sharedHandler].pwd isEqualToString:pwd]) {
         return;
     }

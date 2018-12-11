@@ -33,7 +33,7 @@ static NSString *DemoSEL = @"demo_sel";
 #pragma mark - demo methods
 - (void)demo_init {
     NSLog(@"===demo_init===");
-    
+    [[MySDKDemoLib shareInstance] Kola_Init];
 //    // debug时可以开启打印，发布时要关闭打印
 //#ifdef DEBUG
 //    [Koala kgk_openLog:YES];

@@ -13,5 +13,53 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySDKDemoLib/MySDKDemoLib.m"
+            timestampString = "566213622.764087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MySDKDemoLib setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:]"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/MySDKDemoLib.m"
+                  timestampString = "566213622.8008209"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MySDKDemoLib setupFloatBallWtihViewController:isRememberFloatBallLocation:floatBallInitStyle:]"
+                  moduleName = "MyGameTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liyixian/Downloads/XcodeTest/MySDKDemoLib/MySDKDemoLib/MySDKDemoLib.m"
+                  timestampString = "566213622.802389"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

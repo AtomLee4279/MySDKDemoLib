@@ -113,6 +113,9 @@
 		67DCC78621BF727500FAB9F4 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC77A21BF727400FAB9F4 /* NSObject+Model.m */; };
 		67DCC78721BF727500FAB9F4 /* UIView+ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC77B21BF727400FAB9F4 /* UIView+ActivityIndicatorView.m */; };
 		67DCC78821BF727500FAB9F4 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC77C21BF727400FAB9F4 /* UIImage+Resize.m */; };
+		67DCC9D521BF9C9500FAB9F4 /* UIButton+KKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9D421BF9C9500FAB9F4 /* UIButton+KKWebCache.m */; };
+		67DCC9D921BFCAC900FAB9F4 /* KKSwitchAccountsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */; };
+		67DCC9DD21BFCB3700FAB9F4 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9DB21BFCB3700FAB9F4 /* KKView.m */; };
 		67F633D321B9705100395266 /* TitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F633D221B9705100395266 /* TitleViewCell.m */; };
 		67F6342921BCAAA300395266 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F6342721BCAAA300395266 /* AgreementCell.xib */; };
 		67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342621BCAAA300395266 /* AgreementCell.m */; };
@@ -292,6 +295,12 @@
 		67DCC77A21BF727400FAB9F4 /* NSObject+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 		67DCC77B21BF727400FAB9F4 /* UIView+ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ActivityIndicatorView.m"; sourceTree = "<group>"; };
 		67DCC77C21BF727400FAB9F4 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		67DCC9D321BF9C9400FAB9F4 /* UIButton+KKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KKWebCache.h"; sourceTree = "<group>"; };
+		67DCC9D421BF9C9500FAB9F4 /* UIButton+KKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KKWebCache.m"; sourceTree = "<group>"; };
+		67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSwitchAccountsView.m; sourceTree = "<group>"; };
+		67DCC9D821BFCAC900FAB9F4 /* KKSwitchAccountsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSwitchAccountsView.h; sourceTree = "<group>"; };
+		67DCC9DB21BFCB3700FAB9F4 /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
+		67DCC9DC21BFCB3700FAB9F4 /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
 		67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRegisterViewController.h; sourceTree = "<group>"; };
 		67F633D121B9705100395266 /* TitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewCell.h; sourceTree = "<group>"; };
 		67F633D221B9705100395266 /* TitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewCell.m; sourceTree = "<group>"; };
@@ -485,6 +494,7 @@
 		677BB62B217EC6D200C1ED76 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				67DCC9DA21BFCAD700FAB9F4 /* View */,
 				677BB62C217EC6D200C1ED76 /* Controller */,
 				677BB62F217EC6D200C1ED76 /* Model */,
 			);
@@ -580,6 +590,7 @@
 				67DCC75B21BF727400FAB9F4 /* GlobalDefine.pch */,
 				67DCC77721BF727400FAB9F4 /* APICommonParams.h */,
 				67DCC76221BF727400FAB9F4 /* APICommonParams.m */,
+				67DCC9D621BF9C9B00FAB9F4 /* UIButton */,
 				67DCC77821BF727400FAB9F4 /* NSObject */,
 				67DCC76E21BF727400FAB9F4 /* NSString */,
 				67DCC75F21BF727400FAB9F4 /* Toast */,
@@ -687,6 +698,26 @@
 				67DCC77521BF727400FAB9F4 /* KKConstants.h */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		67DCC9D621BF9C9B00FAB9F4 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				67DCC9D321BF9C9400FAB9F4 /* UIButton+KKWebCache.h */,
+				67DCC9D421BF9C9500FAB9F4 /* UIButton+KKWebCache.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		67DCC9DA21BFCAD700FAB9F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67DCC9DC21BFCB3700FAB9F4 /* KKView.h */,
+				67DCC9DB21BFCB3700FAB9F4 /* KKView.m */,
+				67DCC9D821BFCAC900FAB9F4 /* KKSwitchAccountsView.h */,
+				67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		67F9305521BEAA8300AA4157 /* FloatBall */ = {
@@ -1001,6 +1032,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
+				67DCC9D921BFCAC900FAB9F4 /* KKSwitchAccountsView.m in Sources */,
 				67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */,
 				67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */,
 				67F9307621BEAC7900AA4157 /* KKUIWebController.m in Sources */,
@@ -1019,6 +1051,7 @@
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
 				67DCC74F21BF6DD300FAB9F4 /* KKToast.m in Sources */,
+				67DCC9DD21BFCB3700FAB9F4 /* KKView.m in Sources */,
 				67F9306D21BEAA8300AA4157 /* FloatBallController.m in Sources */,
 				67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */,
 				67F9308621BEB7CB00AA4157 /* KKUserFloat.m in Sources */,
@@ -1029,6 +1062,7 @@
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				67F9306E21BEAA8300AA4157 /* FloatRightExtendView.m in Sources */,
 				67DCC78621BF727500FAB9F4 /* NSObject+Model.m in Sources */,
+				67DCC9D521BF9C9500FAB9F4 /* UIButton+KKWebCache.m in Sources */,
 				67F9307221BEAA8300AA4157 /* KKCollectionView.m in Sources */,
 				67F9306F21BEAA8300AA4157 /* FloatLeftExtendView.m in Sources */,
 				67DCC78221BF727500FAB9F4 /* NetWorkRespondModel.m in Sources */,

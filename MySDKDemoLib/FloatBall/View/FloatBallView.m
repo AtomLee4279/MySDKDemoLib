@@ -7,7 +7,7 @@
 //
 
 #import "FloatBallView.h"
-
+#import <Masonry.h>
 //#import <Masonry.h>
 
 NSString * const kFloatBallCenterKey = @"float_ball_center_key";
