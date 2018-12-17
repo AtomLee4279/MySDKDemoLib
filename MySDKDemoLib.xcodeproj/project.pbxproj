@@ -28,6 +28,18 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
+		67A0096721C7A89D001150DD /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096121C7A89D001150DD /* libUICKeyChainStore.a */; };
+		67A0096821C7A89D001150DD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096221C7A89D001150DD /* libAFNetworking.a */; };
+		67A0096921C7A89D001150DD /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096321C7A89D001150DD /* libMasonry.a */; };
+		67A0096A21C7A89D001150DD /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096421C7A89D001150DD /* libKSToastView.a */; };
+		67A0096B21C7A89D001150DD /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096521C7A89D001150DD /* libSDWebImage.a */; };
+		67A0096C21C7A89D001150DD /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096621C7A89D001150DD /* libMJExtension.a */; };
+		67A0097521C7AA51001150DD /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097421C7AA51001150DD /* libUICKeyChainStore.a */; };
+		67A0097721C7AA71001150DD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097621C7AA71001150DD /* libAFNetworking.a */; };
+		67A0097921C7AA71001150DD /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097821C7AA71001150DD /* libKSToastView.a */; };
+		67A0097B21C7AA71001150DD /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097A21C7AA71001150DD /* libMasonry.a */; };
+		67A0097D21C7AA71001150DD /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097C21C7AA71001150DD /* libMJExtension.a */; };
+		67A0097F21C7AA71001150DD /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0097E21C7AA71001150DD /* libSDWebImage.a */; };
 		67AAAB1421BBB02B00F83EF1 /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */; };
 		67AAAB1521BBB35800F83EF1 /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */; };
 		67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */; };
@@ -129,12 +141,6 @@
 		67F9307921BEACD000AA4157 /* KKUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307821BEACD000AA4157 /* KKUserHandler.m */; };
 		67F9307D21BEB44A00AA4157 /* KKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9307B21BEB44A00AA4157 /* KKUser.m */; };
 		67F9308621BEB7CB00AA4157 /* KKUserFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F9308521BEB7CB00AA4157 /* KKUserFloat.m */; };
-		67F9308D21BFFB4F00AA4157 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1021B6CBCA001720E2 /* libAFNetworking.a */; };
-		67F9308E21BFFB4F00AA4157 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1121B6CBCA001720E2 /* libKSToastView.a */; };
-		67F9308F21BFFB4F00AA4157 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0E21B6CBCA001720E2 /* libMasonry.a */; };
-		67F9309021BFFB4F00AA4157 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0D21B6CBCA001720E2 /* libMJExtension.a */; };
-		67F9309121BFFB4F00AA4157 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC1221B6CBCA001720E2 /* libSDWebImage.a */; };
-		67F9309221BFFB4F00AA4157 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -154,19 +160,7 @@
 
 /* Begin PBXFileReference section */
 		16DCDF932DEA97C0F2D75EA4 /* Pods-MySDKDemoLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.debug.xcconfig"; sourceTree = "<group>"; };
-		670A4B54217F12A100FBE7C3 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../Desktop/CocoPodLibs备份/libSDWebImage.a"; sourceTree = "<group>"; };
-		670A4B55217F12A100FBE7C3 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Desktop/CocoPodLibs备份/libAFNetworking.a"; sourceTree = "<group>"; };
-		670A4B56217F12A100FBE7C3 /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "../../../Desktop/CocoPodLibs备份/libMJExtension.a"; sourceTree = "<group>"; };
-		670A4B57217F12A100FBE7C3 /* libKSToastView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKSToastView.a; path = "../../../Desktop/CocoPodLibs备份/libKSToastView.a"; sourceTree = "<group>"; };
-		670A4B58217F12A100FBE7C3 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../Desktop/CocoPodLibs备份/libMasonry.a"; sourceTree = "<group>"; };
-		670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICKeyChainStore.a; path = "../../../Desktop/CocoPodLibs备份/libUICKeyChainStore.a"; sourceTree = "<group>"; };
 		6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6716FC0D21B6CBCA001720E2 /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "../../../Desktop/cocoPods备份/libMJExtension.a"; sourceTree = "<group>"; };
-		6716FC0E21B6CBCA001720E2 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../Desktop/cocoPods备份/libMasonry.a"; sourceTree = "<group>"; };
-		6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICKeyChainStore.a; path = "../../../Desktop/cocoPods备份/libUICKeyChainStore.a"; sourceTree = "<group>"; };
-		6716FC1021B6CBCA001720E2 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Desktop/cocoPods备份/libAFNetworking.a"; sourceTree = "<group>"; };
-		6716FC1121B6CBCA001720E2 /* libKSToastView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKSToastView.a; path = "../../../Desktop/cocoPods备份/libKSToastView.a"; sourceTree = "<group>"; };
-		6716FC1221B6CBCA001720E2 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../Desktop/cocoPods备份/libSDWebImage.a"; sourceTree = "<group>"; };
 		677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMySDKDemoLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKDemoLib.h; sourceTree = "<group>"; };
 		677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKDemoLib.m; sourceTree = "<group>"; };
@@ -194,6 +188,18 @@
 		67939FB121B531B200E0A641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67939FB321B531B200E0A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67939FB421B531B200E0A641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67A0096121C7A89D001150DD /* libUICKeyChainStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUICKeyChainStore.a; path = "../../../Desktop/CocoPodLibs备份/libUICKeyChainStore.a"; sourceTree = "<group>"; };
+		67A0096221C7A89D001150DD /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Desktop/CocoPodLibs备份/libAFNetworking.a"; sourceTree = "<group>"; };
+		67A0096321C7A89D001150DD /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../Desktop/CocoPodLibs备份/libMasonry.a"; sourceTree = "<group>"; };
+		67A0096421C7A89D001150DD /* libKSToastView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKSToastView.a; path = "../../../Desktop/CocoPodLibs备份/libKSToastView.a"; sourceTree = "<group>"; };
+		67A0096521C7A89D001150DD /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../Desktop/CocoPodLibs备份/libSDWebImage.a"; sourceTree = "<group>"; };
+		67A0096621C7A89D001150DD /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "../../../Desktop/CocoPodLibs备份/libMJExtension.a"; sourceTree = "<group>"; };
+		67A0097421C7AA51001150DD /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0097621C7AA71001150DD /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0097821C7AA71001150DD /* libKSToastView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKSToastView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0097A21C7AA71001150DD /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0097C21C7AA71001150DD /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A0097E21C7AA71001150DD /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AAAB1021BBB02B00F83EF1 /* InputViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewCell.h; sourceTree = "<group>"; };
 		67AAAB1121BBB02B00F83EF1 /* InputViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewCell.m; sourceTree = "<group>"; };
 		67AAAB1221BBB02B00F83EF1 /* InputViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewCell.xib; sourceTree = "<group>"; };
@@ -353,13 +359,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0097721C7AA71001150DD /* libAFNetworking.a in Frameworks */,
+				67A0097921C7AA71001150DD /* libKSToastView.a in Frameworks */,
+				67A0097B21C7AA71001150DD /* libMasonry.a in Frameworks */,
+				67A0097D21C7AA71001150DD /* libMJExtension.a in Frameworks */,
+				67A0097F21C7AA71001150DD /* libSDWebImage.a in Frameworks */,
+				67A0097521C7AA51001150DD /* libUICKeyChainStore.a in Frameworks */,
 				10E7F132CA908298B228EF8A /* libPods-MySDKDemoLib.a in Frameworks */,
-				67F9308D21BFFB4F00AA4157 /* libAFNetworking.a in Frameworks */,
-				67F9308E21BFFB4F00AA4157 /* libKSToastView.a in Frameworks */,
-				67F9308F21BFFB4F00AA4157 /* libMasonry.a in Frameworks */,
-				67F9309021BFFB4F00AA4157 /* libMJExtension.a in Frameworks */,
-				67F9309121BFFB4F00AA4157 /* libSDWebImage.a in Frameworks */,
-				67F9309221BFFB4F00AA4157 /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6716FC1A21B6CD5F001720E2 /* libMySDKDemoLib.a in Frameworks */,
+				67A0096721C7A89D001150DD /* libUICKeyChainStore.a in Frameworks */,
+				67A0096821C7A89D001150DD /* libAFNetworking.a in Frameworks */,
+				67A0096921C7A89D001150DD /* libMasonry.a in Frameworks */,
+				67A0096A21C7A89D001150DD /* libKSToastView.a in Frameworks */,
+				67A0096B21C7A89D001150DD /* libSDWebImage.a in Frameworks */,
+				67A0096C21C7A89D001150DD /* libMJExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,18 +792,18 @@
 		9CC5C67F71A4C6EC09E502F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				670A4B55217F12A100FBE7C3 /* libAFNetworking.a */,
-				670A4B57217F12A100FBE7C3 /* libKSToastView.a */,
-				6716FC1021B6CBCA001720E2 /* libAFNetworking.a */,
-				6716FC1121B6CBCA001720E2 /* libKSToastView.a */,
-				670A4B58217F12A100FBE7C3 /* libMasonry.a */,
-				6716FC0E21B6CBCA001720E2 /* libMasonry.a */,
-				670A4B56217F12A100FBE7C3 /* libMJExtension.a */,
-				670A4B54217F12A100FBE7C3 /* libSDWebImage.a */,
-				6716FC1221B6CBCA001720E2 /* libSDWebImage.a */,
-				670A4B59217F12A100FBE7C3 /* libUICKeyChainStore.a */,
-				6716FC0D21B6CBCA001720E2 /* libMJExtension.a */,
-				6716FC0F21B6CBCA001720E2 /* libUICKeyChainStore.a */,
+				67A0097621C7AA71001150DD /* libAFNetworking.a */,
+				67A0097821C7AA71001150DD /* libKSToastView.a */,
+				67A0097A21C7AA71001150DD /* libMasonry.a */,
+				67A0097C21C7AA71001150DD /* libMJExtension.a */,
+				67A0097E21C7AA71001150DD /* libSDWebImage.a */,
+				67A0097421C7AA51001150DD /* libUICKeyChainStore.a */,
+				67A0096221C7A89D001150DD /* libAFNetworking.a */,
+				67A0096421C7A89D001150DD /* libKSToastView.a */,
+				67A0096321C7A89D001150DD /* libMasonry.a */,
+				67A0096621C7A89D001150DD /* libMJExtension.a */,
+				67A0096521C7A89D001150DD /* libSDWebImage.a */,
+				67A0096121C7A89D001150DD /* libUICKeyChainStore.a */,
 				955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */,
 			);
 			name = Frameworks;
@@ -1293,12 +1305,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CH78CKY35H;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyGameTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtomLee.MyGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
@@ -1312,12 +1327,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CH78CKY35H;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MyGameTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtomLee.MyGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
