@@ -19,27 +19,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AABBCCDDEE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-Km-pRO">
-                        <rect key="frame" x="10" y="51" width="111" height="21"/>
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="122.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opz-El-wUy">
-                        <rect key="frame" x="357" y="47.5" width="28" height="28"/>
-                        <state key="normal" image="删除.png"/>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="opz-El-wUy" secondAttribute="trailing" constant="10" id="XVZ-CJ-Iy4"/>
-                    <constraint firstItem="EVE-Km-pRO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a8o-JB-uB6"/>
-                    <constraint firstItem="opz-El-wUy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ntb-fy-scQ"/>
-                    <constraint firstItem="EVE-Km-pRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vUg-c8-Ybf"/>
+                    <constraint firstAttribute="bottom" secondItem="EVE-Km-pRO" secondAttribute="bottom" id="QCG-hY-68L"/>
+                    <constraint firstAttribute="trailing" secondItem="EVE-Km-pRO" secondAttribute="trailing" id="iwK-hI-fLa"/>
+                    <constraint firstItem="EVE-Km-pRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vUg-c8-Ybf"/>
+                    <constraint firstItem="EVE-Km-pRO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xNd-pJ-H1B"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="151.19999999999999" y="74.212893553223395"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="删除.png" width="28" height="28"/>
-    </resources>
 </document>
