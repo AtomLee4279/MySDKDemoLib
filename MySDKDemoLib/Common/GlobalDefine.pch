@@ -25,9 +25,8 @@
 #import "UIView+ActivityIndicatorView.h"
 #import "UIView+BlurEffect.h"
 #import "KKMacros.h"
-#import "KKToast.h"
 #import "KKConstants.h"
-#import "KKUserHandler.h"
+
 #import "KKDebug.h"
 #import "KKSwitchAccountsView.h"
 

@@ -14,17 +14,10 @@
 #import "AgreementCell.h"
 #import "CreateAccountCell.h"
 #import "LoginBtnCell.h"
-
-#import "FloatBallController.h"
-#import "FloatLeftExtendView.h"
-#import "FloatRightExtendView.h"
-#import "KKFloatCollectView.h"
-
+#import "MoreAccountViewController.h"
 
 
 @interface AccountLoginViewController ()
-
-@property(nonatomic, strong) FloatBallController *floatVc;
 
 @property(nonatomic,strong) KKSwitchAccountsView *switchAccountsView;
 
@@ -89,7 +82,7 @@
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn addTarget:self action:@selector(moreAccount:) forControlEvents:UIControlEventTouchUpInside];
         self.accountCell = cell;
         return cell;
     }
@@ -131,11 +124,20 @@
 
 
 
-- (void)historyAccount:(UIButton *)btn {
+- (void)moreAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
     btn.selected = !btn.selected;
     [self rotateBtn:btn];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
+    MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
+    [moreVC setModalPresentationStyle:UIModalPresentationCustom];
+    
+//    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [self presentViewController:moreVC animated:YES completion:nil];
     
 }
 
@@ -174,13 +176,14 @@
     
 }
 
-//旋转按钮
+//按钮旋转动画
 -(void)rotateBtn:(UIButton*)btn{
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     animation.fromValue = [NSNumber numberWithFloat:0.f];
-    animation.toValue = [NSNumber numberWithFloat: M_PI *2];
-    animation.duration = 3;
+    animation.toValue = [NSNumber numberWithFloat: M_PI];
+    animation.duration = .3f;
     animation.autoreverses = NO;
+    animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
     animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
     [btn.layer addAnimation:animation forKey:nil];
