@@ -1,8 +1,8 @@
 //
-//  NewAccountCell.h
+//  CreateAccountCell.h
 //  SDKBundle
 //
-//  Created by 李一贤 on 2018/12/9.
+//  Created by 李一贤 on 2018/12/20.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
@@ -11,8 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CreateAccountCell : UITableViewCell
-
-@property (weak, nonatomic) IBOutlet UIButton *createAccountBtn;
+@property (weak, nonatomic) IBOutlet UIButton *rightBtn;
 
 @end
 

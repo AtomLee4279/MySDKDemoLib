@@ -31,6 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+//    self.tableView.estimatedRowHeight = 100;
     [self regNib];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -101,7 +103,7 @@
     if (indexPath.row==3) {
         Class cls = [CreateAccountCell class];
         CreateAccountCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell"];
-        [cell.createAccountBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
 //隐私政策：约束待调整

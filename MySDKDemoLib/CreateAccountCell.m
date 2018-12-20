@@ -1,13 +1,12 @@
 //
-//  NewAccountCell.m
+//  CreateAccountCell.m
 //  SDKBundle
 //
-//  Created by 李一贤 on 2018/12/9.
+//  Created by 李一贤 on 2018/12/20.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
 #import "CreateAccountCell.h"
-#import "AccountRegisterViewController.h"
 
 @implementation CreateAccountCell
 

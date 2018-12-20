@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,20 +18,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRd-og-jDH" userLabel="CreateAccountCell">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYd-wg-SrA">
                         <rect key="frame" x="243" y="0.0" width="77" height="43.5"/>
                         <state key="normal" title="注册新账号"/>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="IRd-og-jDH" secondAttribute="bottom" id="Phj-UC-VK3"/>
-                    <constraint firstAttribute="trailing" secondItem="IRd-og-jDH" secondAttribute="trailing" id="df9-Ej-IQ8"/>
-                    <constraint firstItem="IRd-og-jDH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dt5-iI-20I"/>
+                    <constraint firstAttribute="trailing" secondItem="MYd-wg-SrA" secondAttribute="trailing" id="B8Q-Fz-zkA"/>
+                    <constraint firstAttribute="bottom" secondItem="MYd-wg-SrA" secondAttribute="bottom" id="N1B-Un-tAy"/>
+                    <constraint firstItem="MYd-wg-SrA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jjp-RC-fpw"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
-                <outlet property="createAccountBtn" destination="IRd-og-jDH" id="Gvb-z1-XNC"/>
+                <outlet property="rightBtn" destination="MYd-wg-SrA" id="pth-JE-iQf"/>
             </connections>
         </tableViewCell>
     </objects>
