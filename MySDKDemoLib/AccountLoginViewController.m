@@ -75,7 +75,7 @@
         cell.titleLabel.text = @"用户登录";
         return cell;
     }
-//
+////
     if (indexPath.row==1) {
         Class cls = [InputViewCell class];
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
@@ -88,7 +88,7 @@
         self.accountCell = cell;
         return cell;
     }
-//
+////
     if (indexPath.row==2) {
         Class cls = [InputViewCell class];
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
@@ -99,14 +99,14 @@
         [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-////    注册新账号
+//////    注册新账号
     if (indexPath.row==3) {
         Class cls = [CreateAccountCell class];
         CreateAccountCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell"];
         [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-//隐私政策：约束待调整
+
     if (indexPath.row==4) {
         Class cls = [AgreementCell class];
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
@@ -114,7 +114,7 @@
         [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-
+//
     if (indexPath.row==5) {
         Class cls = [LoginBtnCell class];
         LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell"];
@@ -136,10 +136,14 @@
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
     MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
-    [moreVC setModalPresentationStyle:UIModalPresentationCustom];
+//    [moreVC setModalPresentationStyle:UIModalPresentationCustom];
     
 //    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
-    [self presentViewController:moreVC animated:YES completion:nil];
+//    [self presentViewController:moreVC animated:YES completion:nil];
+    [self addChildViewController:moreVC];
+    [self.view addSubview:moreVC.view];
+    moreVC.view.frame = CGRectMake(0, 0, 20, 20);
+    [moreVC didMoveToParentViewController:self];
     
 }
 
@@ -184,6 +188,8 @@
     animation.fromValue = [NSNumber numberWithFloat:0.f];
     animation.toValue = [NSNumber numberWithFloat: M_PI];
     animation.duration = .3f;
+    //动画节奏：匀速
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.autoreverses = NO;
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;

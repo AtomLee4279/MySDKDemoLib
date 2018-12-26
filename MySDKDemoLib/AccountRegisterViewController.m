@@ -60,9 +60,9 @@
         
         UIImage *logo = KK_ImageNamed(res_login_logo);
         UIImage *btnImage = KK_ImageNamed(res_login_refresh);
-        cell.logo.image = logo;
-        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
+//        cell.logo.image = logo;
+//        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+//        [cell.rightBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -71,9 +71,9 @@
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
         UIImage *logo = KK_ImageNamed(res_login_pwd);
         UIImage *btnImage = KK_ImageNamed(res_login_delete);
-        cell.logo.image = logo;
-        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
+//        cell.logo.image = logo;
+//        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+//        [cell.rightBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -81,8 +81,8 @@
         Class cls = [InputViewCell class];
         UIImage *logo = KK_ImageNamed(res_login_pwd);
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        cell.logo.image = logo;
-        cell.rightBtn.hidden = YES;
+//        cell.logo.image = logo;
+//        cell.rightBtn.hidden = YES;
         //        cell.logo.image = [UIImage imageNamed:@"密码"];
         //        [cell.moreBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
         //        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];

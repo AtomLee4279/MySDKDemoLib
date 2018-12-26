@@ -1,8 +1,8 @@
 //
-//  InputViewCell.m
+//  InPutViewCell.m
 //  SDKBundle
 //
-//  Created by 李一贤 on 2018/12/8.
+//  Created by 李一贤 on 2018/12/21.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
- 
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

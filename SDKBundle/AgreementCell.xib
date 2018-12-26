@@ -20,21 +20,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qba-uC-lWc" userLabel="ContainerView">
-                        <rect key="frame" x="84.5" y="40.5" width="201.5" height="21"/>
+                        <rect key="frame" x="84.5" y="10" width="201.5" height="81.5"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uel-52-s7S" userLabel="checkBtn">
-                                <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                                <rect key="frame" x="0.0" y="0.0" width="21" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <state key="normal" backgroundImage="协议.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-0O-aJ1" userLabel="tipsLabel">
-                                <rect key="frame" x="21" y="5.5" width="57.5" height="10"/>
+                                <rect key="frame" x="21" y="36" width="57.5" height="10"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-Pa-2wy" userLabel="detailBtn">
-                                <rect key="frame" x="78.5" y="-0.5" width="123" height="22"/>
+                                <rect key="frame" x="78.5" y="30" width="123" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <state key="normal" title="《用户注册服务协议及隐私政策》"/>
                             </button>
@@ -52,8 +52,9 @@
                 <constraints>
                     <constraint firstItem="qba-uC-lWc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1oy-pI-z5R"/>
                     <constraint firstItem="bpH-0O-aJ1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5Jp-hG-A8w"/>
-                    <constraint firstItem="qba-uC-lWc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AfX-uN-GTa"/>
                     <constraint firstItem="uel-52-s7S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U0O-Kc-6H0"/>
+                    <constraint firstAttribute="bottom" secondItem="qba-uC-lWc" secondAttribute="bottom" constant="10" id="Y3M-bD-m0c"/>
+                    <constraint firstItem="qba-uC-lWc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hsR-i9-eVs"/>
                     <constraint firstItem="2sB-Pa-2wy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hxa-sS-KR9"/>
                     <constraint firstItem="qba-uC-lWc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wON-Ko-oJY"/>
                 </constraints>
