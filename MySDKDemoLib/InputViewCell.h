@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InputViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (weak, nonatomic) IBOutlet UIButton *rightBtn;
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
 
 @end
 

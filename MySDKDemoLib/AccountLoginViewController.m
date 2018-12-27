@@ -142,7 +142,9 @@
 //    [self presentViewController:moreVC animated:YES completion:nil];
     [self addChildViewController:moreVC];
     [self.view addSubview:moreVC.view];
-    moreVC.view.frame = CGRectMake(0, 0, 20, 20);
+    //frame转换：得到inputField这个frame在self.view中的情况
+    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
+    moreVC.view.frame = CGRectMake(cellRect.origin.x, CGRectGetMaxY(cellRect), 100, 100);
     [moreVC didMoveToParentViewController:self];
     
 }

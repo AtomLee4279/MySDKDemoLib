@@ -18,12 +18,12 @@
 		671D2F9121CA21F900FEF64E /* MoreAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 671D2F8C21CA21E700FEF64E /* MoreAccountCell.m */; };
 		6723684C21CB82C000FB8659 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6723684A21CB82C000FB8659 /* AgreementCell.xib */; };
 		6736BD2521D0E9BE00A4A247 /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6736BD2421D0E9BE00A4A247 /* InputViewCell.xib */; };
-		6736BD2721D1EA3100A4A247 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD2621D1EA3100A4A247 /* libAFNetworking.a */; };
-		6736BD2921D1EA3100A4A247 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD2821D1EA3100A4A247 /* libKSToastView.a */; };
-		6736BD2B21D1EA3100A4A247 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD2A21D1EA3100A4A247 /* libMasonry.a */; };
-		6736BD2D21D1EA3100A4A247 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD2C21D1EA3100A4A247 /* libMJExtension.a */; };
-		6736BD2F21D1EA3100A4A247 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD2E21D1EA3100A4A247 /* libSDWebImage.a */; };
-		6736BD3121D1EA3100A4A247 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736BD3021D1EA3100A4A247 /* libUICKeyChainStore.a */; };
+		6736C2E521D338E100A4A247 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2E421D338E100A4A247 /* libAFNetworking.a */; };
+		6736C2E721D338E100A4A247 /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2E621D338E100A4A247 /* libKSToastView.a */; };
+		6736C2E921D338E100A4A247 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2E821D338E100A4A247 /* libMasonry.a */; };
+		6736C2EB21D338E100A4A247 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2EA21D338E100A4A247 /* libMJExtension.a */; };
+		6736C2ED21D338E100A4A247 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2EC21D338E100A4A247 /* libSDWebImage.a */; };
+		6736C2EF21D338E100A4A247 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6736C2EE21D338E100A4A247 /* libUICKeyChainStore.a */; };
 		677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */; };
 		677BB60B217EBFE800C1ED76 /* MySDKDemoLib.h in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */; };
 		677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB62D217EC6D200C1ED76 /* SDKLoginController.m */; };
@@ -198,6 +198,12 @@
 		6736BD2C21D1EA3100A4A247 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6736BD2E21D1EA3100A4A247 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6736BD3021D1EA3100A4A247 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2E421D338E100A4A247 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2E621D338E100A4A247 /* libKSToastView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKSToastView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2E821D338E100A4A247 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2EA21D338E100A4A247 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2EC21D338E100A4A247 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6736C2EE21D338E100A4A247 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMySDKDemoLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKDemoLib.h; sourceTree = "<group>"; };
 		677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKDemoLib.m; sourceTree = "<group>"; };
@@ -422,12 +428,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6736BD2721D1EA3100A4A247 /* libAFNetworking.a in Frameworks */,
-				6736BD2921D1EA3100A4A247 /* libKSToastView.a in Frameworks */,
-				6736BD2B21D1EA3100A4A247 /* libMasonry.a in Frameworks */,
-				6736BD2D21D1EA3100A4A247 /* libMJExtension.a in Frameworks */,
-				6736BD2F21D1EA3100A4A247 /* libSDWebImage.a in Frameworks */,
-				6736BD3121D1EA3100A4A247 /* libUICKeyChainStore.a in Frameworks */,
+				6736C2E521D338E100A4A247 /* libAFNetworking.a in Frameworks */,
+				6736C2E721D338E100A4A247 /* libKSToastView.a in Frameworks */,
+				6736C2E921D338E100A4A247 /* libMasonry.a in Frameworks */,
+				6736C2EB21D338E100A4A247 /* libMJExtension.a in Frameworks */,
+				6736C2ED21D338E100A4A247 /* libSDWebImage.a in Frameworks */,
+				6736C2EF21D338E100A4A247 /* libUICKeyChainStore.a in Frameworks */,
 				671D2F6721C9029200FEF64E /* libPods-MySDKDemoLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,6 +809,12 @@
 		9CC5C67F71A4C6EC09E502F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6736C2E421D338E100A4A247 /* libAFNetworking.a */,
+				6736C2E621D338E100A4A247 /* libKSToastView.a */,
+				6736C2E821D338E100A4A247 /* libMasonry.a */,
+				6736C2EA21D338E100A4A247 /* libMJExtension.a */,
+				6736C2EC21D338E100A4A247 /* libSDWebImage.a */,
+				6736C2EE21D338E100A4A247 /* libUICKeyChainStore.a */,
 				6736BD2621D1EA3100A4A247 /* libAFNetworking.a */,
 				6736BD2821D1EA3100A4A247 /* libKSToastView.a */,
 				6736BD2A21D1EA3100A4A247 /* libMasonry.a */,
