@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreAccountViewCell" rowHeight="29" id="KGk-i7-Jjw" customClass="MoreAccountViewCell" customModule="SDKBundle">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="28.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rf-Nb-mJK">
+                        <rect key="frame" x="15" y="5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyL-kj-ypC">
+                        <rect key="frame" x="380" y="10.5" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="CTk-6p-JKx"/>
+                            <constraint firstAttribute="height" constant="10" id="Kfj-bb-UUV"/>
+                        </constraints>
+                        <state key="normal" image="删除.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PyL-kj-ypC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Phi-NR-SVX"/>
+                    <constraint firstAttribute="trailing" secondItem="PyL-kj-ypC" secondAttribute="trailing" constant="15" id="QJP-QQ-qQh"/>
+                    <constraint firstItem="0rf-Nb-mJK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="byO-fs-bRY"/>
+                    <constraint firstAttribute="bottom" secondItem="PyL-kj-ypC" secondAttribute="bottom" constant="10" id="dbY-er-Cor"/>
+                    <constraint firstItem="PyL-kj-ypC" firstAttribute="centerY" secondItem="0rf-Nb-mJK" secondAttribute="centerY" id="kGs-zQ-JVf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.82418801450000001" green="1" blue="0.81309536729999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="125.59999999999999" y="55.322338830584712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="删除.png" width="28" height="28"/>
+    </resources>
+</document>

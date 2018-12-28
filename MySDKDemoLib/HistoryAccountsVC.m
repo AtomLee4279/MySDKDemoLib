@@ -1,31 +1,29 @@
 //
-//  MoreAccountViewController.m
+//  HistoryAccountsVC.m
 //  SDKBundle
 //
-//  Created by 李一贤 on 2018/12/19.
+//  Created by 李一贤 on 2018/12/28.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
-#import "MoreAccountViewController.h"
+#import "HistoryAccountsVC.h"
 
-@interface MoreAccountViewController ()
+@interface HistoryAccountsVC ()
 
 @end
 
-@implementation MoreAccountViewController
+@implementation HistoryAccountsVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    [self.tableView registerNib:[UINib nibWithNibName:@"MoreAccountViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"MoreAccountViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HistoryAccounts" bundle:SDKBundle] forCellReuseIdentifier:@"HistoryAccountsCell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-//    self.tableView.rowHeight = 80.F;
 }
 
 #pragma mark - Table view data source
@@ -42,20 +40,13 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MoreAccountViewCell" forIndexPath:indexPath];
-
-//    cell.selectedBackgroundView = [UIView new];
-//    cell.selectedBackgroundView.backgroundColor = [UIColor clearColor];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell" forIndexPath:indexPath];
+    
     // Configure the cell...
-
     
     return cell;
 }
-
-//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//    return UITableViewAutomaticDimension;
-//}
 
 
 /*

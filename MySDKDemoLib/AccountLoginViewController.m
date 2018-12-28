@@ -15,7 +15,7 @@
 #import "CreateAccountCell.h"
 #import "LoginBtnCell.h"
 #import "MoreAccountViewController.h"
-
+#import "HistoryAccountsVC.h"
 
 @interface AccountLoginViewController ()
 
@@ -48,6 +48,7 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
@@ -70,7 +71,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
-        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+//        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
         cell.backBtn.hidden = YES;
         cell.titleLabel.text = @"用户登录";
         return cell;
@@ -135,17 +137,22 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
     NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
-    MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
-//    [moreVC setModalPresentationStyle:UIModalPresentationCustom];
-    
-//    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
-//    [self presentViewController:moreVC animated:YES completion:nil];
-    [self addChildViewController:moreVC];
-    [self.view addSubview:moreVC.view];
-    //frame转换：得到inputField这个frame在self.view中的情况
+//    MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
+//    [self addChildViewController:moreVC];
+//    [self.view addSubview:moreVC.view];
+    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+    [self addChildViewController:hisVC];
+    [self.view addSubview:hisVC.view];
+    //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
     CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-    moreVC.view.frame = CGRectMake(cellRect.origin.x, CGRectGetMaxY(cellRect), 100, 100);
-    [moreVC didMoveToParentViewController:self];
+    CGFloat viewX = cellRect.origin.x;
+    CGFloat viewY = CGRectGetMaxY(cellRect);
+    CGFloat viewW = cellRect.size.width;
+    CGFloat viewH = 150;
+//    moreVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+//    [moreVC didMoveToParentViewController:self];
+    hisVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    [hisVC didMoveToParentViewController:self];
     
 }
 

@@ -1,8 +1,8 @@
 //
-//  MoreAccountCell.h
-//  SDKBundle
+//  HistoryAccountsCell.h
+//  MySDKDemoLib
 //
-//  Created by 李一贤 on 2018/12/19.
+//  Created by 李一贤 on 2018/12/28.
 //  Copyright © 2018 李一贤. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MoreAccountCell : UITableViewCell
+@interface HistoryAccountsCell : UITableViewCell
 
 @end
 
