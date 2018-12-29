@@ -140,7 +140,8 @@
 //    MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
 //    [self addChildViewController:moreVC];
 //    [self.view addSubview:moreVC.view];
-    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+//    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+    HistoryAccountsVC *hisVC = [[SDKBundle loadNibNamed:@"HistoryAccounts" owner:nil options:nil] objectAtIndex:0];
     [self addChildViewController:hisVC];
     [self.view addSubview:hisVC.view];
     //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
