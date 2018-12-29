@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    [self.tableView registerNib:[UINib nibWithNibName:@"HistoryAccounts" bundle:SDKBundle] forCellReuseIdentifier:@"HistoryAccountsCell"];
+//    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+//    [self.tableView registerNib:[UINib nibWithNibName:@"HistoryAccounts" bundle:SDKBundle] forCellReuseIdentifier:@"HistoryAccountsCell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -41,11 +41,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell" forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell" forIndexPath:indexPath];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
+    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell"];
+    [UINib nibWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+    if (!cell){
+        cell = [[SDKBundle loadNibNamed:@"HistoryAccounts" owner:self options:nil] objectAtIndex:1];
+        return cell;
+    }
     
-    // Configure the cell...
-    
-    return cell;
+//    return cell;
+    return  [UITableViewCell new];
 }
 
 
