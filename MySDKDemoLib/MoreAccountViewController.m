@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     [self.tableView registerNib:[UINib nibWithNibName:@"MoreAccountViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"MoreAccountViewCell"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

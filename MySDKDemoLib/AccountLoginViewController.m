@@ -16,6 +16,7 @@
 #import "LoginBtnCell.h"
 #import "MoreAccountViewController.h"
 #import "HistoryAccountsVC.h"
+#import "TableView.h"
 
 @interface AccountLoginViewController ()
 
@@ -33,7 +34,7 @@
     [super viewDidLoad];
 //    self.tableView.rowHeight = UITableViewAutomaticDimension;
 //    self.tableView.estimatedRowHeight = 100;
-    [self regNib];
+//    [self regNib];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -45,14 +46,12 @@
  *  注册nib
  */
 - (void)regNib {
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+
     
     [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"Cells" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"CreateAccountCell" bundle:SDKBundle] forCellReuseIdentifier:@"CreateAccountCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"Cells" bundle:SDKBundle] forCellReuseIdentifier:@"CreateAccountCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"LoginBtnCell" bundle:SDKBundle] forCellReuseIdentifier:@"LoginBtnCell"];
     
 }
@@ -71,58 +70,77 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
-//        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
-        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
-        cell.backBtn.hidden = YES;
-        cell.titleLabel.text = @"用户登录";
+        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell"];
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:0];
+            cell.backBtn.hidden = YES;
+            cell.titleLabel.text = @"用户登录";
+        }
         return cell;
     }
 ////
     if (indexPath.row==1) {
         Class cls = [InputViewCell class];
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
-        cell.logo.image = logo;
-        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(moreAccount:) forControlEvents:UIControlEventTouchUpInside];
-        self.accountCell = cell;
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:1];
+            UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
+            UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
+            cell.logo.image = logo;
+            [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+            [cell.rightBtn addTarget:self action:@selector(moreAccount:) forControlEvents:UIControlEventTouchUpInside];
+            self.accountCell = cell;
+        }
         return cell;
     }
 ////
     if (indexPath.row==2) {
         Class cls = [InputViewCell class];
-        InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
-        cell.logo.image = logo;
-        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
+        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:1];
+            UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
+            UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
+            cell.logo.image = logo;
+            [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+            [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        
         return cell;
     }
-//////    注册新账号
+//    注册新账号
     if (indexPath.row==3) {
         Class cls = [CreateAccountCell class];
-        CreateAccountCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell"];
-        [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
+        CreateAccountCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell"];
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:2];
+            [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
+        }
+       
         return cell;
     }
-
     if (indexPath.row==4) {
         Class cls = [AgreementCell class];
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
-        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:5];
+            [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        }
         return cell;
     }
 //
     if (indexPath.row==5) {
         Class cls = [LoginBtnCell class];
         LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell"];
-        [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        if (!cell) {
+            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:4];
+            [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        
         return cell;
     }
+    
     return [UITableViewCell new];
 }
 
@@ -133,15 +151,7 @@
     NSLog(@"===historyAccount===");
     btn.selected = !btn.selected;
     [self rotateBtn:btn];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-    
-//    MoreAccountViewController *moreVC = [[MoreAccountViewController alloc] initWithNibName:@"MoreAccountView" bundle:SDKBundle];
-//    [self addChildViewController:moreVC];
-//    [self.view addSubview:moreVC.view];
-//    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
-    HistoryAccountsVC *hisVC = [[SDKBundle loadNibNamed:@"HistoryAccounts" owner:nil options:nil] objectAtIndex:0];
+    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
     [self addChildViewController:hisVC];
     [self.view addSubview:hisVC.view];
     //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
@@ -150,8 +160,6 @@
     CGFloat viewY = CGRectGetMaxY(cellRect);
     CGFloat viewW = cellRect.size.width;
     CGFloat viewH = 150;
-//    moreVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
-//    [moreVC didMoveToParentViewController:self];
     hisVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
     [hisVC didMoveToParentViewController:self];
     
@@ -167,8 +175,7 @@
     
     NSLog(@"===newAccount===");
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+  
     
     AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"AccountRegisterView" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
@@ -188,7 +195,20 @@
 - (void)detailBtnDidClick:(UIButton *)btn {
     
     NSLog(@"===detailBtnDidClick===");
-    
+//    TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:SDKBundle];
+    UIViewController *tableVC = [[UIViewController alloc] init];
+    id tmp = [SDKBundle loadNibNamed:@"TableViewController" owner:nil options:nil];
+    TableView *tableView = [[SDKBundle loadNibNamed:@"TableViewController" owner:nil options:nil] firstObject];
+    [tableVC.view addSubview:tableView];
+    [self addChildViewController:tableVC];
+    [self.view addSubview:tableVC.view];
+    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
+    CGFloat viewX = cellRect.origin.x;
+    CGFloat viewY = CGRectGetMaxY(cellRect);
+    CGFloat viewW = cellRect.size.width;
+    CGFloat viewH = 150;
+    tableVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    [tableVC didMoveToParentViewController:self];
     
 }
 
@@ -219,8 +239,6 @@
 
 -(void)autoLoginWithVC:(UIViewController* _Nullable)vc{
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
     AutoLoginController * autoVC = [[AutoLoginController alloc] initWithNibName:@"AutoLoginView" bundle:SDKBundle];
     [autoVC setModalPresentationStyle:UIModalPresentationCustom];

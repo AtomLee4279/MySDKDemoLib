@@ -54,6 +54,11 @@
 
 #define Toast(message,time) [MyToast showAlertMessageWithMessage:message duration:time]
 
+
+#define BundlePath  [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"]
+#define SDKBundle  [NSBundle bundleWithPath:BundlePath]
+
+
 // 对iphone x的处理
 #define KKSTATUSBAR_HEIGHT (IS_IPHONE_X?44.0:20.0)
 #define IS_IPHONE_X (IS_IPHONE && UIScreenMaxLine() == 812.0)

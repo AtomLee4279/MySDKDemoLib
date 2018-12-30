@@ -26,10 +26,9 @@
     self.tableView.dataSource = self;
     
     //注册nib文件关联的tableviewcell
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
+   
     [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"InputViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"Cells" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
  
     // Do any additional setup after loading the view.
@@ -49,14 +48,14 @@
 {
     if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
-        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell"];
+        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
         [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
  
     if (indexPath.row==1) {
         Class cls = [InputViewCell class];
-        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
+        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
         
         UIImage *logo = KK_ImageNamed(res_login_logo);
         UIImage *btnImage = KK_ImageNamed(res_login_refresh);
@@ -80,7 +79,7 @@
     if (indexPath.row==3) {
         Class cls = [InputViewCell class];
         UIImage *logo = KK_ImageNamed(res_login_pwd);
-        InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
+        InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
 //        cell.logo.image = logo;
 //        cell.rightBtn.hidden = YES;
         //        cell.logo.image = [UIImage imageNamed:@"密码"];
@@ -96,10 +95,6 @@
         [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
-    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-//    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
-//    [UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle];
       return [UITableViewCell new];
 }
 
@@ -107,8 +102,6 @@
     
     NSLog(@"backBtnDidClick");
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SDKBundle" ofType:@"bundle"];
-    NSBundle *SDKBundle = [NSBundle bundleWithPath:path];
     
     AccountLoginViewController *baseVC = [[AccountLoginViewController alloc] initWithNibName:@"AccountLoginView" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
