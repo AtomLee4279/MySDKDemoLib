@@ -14,9 +14,7 @@
 #import "AgreementCell.h"
 #import "CreateAccountCell.h"
 #import "LoginBtnCell.h"
-#import "MoreAccountViewController.h"
 #import "HistoryAccountsVC.h"
-#import "TableView.h"
 
 @interface AccountLoginViewController ()
 
@@ -68,11 +66,16 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+     UINib *nib = [UINib nibWithNibName:@"Cells" bundle:SDKBundle];
+    // UIView *contentView = [nib instantiateWithOwner:self options:nil].firstObject;
     if (indexPath.row==0) {
         Class cls = [TitleViewCell class];
         TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"HistoryAccountsCell"];
         if (!cell) {
-            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:0];
+//方法一：加载nib：cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:0];
+//方法二：
+            cell = [nib instantiateWithOwner:nil options:nil].firstObject;
             cell.backBtn.hidden = YES;
             cell.titleLabel.text = @"用户登录";
         }
@@ -88,7 +91,7 @@
             UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
             cell.logo.image = logo;
             [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-            [cell.rightBtn addTarget:self action:@selector(moreAccount:) forControlEvents:UIControlEventTouchUpInside];
+            [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
             self.accountCell = cell;
         }
         return cell;
@@ -146,7 +149,7 @@
 
 
 
-- (void)moreAccount:(UIButton *)btn {
+- (void)historyAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
     btn.selected = !btn.selected;
@@ -196,19 +199,15 @@
     
     NSLog(@"===detailBtnDidClick===");
 //    TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:SDKBundle];
-    UIViewController *tableVC = [[UIViewController alloc] init];
-    id tmp = [SDKBundle loadNibNamed:@"TableViewController" owner:nil options:nil];
-    TableView *tableView = [[SDKBundle loadNibNamed:@"TableViewController" owner:nil options:nil] firstObject];
-    [tableVC.view addSubview:tableView];
-    [self addChildViewController:tableVC];
-    [self.view addSubview:tableVC.view];
-    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-    CGFloat viewX = cellRect.origin.x;
-    CGFloat viewY = CGRectGetMaxY(cellRect);
-    CGFloat viewW = cellRect.size.width;
-    CGFloat viewH = 150;
-    tableVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
-    [tableVC didMoveToParentViewController:self];
+//    [self addChildViewController:tableVC];
+//    [self.view addSubview:tableVC.view];
+//    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
+//    CGFloat viewX = cellRect.origin.x;
+//    CGFloat viewY = CGRectGetMaxY(cellRect);
+//    CGFloat viewW = cellRect.size.width;
+//    CGFloat viewH = 150;
+//    tableVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+//    [tableVC didMoveToParentViewController:self];
     
 }
 
