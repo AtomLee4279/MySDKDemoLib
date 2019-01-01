@@ -15,6 +15,8 @@
 #import "CreateAccountCell.h"
 #import "LoginBtnCell.h"
 #import "HistoryAccountsVC.h"
+#import "BaseVC.h"
+#import "LoginVC.h"
 
 @interface AccountLoginViewController ()
 
@@ -198,16 +200,18 @@
 - (void)detailBtnDidClick:(UIButton *)btn {
     
     NSLog(@"===detailBtnDidClick===");
-//    TableViewController *tableVC = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:SDKBundle];
-//    [self addChildViewController:tableVC];
-//    [self.view addSubview:tableVC.view];
-//    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-//    CGFloat viewX = cellRect.origin.x;
-//    CGFloat viewY = CGRectGetMaxY(cellRect);
-//    CGFloat viewW = cellRect.size.width;
-//    CGFloat viewH = 150;
-//    tableVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
-//    [tableVC didMoveToParentViewController:self];
+//    BaseVC *baseVC = [[BaseVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
+    LoginVC *loginVC = [[LoginVC alloc] init];
+    [self addChildViewController:loginVC];
+    [self.view addSubview:loginVC.view];
+    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
+    CGFloat viewX = cellRect.origin.x;
+    CGFloat viewY = CGRectGetMaxY(cellRect);
+    CGFloat viewW = cellRect.size.width;
+    CGFloat viewH = 150;
+    loginVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    [loginVC didMoveToParentViewController:self];
+  
     
 }
 

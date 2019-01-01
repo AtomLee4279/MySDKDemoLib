@@ -19,6 +19,9 @@
 		6745071221D85FFD00CD1656 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745071121D85FFD00CD1656 /* libSDWebImage.a */; };
 		6745071421D85FFD00CD1656 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745071321D85FFD00CD1656 /* libUICKeyChainStore.a */; };
 		6745071621D86BAA00CD1656 /* Cells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745071521D86BAA00CD1656 /* Cells.xib */; };
+		6745073821DB503000CD1656 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745073621DB503000CD1656 /* BaseVC.xib */; };
+		6745073921DB513100CD1656 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073521DB503000CD1656 /* BaseVC.m */; };
+		6745073C21DB527000CD1656 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073B21DB527000CD1656 /* LoginVC.m */; };
 		676F8AFE21D4C193001E1F7A /* MoreAccountViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8AFA21D4C18B001E1F7A /* MoreAccountViewCell.m */; };
 		676F8B1421D62B93001E1F7A /* HistoryAccounts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */; };
 		676F8B1521D6320D001E1F7A /* HistoryAccountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */; };
@@ -199,6 +202,11 @@
 		6745071121D85FFD00CD1656 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745071321D85FFD00CD1656 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745071521D86BAA00CD1656 /* Cells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cells.xib; sourceTree = "<group>"; };
+		6745073421DB503000CD1656 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		6745073521DB503000CD1656 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		6745073621DB503000CD1656 /* BaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseVC.xib; sourceTree = "<group>"; };
+		6745073A21DB527000CD1656 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		6745073B21DB527000CD1656 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		676F8AF921D4C18B001E1F7A /* MoreAccountViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreAccountViewCell.h; sourceTree = "<group>"; };
 		676F8AFA21D4C18B001E1F7A /* MoreAccountViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreAccountViewCell.m; sourceTree = "<group>"; };
 		676F8AFF21D4C418001E1F7A /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -466,6 +474,7 @@
 				6745071521D86BAA00CD1656 /* Cells.xib */,
 				67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */,
 				67F6343921BD59FE00395266 /* AccountLoginView.xib */,
+				6745073621DB503000CD1656 /* BaseVC.xib */,
 				676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */,
 				67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */,
 				67B9DA8921BA305000FD725F /* example */,
@@ -572,6 +581,10 @@
 				676F8B1721D63998001E1F7A /* HistoryAccountsCell.m */,
 				676F8B1021D62B93001E1F7A /* HistoryAccountsVC.h */,
 				676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */,
+				6745073421DB503000CD1656 /* BaseVC.h */,
+				6745073521DB503000CD1656 /* BaseVC.m */,
+				6745073A21DB527000CD1656 /* LoginVC.h */,
+				6745073B21DB527000CD1656 /* LoginVC.m */,
 				67DCC75921BF727400FAB9F4 /* Common */,
 				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
@@ -1081,6 +1094,7 @@
 				67B9DACC21BA305600FD725F /* 个人中心点击@2X.png in Resources */,
 				67B9DAB721BA305600FD725F /* 标题栏@3x.png in Resources */,
 				67B9DACF21BA305600FD725F /* 协议选择@3x.png in Resources */,
+				6745073821DB503000CD1656 /* BaseVC.xib in Resources */,
 				67B9DAD921BA305600FD725F /* QQ@2x.png in Resources */,
 				67B9DABE21BA305600FD725F /* 修改密码.jpg in Resources */,
 				67DCC74A21BF6C7C00FAB9F4 /* 边框@2x.png in Resources */,
@@ -1190,6 +1204,8 @@
 				67DCC9DD21BFCB3700FAB9F4 /* KKView.m in Sources */,
 				67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */,
 				67DCC78821BF727500FAB9F4 /* UIImage+Resize.m in Sources */,
+				6745073921DB513100CD1656 /* BaseVC.m in Sources */,
+				6745073C21DB527000CD1656 /* LoginVC.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				67DCC78621BF727500FAB9F4 /* NSObject+Model.m in Sources */,

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseVC">
+            <connections>
+                <outlet property="tableView" destination="g77-LC-75a" id="lLI-62-3Mr"/>
+                <outlet property="view" destination="xfd-Dw-Qid" id="6hS-lq-19i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xfd-Dw-Qid" userLabel="BaseView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYQ-NZ-K91" userLabel="ContainerView">
+                    <rect key="frame" x="45.5" y="198.5" width="284" height="270"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g77-LC-75a" userLabel="TableView">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="270"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Pov-c2-HYK"/>
+                                <outlet property="delegate" destination="-1" id="EX2-GB-aFh"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="g77-LC-75a" secondAttribute="bottom" id="1yL-fk-TPf"/>
+                        <constraint firstAttribute="width" constant="284" id="57U-Eq-fhe"/>
+                        <constraint firstAttribute="height" constant="270" id="AcO-73-jPv"/>
+                        <constraint firstAttribute="width" secondItem="bYQ-NZ-K91" secondAttribute="height" multiplier="142:135" id="Moc-Fj-iiP"/>
+                        <constraint firstItem="g77-LC-75a" firstAttribute="centerY" secondItem="bYQ-NZ-K91" secondAttribute="centerY" id="QdM-2I-Cb8"/>
+                        <constraint firstAttribute="trailing" secondItem="g77-LC-75a" secondAttribute="trailing" id="S5K-mZ-9LS"/>
+                        <constraint firstItem="g77-LC-75a" firstAttribute="centerX" secondItem="bYQ-NZ-K91" secondAttribute="centerX" id="hnm-dn-khj"/>
+                        <constraint firstItem="g77-LC-75a" firstAttribute="top" secondItem="bYQ-NZ-K91" secondAttribute="top" id="q9k-Jq-YPt"/>
+                        <constraint firstItem="g77-LC-75a" firstAttribute="leading" secondItem="bYQ-NZ-K91" secondAttribute="leading" id="xlX-23-6YU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bYQ-NZ-K91" firstAttribute="centerY" secondItem="xfd-Dw-Qid" secondAttribute="centerY" id="bam-ml-Qcl"/>
+                <constraint firstItem="bYQ-NZ-K91" firstAttribute="centerX" secondItem="xfd-Dw-Qid" secondAttribute="centerX" id="xfq-kt-1Jo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="x5T-kP-Vvb"/>
+            <point key="canvasLocation" x="309.375" y="-200.70422535211267"/>
+        </view>
+    </objects>
+</document>
