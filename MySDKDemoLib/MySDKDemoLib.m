@@ -14,7 +14,14 @@
 #import "SDKLoginController.h"
 #import "AccountRegisterViewController.h"
 #import "AccountLoginViewController.h"
-
+#import "LoginVC.h"
+#import "TitleViewCell.h"
+#import "InputViewCell.h"
+#import "AgreementCell.h"
+#import "HistoryAccountsCell.h"
+#import "CreateAccountCell.h"
+#import "LoginBtnCell.h"
+#import "HistoryAccountsVC.h"
 
 @interface MySDKDemoLib ()
 
@@ -58,16 +65,11 @@
 
 - (void)Kola_Login{
     
-    
-    
-    AccountLoginViewController *baseVC = [[AccountLoginViewController alloc] initWithNibName:@"AccountLoginView" bundle:SDKBundle];
+    LoginVC *baseVC = [[LoginVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     [baseVC setModalPresentationStyle:UIModalPresentationCustom];
-    
-    
-    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    [viewController presentViewController:baseVC animated:YES completion:nil];
-    
+
+    [rootVC presentViewController:baseVC animated:YES completion:nil];
     
 }
 

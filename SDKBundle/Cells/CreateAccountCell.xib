@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreateAccountCell" rowHeight="45" id="vHo-sE-Y7j" customClass="CreateAccountCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vHo-sE-Y7j" id="aDv-h3-wiQ">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3s-dB-J77">
+                        <rect key="frame" x="245" y="0.0" width="77" height="44.5"/>
+                        <state key="normal" title="注册新账号"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c3s-dB-J77" firstAttribute="top" secondItem="aDv-h3-wiQ" secondAttribute="top" id="OXE-Os-Gxg"/>
+                    <constraint firstAttribute="bottom" secondItem="c3s-dB-J77" secondAttribute="bottom" id="d7u-Cj-e2Y"/>
+                    <constraint firstAttribute="trailing" secondItem="c3s-dB-J77" secondAttribute="trailing" id="vpX-Bi-vQm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightBtn" destination="c3s-dB-J77" id="gm0-5V-ZXw"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="453"/>
+        </tableViewCell>
+    </objects>
+</document>

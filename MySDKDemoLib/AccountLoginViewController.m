@@ -20,8 +20,6 @@
 
 @interface AccountLoginViewController ()
 
-@property(nonatomic,strong) KKSwitchAccountsView *switchAccountsView;
-
 @property(nonatomic,strong) InputViewCell *accountCell;
 
 @property(nonatomic,strong) InputViewCell *pwdCell;
@@ -246,9 +244,8 @@
     AutoLoginController * autoVC = [[AutoLoginController alloc] initWithNibName:@"AutoLoginView" bundle:SDKBundle];
     [autoVC setModalPresentationStyle:UIModalPresentationCustom];
     
-    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
     [rootVC presentViewController:autoVC animated:YES completion:nil];
-    
+     
     
 }
 

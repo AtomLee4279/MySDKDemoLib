@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputViewCell">
+            <connections>
+                <outlet property="inputField" destination="KNR-Ki-0wl" id="59L-6v-wWr"/>
+                <outlet property="logo" destination="mYK-I5-3xF" id="0gE-KT-JI3"/>
+                <outlet property="rightBtn" destination="XK0-P7-uqa" id="kwP-7C-1qb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InputViewCell" rowHeight="38" id="0TG-SE-U2e">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0TG-SE-U2e" id="Rvx-Rj-Qdk">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="37.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-sO-JKU" userLabel="bgLine">
+                        <rect key="frame" x="0.0" y="0.0" width="349" height="35"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="账号.png" translatesAutoresizingMaskIntoConstraints="NO" id="mYK-I5-3xF" userLabel="logo">
+                        <rect key="frame" x="10" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="6Up-Bh-rcm"/>
+                            <constraint firstAttribute="width" secondItem="mYK-I5-3xF" secondAttribute="height" multiplier="1:1" id="iVE-j3-tdu"/>
+                            <constraint firstAttribute="width" constant="15" id="puD-yV-d2L"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KNR-Ki-0wl" userLabel="InputField">
+                        <rect key="frame" x="35" y="0.0" width="279" height="35"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK0-P7-uqa">
+                        <rect key="frame" x="324" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XK0-P7-uqa" secondAttribute="height" multiplier="1:1" id="bLG-lJ-4e8"/>
+                            <constraint firstAttribute="width" constant="15" id="iGk-0u-EIf"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mYK-I5-3xF" secondAttribute="bottom" constant="10" id="3NM-I1-PCd"/>
+                    <constraint firstItem="KNR-Ki-0wl" firstAttribute="top" secondItem="Rvx-Rj-Qdk" secondAttribute="top" id="BXq-SW-SCc"/>
+                    <constraint firstItem="mYK-I5-3xF" firstAttribute="top" secondItem="Rvx-Rj-Qdk" secondAttribute="top" constant="10" id="EX7-Wk-qjg"/>
+                    <constraint firstItem="KNR-Ki-0wl" firstAttribute="leading" secondItem="mYK-I5-3xF" secondAttribute="trailing" constant="10" id="GmF-TG-GLB"/>
+                    <constraint firstItem="XK0-P7-uqa" firstAttribute="leading" secondItem="KNR-Ki-0wl" secondAttribute="trailing" constant="10" id="TQX-JE-B1j"/>
+                    <constraint firstAttribute="trailing" secondItem="XK0-P7-uqa" secondAttribute="trailing" constant="10" id="TyE-iR-jSR"/>
+                    <constraint firstItem="mYK-I5-3xF" firstAttribute="leading" secondItem="Rvx-Rj-Qdk" secondAttribute="leading" constant="10" id="UgK-bv-XcP"/>
+                    <constraint firstAttribute="trailing" secondItem="GFc-sO-JKU" secondAttribute="trailing" id="bGC-81-ITA"/>
+                    <constraint firstAttribute="bottom" secondItem="XK0-P7-uqa" secondAttribute="bottom" constant="10" id="clE-ry-7ra"/>
+                    <constraint firstAttribute="bottom" secondItem="KNR-Ki-0wl" secondAttribute="bottom" id="izY-0Q-B79"/>
+                    <constraint firstItem="XK0-P7-uqa" firstAttribute="top" secondItem="Rvx-Rj-Qdk" secondAttribute="top" constant="10" id="o0X-JE-dl0"/>
+                    <constraint firstAttribute="bottom" secondItem="GFc-sO-JKU" secondAttribute="bottom" id="sl4-OC-2b1"/>
+                    <constraint firstItem="GFc-sO-JKU" firstAttribute="leading" secondItem="Rvx-Rj-Qdk" secondAttribute="leading" id="tYO-x2-pPz"/>
+                    <constraint firstItem="GFc-sO-JKU" firstAttribute="top" secondItem="Rvx-Rj-Qdk" secondAttribute="top" id="v7O-Lc-hBb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-4" y="538"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="账号.png" width="31" height="31"/>
+    </resources>
+</document>

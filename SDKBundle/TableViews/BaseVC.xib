@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseVC">
             <connections>
-                <outlet property="tableView" destination="g77-LC-75a" id="lLI-62-3Mr"/>
-                <outlet property="view" destination="xfd-Dw-Qid" id="6hS-lq-19i"/>
+                <outlet property="tableView" destination="g77-LC-75a" id="zJl-Qb-NN9"/>
+                <outlet property="view" destination="xfd-Dw-Qid" id="AH3-O0-FGb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

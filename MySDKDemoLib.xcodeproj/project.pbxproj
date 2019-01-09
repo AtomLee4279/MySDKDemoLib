@@ -18,10 +18,17 @@
 		6745071021D85FFD00CD1656 /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745070F21D85FFD00CD1656 /* libMJExtension.a */; };
 		6745071221D85FFD00CD1656 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745071121D85FFD00CD1656 /* libSDWebImage.a */; };
 		6745071421D85FFD00CD1656 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745071321D85FFD00CD1656 /* libUICKeyChainStore.a */; };
-		6745071621D86BAA00CD1656 /* Cells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745071521D86BAA00CD1656 /* Cells.xib */; };
 		6745073821DB503000CD1656 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745073621DB503000CD1656 /* BaseVC.xib */; };
 		6745073921DB513100CD1656 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073521DB503000CD1656 /* BaseVC.m */; };
 		6745073C21DB527000CD1656 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073B21DB527000CD1656 /* LoginVC.m */; };
+		6745074321E0869600CD1656 /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074221E0869600CD1656 /* InputViewCell.xib */; };
+		6745074521E086BC00CD1656 /* CreateAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074421E086BC00CD1656 /* CreateAccountCell.xib */; };
+		6745074721E086F200CD1656 /* HistoryAccountsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074621E086F200CD1656 /* HistoryAccountsCell.xib */; };
+		6745074921E0871800CD1656 /* LoginBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074821E0871800CD1656 /* LoginBtnCell.xib */; };
+		6745074B21E0874700CD1656 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074A21E0874700CD1656 /* AgreementCell.xib */; };
+		6745075321E08B0500CD1656 /* HistoryAccountsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745075221E08B0500CD1656 /* HistoryAccountsCell.xib */; };
+		6745075A21E0938000CD1656 /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745075921E0938000CD1656 /* InputViewCell.m */; };
+		6745076821E094BC00CD1656 /* TitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745076721E094BC00CD1656 /* TitleViewCell.xib */; };
 		676F8AFE21D4C193001E1F7A /* MoreAccountViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8AFA21D4C18B001E1F7A /* MoreAccountViewCell.m */; };
 		676F8B1421D62B93001E1F7A /* HistoryAccounts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */; };
 		676F8B1521D6320D001E1F7A /* HistoryAccountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */; };
@@ -43,15 +50,9 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
-		67A0096721C7A89D001150DD /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096121C7A89D001150DD /* libUICKeyChainStore.a */; };
-		67A0096821C7A89D001150DD /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096221C7A89D001150DD /* libAFNetworking.a */; };
-		67A0096921C7A89D001150DD /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096321C7A89D001150DD /* libMasonry.a */; };
-		67A0096A21C7A89D001150DD /* libKSToastView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096421C7A89D001150DD /* libKSToastView.a */; };
-		67A0096B21C7A89D001150DD /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096521C7A89D001150DD /* libSDWebImage.a */; };
-		67A0096C21C7A89D001150DD /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0096621C7A89D001150DD /* libMJExtension.a */; };
+		67A5A42321E3311D00652A65 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745073621DB503000CD1656 /* BaseVC.xib */; };
 		67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */; };
 		67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */; };
-		67ADB39321CCA32100CD2CFB /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67ADB38F21CCA31800CD2CFB /* InputViewCell.m */; };
 		67B9DA6C21BA228400FD725F /* example in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6621BA228400FD725F /* example */; };
 		67B9DA6D21BA228400FD725F /* bundleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6721BA228400FD725F /* bundleInfo.plist */; };
 		67B9DA7B21BA2B1F00FD725F /* AccountRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */; };
@@ -124,8 +125,6 @@
 		67DCC78721BF727500FAB9F4 /* UIView+ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC77B21BF727400FAB9F4 /* UIView+ActivityIndicatorView.m */; };
 		67DCC78821BF727500FAB9F4 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC77C21BF727400FAB9F4 /* UIImage+Resize.m */; };
 		67DCC9D521BF9C9500FAB9F4 /* UIButton+KKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9D421BF9C9500FAB9F4 /* UIButton+KKWebCache.m */; };
-		67DCC9D921BFCAC900FAB9F4 /* KKSwitchAccountsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */; };
-		67DCC9DD21BFCB3700FAB9F4 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DCC9DB21BFCB3700FAB9F4 /* KKView.m */; };
 		67F633D321B9705100395266 /* TitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F633D221B9705100395266 /* TitleViewCell.m */; };
 		67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342621BCAAA300395266 /* AgreementCell.m */; };
 		67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F6342B21BD521F00395266 /* AccountRegisterViewController.m */; };
@@ -201,12 +200,20 @@
 		6745070F21D85FFD00CD1656 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745071121D85FFD00CD1656 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745071321D85FFD00CD1656 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6745071521D86BAA00CD1656 /* Cells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cells.xib; sourceTree = "<group>"; };
 		6745073421DB503000CD1656 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		6745073521DB503000CD1656 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		6745073621DB503000CD1656 /* BaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseVC.xib; sourceTree = "<group>"; };
 		6745073A21DB527000CD1656 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		6745073B21DB527000CD1656 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		6745074221E0869600CD1656 /* InputViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewCell.xib; sourceTree = "<group>"; };
+		6745074421E086BC00CD1656 /* CreateAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountCell.xib; sourceTree = "<group>"; };
+		6745074621E086F200CD1656 /* HistoryAccountsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryAccountsCell.xib; sourceTree = "<group>"; };
+		6745074821E0871800CD1656 /* LoginBtnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginBtnCell.xib; sourceTree = "<group>"; };
+		6745074A21E0874700CD1656 /* AgreementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementCell.xib; sourceTree = "<group>"; };
+		6745075221E08B0500CD1656 /* HistoryAccountsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryAccountsCell.xib; sourceTree = "<group>"; };
+		6745075821E0938000CD1656 /* InputViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewCell.h; sourceTree = "<group>"; };
+		6745075921E0938000CD1656 /* InputViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewCell.m; sourceTree = "<group>"; };
+		6745076721E094BC00CD1656 /* TitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewCell.xib; sourceTree = "<group>"; };
 		676F8AF921D4C18B001E1F7A /* MoreAccountViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreAccountViewCell.h; sourceTree = "<group>"; };
 		676F8AFA21D4C18B001E1F7A /* MoreAccountViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreAccountViewCell.m; sourceTree = "<group>"; };
 		676F8AFF21D4C418001E1F7A /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,8 +324,6 @@
 		67ADB38821CC8DE500CD2CFB /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		67ADB38A21CC8DE500CD2CFB /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		67ADB38C21CC8DE500CD2CFB /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		67ADB38E21CCA31800CD2CFB /* InputViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewCell.h; sourceTree = "<group>"; };
-		67ADB38F21CCA31800CD2CFB /* InputViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewCell.m; sourceTree = "<group>"; };
 		67B9DA6621BA228400FD725F /* example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = example; sourceTree = "<group>"; };
 		67B9DA6721BA228400FD725F /* bundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bundleInfo.plist; sourceTree = "<group>"; };
 		67B9DA7221BA229F00FD725F /* Root.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
@@ -412,10 +417,6 @@
 		67DCC77C21BF727400FAB9F4 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		67DCC9D321BF9C9400FAB9F4 /* UIButton+KKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KKWebCache.h"; sourceTree = "<group>"; };
 		67DCC9D421BF9C9500FAB9F4 /* UIButton+KKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KKWebCache.m"; sourceTree = "<group>"; };
-		67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSwitchAccountsView.m; sourceTree = "<group>"; };
-		67DCC9D821BFCAC900FAB9F4 /* KKSwitchAccountsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSwitchAccountsView.h; sourceTree = "<group>"; };
-		67DCC9DB21BFCB3700FAB9F4 /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
-		67DCC9DC21BFCB3700FAB9F4 /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
 		67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRegisterViewController.h; sourceTree = "<group>"; };
 		67F633D121B9705100395266 /* TitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewCell.h; sourceTree = "<group>"; };
 		67F633D221B9705100395266 /* TitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewCell.m; sourceTree = "<group>"; };
@@ -456,12 +457,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6716FC1A21B6CD5F001720E2 /* libMySDKDemoLib.a in Frameworks */,
-				67A0096721C7A89D001150DD /* libUICKeyChainStore.a in Frameworks */,
-				67A0096821C7A89D001150DD /* libAFNetworking.a in Frameworks */,
-				67A0096921C7A89D001150DD /* libMasonry.a in Frameworks */,
-				67A0096A21C7A89D001150DD /* libKSToastView.a in Frameworks */,
-				67A0096B21C7A89D001150DD /* libSDWebImage.a in Frameworks */,
-				67A0096C21C7A89D001150DD /* libMJExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,12 +466,8 @@
 		6716F9C321B6BB3E001720E2 /* SDKBundle */ = {
 			isa = PBXGroup;
 			children = (
-				6745071521D86BAA00CD1656 /* Cells.xib */,
-				67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */,
-				67F6343921BD59FE00395266 /* AccountLoginView.xib */,
-				6745073621DB503000CD1656 /* BaseVC.xib */,
-				676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */,
-				67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */,
+				6745074C21E0877800CD1656 /* Cells */,
+				6745074D21E0878700CD1656 /* TableViews */,
 				67B9DA8921BA305000FD725F /* example */,
 				67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */,
 				67DCC74821BF6C7C00FAB9F4 /* 边框@2x.png */,
@@ -532,13 +523,39 @@
 			path = SDKBundle;
 			sourceTree = "<group>";
 		};
+		6745074C21E0877800CD1656 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6745074A21E0874700CD1656 /* AgreementCell.xib */,
+				6745074421E086BC00CD1656 /* CreateAccountCell.xib */,
+				6745075221E08B0500CD1656 /* HistoryAccountsCell.xib */,
+				6745076721E094BC00CD1656 /* TitleViewCell.xib */,
+				6745074821E0871800CD1656 /* LoginBtnCell.xib */,
+				6745074221E0869600CD1656 /* InputViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6745074D21E0878700CD1656 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */,
+				67F6343921BD59FE00395266 /* AccountLoginView.xib */,
+				6745074621E086F200CD1656 /* HistoryAccountsCell.xib */,
+				6745073621DB503000CD1656 /* BaseVC.xib */,
+				676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */,
+				67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
 		677BB5FC217EBFE800C1ED76 = {
 			isa = PBXGroup;
 			children = (
 				677BB607217EBFE800C1ED76 /* MySDKDemoLib */,
 				67939F9D21B531AF00E0A641 /* MyGameTest */,
-				6716F9C321B6BB3E001720E2 /* SDKBundle */,
 				677BB606217EBFE800C1ED76 /* Products */,
+				6716F9C321B6BB3E001720E2 /* SDKBundle */,
 				C8211CFA13158CAC8B346991 /* Pods */,
 				9CC5C67F71A4C6EC09E502F6 /* Frameworks */,
 			);
@@ -559,8 +576,6 @@
 			children = (
 				677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */,
 				677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */,
-				67ADB38E21CCA31800CD2CFB /* InputViewCell.h */,
-				67ADB38F21CCA31800CD2CFB /* InputViewCell.m */,
 				67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */,
 				67F6342B21BD521F00395266 /* AccountRegisterViewController.m */,
 				67F6343721BD59FE00395266 /* AccountLoginViewController.h */,
@@ -581,13 +596,15 @@
 				676F8B1721D63998001E1F7A /* HistoryAccountsCell.m */,
 				676F8B1021D62B93001E1F7A /* HistoryAccountsVC.h */,
 				676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */,
+				6745075821E0938000CD1656 /* InputViewCell.h */,
+				6745075921E0938000CD1656 /* InputViewCell.m */,
 				6745073421DB503000CD1656 /* BaseVC.h */,
 				6745073521DB503000CD1656 /* BaseVC.m */,
 				6745073A21DB527000CD1656 /* LoginVC.h */,
 				6745073B21DB527000CD1656 /* LoginVC.m */,
 				67DCC75921BF727400FAB9F4 /* Common */,
-				677BB651217EC6D300C1ED76 /* Init */,
 				677BB62B217EC6D200C1ED76 /* Login */,
+				677BB651217EC6D300C1ED76 /* Init */,
 			);
 			path = MySDKDemoLib;
 			sourceTree = "<group>";
@@ -813,10 +830,6 @@
 		67DCC9DA21BFCAD700FAB9F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				67DCC9DC21BFCB3700FAB9F4 /* KKView.h */,
-				67DCC9DB21BFCB3700FAB9F4 /* KKView.m */,
-				67DCC9D821BFCAC900FAB9F4 /* KKSwitchAccountsView.h */,
-				67DCC9D721BFCAC800FAB9F4 /* KKSwitchAccountsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1078,6 +1091,7 @@
 				67B9DACE21BA305600FD725F /* 协议选择@2x.png in Resources */,
 				67B9DAB821BA305600FD725F /* 浮标@2X.png in Resources */,
 				67B9DAC421BA305600FD725F /* 背景4X4.png in Resources */,
+				6745074521E086BC00CD1656 /* CreateAccountCell.xib in Resources */,
 				67B9DABF21BA305600FD725F /* 色值2.jpg in Resources */,
 				67B9DACD21BA305600FD725F /* 个人中心@3X.png in Resources */,
 				67B9DAB621BA305600FD725F /* 客服@2x.png in Resources */,
@@ -1085,14 +1099,15 @@
 				67B9DAD821BA305600FD725F /* 隐藏点击@2x.png in Resources */,
 				67B9DAD221BA305600FD725F /* 返回@2x.png in Resources */,
 				67B9DABD21BA305600FD725F /* 账号注册.jpg in Resources */,
-				6745071621D86BAA00CD1656 /* Cells.xib in Resources */,
 				67B9DAE121BA305600FD725F /* 隐藏@3x.png in Resources */,
 				67B9DAC721BA305600FD725F /* 客服点击@3x.png in Resources */,
 				67B9DA6D21BA228400FD725F /* bundleInfo.plist in Resources */,
 				67B9DAE421BA4BD300FD725F /* register.png in Resources */,
 				67B9DAC321BA305600FD725F /* 时间@2x.png in Resources */,
 				67B9DACC21BA305600FD725F /* 个人中心点击@2X.png in Resources */,
+				6745075321E08B0500CD1656 /* HistoryAccountsCell.xib in Resources */,
 				67B9DAB721BA305600FD725F /* 标题栏@3x.png in Resources */,
+				6745074721E086F200CD1656 /* HistoryAccountsCell.xib in Resources */,
 				67B9DACF21BA305600FD725F /* 协议选择@3x.png in Resources */,
 				6745073821DB503000CD1656 /* BaseVC.xib in Resources */,
 				67B9DAD921BA305600FD725F /* QQ@2x.png in Resources */,
@@ -1100,6 +1115,7 @@
 				67DCC74A21BF6C7C00FAB9F4 /* 边框@2x.png in Resources */,
 				67F6343B21BD59FE00395266 /* AccountLoginView.xib in Resources */,
 				67B9DAC221BA305600FD725F /* 当前账号.jpg in Resources */,
+				6745076821E094BC00CD1656 /* TitleViewCell.xib in Resources */,
 				67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */,
 				67DCC74B21BF6C7C00FAB9F4 /* 边框@3x.png in Resources */,
 				67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */,
@@ -1109,9 +1125,11 @@
 				676F8B1421D62B93001E1F7A /* HistoryAccounts.xib in Resources */,
 				67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */,
 				67B9DADB21BA305600FD725F /* QQ@3x.png in Resources */,
+				6745074B21E0874700CD1656 /* AgreementCell.xib in Resources */,
 				67B9DAD321BA305600FD725F /* 浮标@3X.png in Resources */,
 				67B9DAD021BA305600FD725F /* 协议@3x.png in Resources */,
 				67B9DADA21BA305600FD725F /* 返回@3x.png in Resources */,
+				6745074321E0869600CD1656 /* InputViewCell.xib in Resources */,
 				67B9DAC021BA305600FD725F /* 色值.jpg in Resources */,
 				67B9DA6C21BA228400FD725F /* example in Resources */,
 				67B9DADE21BA305600FD725F /* 隐藏@2x.png in Resources */,
@@ -1123,6 +1141,7 @@
 				67B9DADC21BA305600FD725F /* 按钮@2x.png in Resources */,
 				67B9DABA21BA305600FD725F /* 个人中心点击@3X.png in Resources */,
 				67DCC73321BE461900FAB9F4 /* AutoLoginView.xib in Resources */,
+				6745074921E0871800CD1656 /* LoginBtnCell.xib in Resources */,
 				67B9DAC821BA305600FD725F /* 浮标拖动@2X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1131,6 +1150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A5A42321E3311D00652A65 /* BaseVC.xib in Resources */,
 				6716FC0B21B6CB4F001720E2 /* SDKBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1184,7 +1204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				677BB667217EC6D300C1ED76 /* MySDKInitData.m in Sources */,
-				67DCC9D921BFCAC900FAB9F4 /* KKSwitchAccountsView.m in Sources */,
 				67F6342C21BD521F00395266 /* AccountRegisterViewController.m in Sources */,
 				67F6344621BD722A00395266 /* AccountLoginViewController.m in Sources */,
 				67DCC77E21BF727500FAB9F4 /* KKConstants.m in Sources */,
@@ -1194,19 +1213,18 @@
 				67DCC77F21BF727500FAB9F4 /* MyToast.m in Sources */,
 				676F8AFE21D4C193001E1F7A /* MoreAccountViewCell.m in Sources */,
 				67DCC72721BE03A800FAB9F4 /* LoginBtnCell.m in Sources */,
-				67ADB39321CCA32100CD2CFB /* InputViewCell.m in Sources */,
 				67DCC78021BF727500FAB9F4 /* APICommonParams.m in Sources */,
 				67DCC78321BF727500FAB9F4 /* UIView+BlurEffect.m in Sources */,
 				67DCC78521BF727500FAB9F4 /* NSString+UniqueStrings.m in Sources */,
 				6791266321CB7B7700BC7859 /* CreateAccountCell.m in Sources */,
 				677BB65B217EC6D300C1ED76 /* SDKLoginController.m in Sources */,
 				677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */,
-				67DCC9DD21BFCB3700FAB9F4 /* KKView.m in Sources */,
 				67F6342A21BCAABE00395266 /* AgreementCell.m in Sources */,
 				67DCC78821BF727500FAB9F4 /* UIImage+Resize.m in Sources */,
 				6745073921DB513100CD1656 /* BaseVC.m in Sources */,
 				6745073C21DB527000CD1656 /* LoginVC.m in Sources */,
 				677BB666217EC6D300C1ED76 /* MySDKConfig.m in Sources */,
+				6745075A21E0938000CD1656 /* InputViewCell.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				67DCC78621BF727500FAB9F4 /* NSObject+Model.m in Sources */,
 				676F8B1521D6320D001E1F7A /* HistoryAccountsVC.m in Sources */,
@@ -1446,6 +1464,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtomLee.MyGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
@@ -1468,6 +1487,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtomLee.MyGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = debug_0314_dev;
