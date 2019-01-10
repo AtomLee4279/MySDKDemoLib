@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6716FC0B21B6CB4F001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC0C21B6CB77001720E2 /* SDKBundle.bundle in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC1921B6CC95001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC1A21B6CD5F001720E2 /* libMySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */; };
@@ -23,7 +22,6 @@
 		6745073C21DB527000CD1656 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073B21DB527000CD1656 /* LoginVC.m */; };
 		6745074321E0869600CD1656 /* InputViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074221E0869600CD1656 /* InputViewCell.xib */; };
 		6745074521E086BC00CD1656 /* CreateAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074421E086BC00CD1656 /* CreateAccountCell.xib */; };
-		6745074721E086F200CD1656 /* HistoryAccountsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074621E086F200CD1656 /* HistoryAccountsCell.xib */; };
 		6745074921E0871800CD1656 /* LoginBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074821E0871800CD1656 /* LoginBtnCell.xib */; };
 		6745074B21E0874700CD1656 /* AgreementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745074A21E0874700CD1656 /* AgreementCell.xib */; };
 		6745075321E08B0500CD1656 /* HistoryAccountsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745075221E08B0500CD1656 /* HistoryAccountsCell.xib */; };
@@ -50,7 +48,6 @@
 		67939FAF21B531B200E0A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67939FAE21B531B200E0A641 /* Assets.xcassets */; };
 		67939FB221B531B200E0A641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67939FB021B531B200E0A641 /* LaunchScreen.storyboard */; };
 		67939FB521B531B200E0A641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939FB421B531B200E0A641 /* main.m */; };
-		67A5A42321E3311D00652A65 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745073621DB503000CD1656 /* BaseVC.xib */; };
 		67AAAB1821BBBBAC00F83EF1 /* 下拉@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1621BBBBAC00F83EF1 /* 下拉@3x.png */; };
 		67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AAAB1721BBBBAC00F83EF1 /* 下拉@2x.png */; };
 		67B9DA6C21BA228400FD725F /* example in Resources */ = {isa = PBXBuildFile; fileRef = 67B9DA6621BA228400FD725F /* example */; };
@@ -207,7 +204,6 @@
 		6745073B21DB527000CD1656 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		6745074221E0869600CD1656 /* InputViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewCell.xib; sourceTree = "<group>"; };
 		6745074421E086BC00CD1656 /* CreateAccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountCell.xib; sourceTree = "<group>"; };
-		6745074621E086F200CD1656 /* HistoryAccountsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryAccountsCell.xib; sourceTree = "<group>"; };
 		6745074821E0871800CD1656 /* LoginBtnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginBtnCell.xib; sourceTree = "<group>"; };
 		6745074A21E0874700CD1656 /* AgreementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementCell.xib; sourceTree = "<group>"; };
 		6745075221E08B0500CD1656 /* HistoryAccountsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryAccountsCell.xib; sourceTree = "<group>"; };
@@ -541,7 +537,6 @@
 			children = (
 				67B9DA7921BA2B1F00FD725F /* AccountRegisterView.xib */,
 				67F6343921BD59FE00395266 /* AccountLoginView.xib */,
-				6745074621E086F200CD1656 /* HistoryAccountsCell.xib */,
 				6745073621DB503000CD1656 /* BaseVC.xib */,
 				676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */,
 				67DCC73121BE461900FAB9F4 /* AutoLoginView.xib */,
@@ -1107,7 +1102,6 @@
 				67B9DACC21BA305600FD725F /* 个人中心点击@2X.png in Resources */,
 				6745075321E08B0500CD1656 /* HistoryAccountsCell.xib in Resources */,
 				67B9DAB721BA305600FD725F /* 标题栏@3x.png in Resources */,
-				6745074721E086F200CD1656 /* HistoryAccountsCell.xib in Resources */,
 				67B9DACF21BA305600FD725F /* 协议选择@3x.png in Resources */,
 				6745073821DB503000CD1656 /* BaseVC.xib in Resources */,
 				67B9DAD921BA305600FD725F /* QQ@2x.png in Resources */,
@@ -1150,8 +1144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67A5A42321E3311D00652A65 /* BaseVC.xib in Resources */,
-				6716FC0B21B6CB4F001720E2 /* SDKBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
