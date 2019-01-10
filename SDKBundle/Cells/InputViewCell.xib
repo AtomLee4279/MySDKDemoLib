@@ -9,15 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputViewCell">
-            <connections>
-                <outlet property="inputField" destination="KNR-Ki-0wl" id="59L-6v-wWr"/>
-                <outlet property="logo" destination="mYK-I5-3xF" id="0gE-KT-JI3"/>
-                <outlet property="rightBtn" destination="XK0-P7-uqa" id="kwP-7C-1qb"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InputViewCell" rowHeight="38" id="0TG-SE-U2e">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="InputViewCell" rowHeight="38" id="0TG-SE-U2e" customClass="InputViewCell">
             <rect key="frame" x="0.0" y="0.0" width="349" height="38"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0TG-SE-U2e" id="Rvx-Rj-Qdk">
@@ -66,6 +60,11 @@
                     <constraint firstItem="GFc-sO-JKU" firstAttribute="top" secondItem="Rvx-Rj-Qdk" secondAttribute="top" id="v7O-Lc-hBb"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="inputField" destination="KNR-Ki-0wl" id="qu4-ds-WcI"/>
+                <outlet property="logo" destination="mYK-I5-3xF" id="f7K-iF-SGM"/>
+                <outlet property="rightBtn" destination="XK0-P7-uqa" id="VKi-Jl-jkp"/>
+            </connections>
             <point key="canvasLocation" x="-4" y="538"/>
         </tableViewCell>
     </objects>

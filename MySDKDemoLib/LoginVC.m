@@ -28,16 +28,18 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-//    [self regNib];
-    regNib(self.tableView, @"TitleViewCell", @"TitleViewCell");
-    regNib(self.tableView, @"InputViewCell", @"InputViewCell");
-    
+    [self setUpReg];
+   
     
 }
 
 -(void)setUpReg{
     
-    
+    regNib(self.tableView, @"TitleViewCell", @"TitleViewCell");
+    regNib(self.tableView, @"InputViewCell", @"InputViewCell");
+    regNib(self.tableView, @"CreateAccountCell", @"CreateAccountCell");
+    regNib(self.tableView, @"AgreementCell", @"AgreementCell");
+    regNib(self.tableView, @"LoginBtnCell", @"LoginBtnCell");
     
     
 }
@@ -56,7 +58,6 @@
     ////
     if (indexPath.row==1) {
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-        cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:1];
         UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
         UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
         cell.logo.image = logo;
@@ -69,7 +70,6 @@
     if (indexPath.row==2) {
     
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-            cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:1];
             UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
             UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
             cell.logo.image = logo;
@@ -81,14 +81,12 @@
     //    注册新账号
     if (indexPath.row==3) {
         CreateAccountCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell" forIndexPath:indexPath];
-        cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:2];
         [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
 
         return cell;
     }
     if (indexPath.row==4) {
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:indexPath];
-        cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:5];
         [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
@@ -97,7 +95,6 @@
     if (indexPath.row==5) {
         
         LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell" forIndexPath:indexPath];
-        cell = [[SDKBundle loadNibNamed:@"Cells" owner:nil options:nil] objectAtIndex:4];
         [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         
         
