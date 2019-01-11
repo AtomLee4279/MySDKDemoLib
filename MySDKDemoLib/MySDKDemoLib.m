@@ -11,9 +11,7 @@
 #import <MJExtension.h>
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
-#import "SDKLoginController.h"
 #import "AccountRegisterViewController.h"
-#import "AccountLoginViewController.h"
 #import "LoginVC.h"
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
@@ -68,7 +66,6 @@
     LoginVC *baseVC = [[LoginVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     [baseVC setModalPresentationStyle:UIModalPresentationCustom];
-
     [rootVC presentViewController:baseVC animated:YES completion:nil];
     
 }

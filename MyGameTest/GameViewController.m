@@ -8,7 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
-#import "MySDKDemoLib.h"
+
 //#import "JueQiSanGuo.h"
 //#import "DouHunSanGuo.h"
 //#import "HaoMenShouFu.h"
@@ -296,6 +296,20 @@ static NSString *DemoSEL = @"demo_sel";
     return _demoSource;
 }
 
+
+
+
+- (void)KolaDidInitFinish:(NSDictionary *)initRuslt {
+    NSLog(@"KolaDidInitFinish");
+}
+
+- (void)KolaDidLoginFinish:(NSDictionary *)LoginResult {
+    NSLog(@"KolaDidLoginFinish");
+}
+
+- (void)KolaHandleFail:(NSString *)failType andDtail:(NSDictionary *)detail {
+    NSLog(@"KolaHandleFail");
+}
 
 
 
