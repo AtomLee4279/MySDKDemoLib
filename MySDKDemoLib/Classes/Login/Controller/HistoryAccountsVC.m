@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    regNib(self.view, @"HistoryAccountsCell", HistoryAccountsCell);
+    regNib(self.tableView, @"HistoryAccountsCell", @"HistoryAccountsCell");
 }
 
 #pragma mark - Table view data source
@@ -41,6 +41,11 @@
     
 }
 
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 /*
 // Override to support conditional editing of the table view.

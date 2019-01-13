@@ -116,7 +116,7 @@
     NSLog(@"===historyAccount===");
     btn.selected = !btn.selected;
     [self rotateBtn:btn];
-    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
     [self addChildViewController:hisVC];
     [self.view addSubview:hisVC.view];
     //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
@@ -125,7 +125,8 @@
     CGFloat viewY = CGRectGetMaxY(cellRect);
     CGFloat viewW = cellRect.size.width;
     CGFloat viewH = 150;
-    hisVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    UIView *containerView = [hisVC.view viewWithTag:1000];
+    containerView.frame = CGRectMake(viewX,viewY,viewW,viewH);
     [hisVC didMoveToParentViewController:self];
     
 }

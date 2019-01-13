@@ -11,6 +11,7 @@
 		6716FC1921B6CC95001720E2 /* SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6716F9C221B6BB3E001720E2 /* SDKBundle.bundle */; };
 		6716FC1A21B6CD5F001720E2 /* libMySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 677BB605217EBFE800C1ED76 /* libMySDKDemoLib.a */; };
 		671D2F6721C9029200FEF64E /* libPods-MySDKDemoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 671D2F6621C9029200FEF64E /* libPods-MySDKDemoLib.a */; };
+		672E666521E9D80000D61EF5 /* HistoryAccountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 672E666421E9D80000D61EF5 /* HistoryAccountsVC.m */; };
 		6745073821DB503000CD1656 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745073621DB503000CD1656 /* BaseVC.xib */; };
 		6745073921DB513100CD1656 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073521DB503000CD1656 /* BaseVC.m */; };
 		6745073C21DB527000CD1656 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745073B21DB527000CD1656 /* LoginVC.m */; };
@@ -22,7 +23,6 @@
 		6745075A21E0938000CD1656 /* InputViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745075921E0938000CD1656 /* InputViewCell.m */; };
 		6745076821E094BC00CD1656 /* TitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6745076721E094BC00CD1656 /* TitleViewCell.xib */; };
 		676F8B1421D62B93001E1F7A /* HistoryAccounts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */; };
-		676F8B1521D6320D001E1F7A /* HistoryAccountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */; };
 		676F8B1821D63998001E1F7A /* HistoryAccountsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F8B1721D63998001E1F7A /* HistoryAccountsCell.m */; };
 		677BB60A217EBFE800C1ED76 /* MySDKDemoLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BB609217EBFE800C1ED76 /* MySDKDemoLib.m */; };
 		677BB60B217EBFE800C1ED76 /* MySDKDemoLib.h in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = 677BB608217EBFE800C1ED76 /* MySDKDemoLib.h */; };
@@ -148,6 +148,7 @@
 		6723684221CB809A00FB8659 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6723684421CB809A00FB8659 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6723684621CB809A00FB8659 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		672E666421E9D80000D61EF5 /* HistoryAccountsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryAccountsVC.m; sourceTree = "<group>"; };
 		6736BD0021D0791300A4A247 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6736BD0221D0791300A4A247 /* libKSToastView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKSToastView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6736BD0421D0791300A4A247 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +205,6 @@
 		676F8B0721D4C418001E1F7A /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		676F8B0921D4C418001E1F7A /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		676F8B1021D62B93001E1F7A /* HistoryAccountsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryAccountsVC.h; sourceTree = "<group>"; };
-		676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryAccountsVC.m; sourceTree = "<group>"; };
 		676F8B1221D62B93001E1F7A /* HistoryAccounts.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryAccounts.xib; sourceTree = "<group>"; };
 		676F8B1621D63998001E1F7A /* HistoryAccountsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryAccountsCell.h; sourceTree = "<group>"; };
 		676F8B1721D63998001E1F7A /* HistoryAccountsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryAccountsCell.m; sourceTree = "<group>"; };
@@ -563,6 +563,12 @@
 		677BB62C217EC6D200C1ED76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */,
+				67F6342B21BD521F00395266 /* AccountRegisterViewController.m */,
+				67DCC72F21BE461900FAB9F4 /* AutoLoginController.h */,
+				67DCC73021BE461900FAB9F4 /* AutoLoginController.m */,
+				676F8B1021D62B93001E1F7A /* HistoryAccountsVC.h */,
+				672E666421E9D80000D61EF5 /* HistoryAccountsVC.m */,
 				6745073A21DB527000CD1656 /* LoginVC.h */,
 				6745073B21DB527000CD1656 /* LoginVC.m */,
 			);
@@ -784,12 +790,6 @@
 			isa = PBXGroup;
 			children = (
 				67FCE36C21E8444000BE9501 /* Base */,
-				67DFADD921B8C4D9009E0C92 /* AccountRegisterViewController.h */,
-				67F6342B21BD521F00395266 /* AccountRegisterViewController.m */,
-				67DCC72F21BE461900FAB9F4 /* AutoLoginController.h */,
-				67DCC73021BE461900FAB9F4 /* AutoLoginController.m */,
-				676F8B1021D62B93001E1F7A /* HistoryAccountsVC.h */,
-				676F8B1121D62B93001E1F7A /* HistoryAccountsVC.m */,
 				67DCC75921BF727400FAB9F4 /* Common */,
 				677BB62B217EC6D200C1ED76 /* Login */,
 				677BB651217EC6D300C1ED76 /* Init */,
@@ -1189,8 +1189,8 @@
 				6745075A21E0938000CD1656 /* InputViewCell.m in Sources */,
 				677BB65C217EC6D300C1ED76 /* ParamsRegLogOn.m in Sources */,
 				67DCC78621BF727500FAB9F4 /* NSObject+Model.m in Sources */,
-				676F8B1521D6320D001E1F7A /* HistoryAccountsVC.m in Sources */,
 				67DCC9D521BF9C9500FAB9F4 /* UIButton+KKWebCache.m in Sources */,
+				672E666521E9D80000D61EF5 /* HistoryAccountsVC.m in Sources */,
 				67DCC78221BF727500FAB9F4 /* NetWorkRespondModel.m in Sources */,
 				67F633D321B9705100395266 /* TitleViewCell.m in Sources */,
 				67DCC78721BF727500FAB9F4 /* UIView+ActivityIndicatorView.m in Sources */,
