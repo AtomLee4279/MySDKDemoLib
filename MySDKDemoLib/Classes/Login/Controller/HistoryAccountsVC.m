@@ -15,10 +15,37 @@
 
 @implementation HistoryAccountsVC
 
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil{
+ 
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+    }
+    return self;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    regNib((UITableView*)self.view, @"HistoryAccountsCell", @"HistoryAccountsCell");
     regNib(self.tableView, @"HistoryAccountsCell", @"HistoryAccountsCell");
+    [self setContainerRect];
 }
+
+-(void)setContainerRect{
+    
+    if (!CGRectIsEmpty(self.rect)) {
+        
+        CGFloat viewX = self.rect.origin.x;
+        CGFloat viewY = CGRectGetMaxY(self.rect);
+        CGFloat viewW = self.rect.size.width;
+        CGFloat viewH = 100;
+        _tableView.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    }
+    
+    return;
+};
 
 #pragma mark - Table view data source
 
@@ -106,5 +133,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

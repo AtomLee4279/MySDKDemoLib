@@ -10,7 +10,11 @@
 #import "BaseVC.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HistoryAccountsVC : BaseVC
+@interface HistoryAccountsVC : UIViewController
+
+@property(nonatomic,assign) CGRect rect;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 

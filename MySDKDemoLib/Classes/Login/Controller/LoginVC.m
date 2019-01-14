@@ -33,6 +33,7 @@
 
 
 
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self setUpReg];
@@ -116,17 +117,19 @@
     NSLog(@"===historyAccount===");
     btn.selected = !btn.selected;
     [self rotateBtn:btn];
-    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
-    [self addChildViewController:hisVC];
-    [self.view addSubview:hisVC.view];
+    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
     //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
     CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-    CGFloat viewX = cellRect.origin.x;
-    CGFloat viewY = CGRectGetMaxY(cellRect);
-    CGFloat viewW = cellRect.size.width;
-    CGFloat viewH = 150;
-    UIView *containerView = [hisVC.view viewWithTag:1000];
-    containerView.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    hisVC.rect = cellRect;
+//    CGFloat viewX = cellRect.origin.x;
+//    CGFloat viewY = CGRectGetMaxY(cellRect);
+//    CGFloat viewW = cellRect.size.width;
+//    CGFloat viewH = 150;
+//    UIView *containerView = [hisVC.view viewWithTag:1000];
+//    hisVC.view.frame = CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height);
+//    containerView.frame = CGRectMake(viewX,viewY,viewW,viewH);
+    [self addChildViewController:hisVC];
+    [self.view addSubview:hisVC.view];
     [hisVC didMoveToParentViewController:self];
     
 }
