@@ -115,22 +115,31 @@
 - (void)historyAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
-    btn.selected = !btn.selected;
+     btn.selected = !btn.selected;
     [self rotateBtn:btn];
-    HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
-    //frame转换：得到inputField这个frame在self.view中的情况(x,y,w，h)
-    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-    hisVC.rect = cellRect;
-//    CGFloat viewX = cellRect.origin.x;
-//    CGFloat viewY = CGRectGetMaxY(cellRect);
-//    CGFloat viewW = cellRect.size.width;
-//    CGFloat viewH = 150;
-//    UIView *containerView = [hisVC.view viewWithTag:1000];
-//    hisVC.view.frame = CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height);
-//    containerView.frame = CGRectMake(viewX,viewY,viewW,viewH);
-    [self addChildViewController:hisVC];
-    [self.view addSubview:hisVC.view];
-    [hisVC didMoveToParentViewController:self];
+    //**if:创建账号下拉框
+    if (btn.selected) {
+        HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
+        
+        UIView *containerView = [self.view viewWithTag:1000];
+        //把该loginVC控制器下containerView的frame传给hisVC的属性
+        hisVC.containerFrame = containerView.frame;
+        //frame转换：得到inputField这个frame在containerView中的情况(x,y,w，h)
+        CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:containerView];
+        hisVC.tableFrame = cellRect;
+        [self addChildViewController:hisVC];
+        [self.view addSubview:hisVC.view];
+        [hisVC didMoveToParentViewController:self];
+    }
+    //**else:删除账号下拉框
+    else{
+        NSArray *array = self.childViewControllers;
+        if ([array firstObject]&&[[array firstObject] isKindOfClass:[HistoryAccountsVC class]])
+        {
+            [self removeFromParentViewController];
+        }
+    }
+   
     
 }
 
@@ -192,6 +201,21 @@
     animation.fillMode = kCAFillModeForwards;
     animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
     [btn.layer addAnimation:animation forKey:nil];
+    if (btn.selected) {
+        return;
+    }
+    //收回账号下拉框伴随的按钮动画
+    else{
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+        animation.fromValue = [NSNumber numberWithFloat:M_PI];
+        animation.toValue = [NSNumber numberWithFloat: 0.f];
+        animation.duration = .3f;
+        //动画节奏：匀速
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        animation.removedOnCompletion = NO;
+        animation.fillMode = kCAFillModeForwards;
+        [btn.layer addAnimation:animation forKey:nil];
+    }
 }
 
 - (void)loginBtnDidClick:(UIButton *)btn {

@@ -15,34 +15,34 @@
 
 @implementation HistoryAccountsVC
 
-- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil{
- 
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-    }
-    return self;
-}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    regNib((UITableView*)self.view, @"HistoryAccountsCell", @"HistoryAccountsCell");
     regNib(self.tableView, @"HistoryAccountsCell", @"HistoryAccountsCell");
-    [self setContainerRect];
+    [self customFrame];
 }
 
--(void)setContainerRect{
+#pragma mark - methods
+//自定义该控制器一些子view的frame*
+-(void)customFrame{
     
-    if (!CGRectIsEmpty(self.rect)) {
+    //**设置tableView父view--containerView的frame*
+    if (!CGRectIsEmpty(self.containerFrame)) {
+        self.view.frame = self.containerFrame;
+    }
+    
+    //*设置taleView的frame*
+    if (!CGRectIsEmpty(self.tableFrame)) {
         
-        CGFloat viewX = self.rect.origin.x;
-        CGFloat viewY = CGRectGetMaxY(self.rect);
-        CGFloat viewW = self.rect.size.width;
+        CGFloat viewX = self.tableFrame.origin.x;
+        CGFloat viewY = CGRectGetMaxY(self.tableFrame);
+        CGFloat viewW = self.tableFrame.size.width;
         CGFloat viewH = 100;
         _tableView.frame = CGRectMake(viewX,viewY,viewW,viewH);
     }
+    
+
+    
     
     return;
 };
@@ -68,10 +68,11 @@
     
 }
 
-
+///**重写UIResponder方法，手指触摸账号框其他区域时，关掉此框
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self removeFromParentViewController];
+    [self.view removeFromSuperview];
 }
 
 /*

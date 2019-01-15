@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryAccountsVC : UIViewController
 
-@property(nonatomic,assign) CGRect rect;
+@property(nonatomic,assign) CGRect containerFrame;
+
+@property(nonatomic,assign) CGRect tableFrame;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
