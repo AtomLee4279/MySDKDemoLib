@@ -67,7 +67,7 @@
     //**if:点击状态：创建账号下拉框
     if (btn.selected) {
         HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
-        
+        hisVC.delegate = self;
         UIView *containerView = [self.view viewWithTag:1000];
         //把该loginVC控制器下containerView的frame传给hisVC的属性
         hisVC.containerFrame = containerView.frame;
@@ -84,7 +84,8 @@
         NSArray *array = self.childViewControllers;
         if ([array firstObject]&&[[array firstObject] isKindOfClass:[HistoryAccountsVC class]])
         {
-            [self removeFromParentViewController];
+            [[array firstObject] removeFromParentViewController];
+//            [array firstObject].view = nil;
         }
     }
    
@@ -111,8 +112,8 @@
     //收回账号下拉框伴随的按钮动画
     else{
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        animation.fromValue = [NSNumber numberWithFloat:0.f];
-        animation.toValue = [NSNumber numberWithFloat: M_PI];
+        animation.fromValue = [NSNumber numberWithFloat:M_PI];
+        animation.toValue = [NSNumber numberWithFloat: 0.f];
         animation.duration = .3f;
         //动画节奏：匀速
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
