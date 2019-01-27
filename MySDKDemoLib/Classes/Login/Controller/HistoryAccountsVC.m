@@ -71,9 +71,13 @@
 ///**重写UIResponder方法，手指触摸账号框其他区域时，关掉此框
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-//    [self removeFromParentViewController];
-    [self.view removeFromSuperview];
+    //    [self removeFromParentViewController];
+    if ([self.delegate respondsToSelector:@selector(historyAccountsDidClickedOutSideFinished:)]) {
+        [self.delegate historyAccountsDidClickedOutSideFinished:self];
+    }
+    
 }
+
 
 /*
 // Override to support conditional editing of the table view.

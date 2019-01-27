@@ -27,6 +27,9 @@
 
 @property(nonatomic,strong) InputViewCell *pwdCell;
 
+//展开历史账号的三角按钮
+@property(nonatomic,strong)  UIButton *switchBtn;
+
 @end
 
 @implementation LoginVC
@@ -37,7 +40,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self setUpReg];
-   
+    
     
 }
 
@@ -52,87 +55,32 @@
     
 }
 
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
-}
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    if (indexPath.row==0) {
-        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
-        cell.backBtn.hidden = YES;
-        cell.titleLabel.text = @"用户登录";
-        return cell;
-    }
-    ////
-    if (indexPath.row==1) {
-        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
-        cell.logo.image = logo;
-        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-        [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
-            self.accountCell = cell;
-        return cell;
-    }
-
-    if (indexPath.row==2) {
-    
-        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-            UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
-            UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
-            cell.logo.image = logo;
-            [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-            [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
-        
-        return cell;
-    }
-    //    注册新账号
-    if (indexPath.row==3) {
-        CreateAccountCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell" forIndexPath:indexPath];
-        [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
-
-        return cell;
-    }
-    if (indexPath.row==4) {
-        AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:indexPath];
-        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        return cell;
-    }
-    //
-    if (indexPath.row==5) {
-        
-        LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell" forIndexPath:indexPath];
-        [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        
-        
-        return cell;
-    }
-    
-    return [UITableViewCell new];
-}
 
 - (void)historyAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
+     self.switchBtn = btn;
      btn.selected = !btn.selected;
+    //旋转按钮的动画
     [self rotateBtn:btn];
-    //**if:创建账号下拉框
+    //**if:点击状态：创建账号下拉框
     if (btn.selected) {
         HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
         
         UIView *containerView = [self.view viewWithTag:1000];
         //把该loginVC控制器下containerView的frame传给hisVC的属性
         hisVC.containerFrame = containerView.frame;
-        //frame转换：得到inputField这个frame在containerView中的情况(x,y,w，h)
+        //frame转换：得到inputField这个frame在LoginVC-containerView中的情况(x,y,w，h)
         CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:containerView];
         hisVC.tableFrame = cellRect;
         [self addChildViewController:hisVC];
         [self.view addSubview:hisVC.view];
         [hisVC didMoveToParentViewController:self];
     }
-    //**else:删除账号下拉框
+    //**else:非点击状态:删除账号下拉框
     else{
+//        [self rotateBtn:btn];
         NSArray *array = self.childViewControllers;
         if ([array firstObject]&&[[array firstObject] isKindOfClass:[HistoryAccountsVC class]])
         {
@@ -142,6 +90,38 @@
    
     
 }
+
+
+//按钮旋转动画
+-(void)rotateBtn:(UIButton*)btn{
+    //展开了历史账号下拉框，伴随的三角按钮旋转
+    if (btn.selected) {
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+        animation.fromValue = [NSNumber numberWithFloat:0.f];
+        animation.toValue = [NSNumber numberWithFloat: M_PI];
+        animation.duration = .3f;
+        //动画节奏：匀速
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        animation.autoreverses = NO;
+        animation.removedOnCompletion = NO;
+        animation.fillMode = kCAFillModeForwards;
+        animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
+        [btn.layer addAnimation:animation forKey:nil];
+    }
+    //收回账号下拉框伴随的按钮动画
+    else{
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+        animation.fromValue = [NSNumber numberWithFloat:0.f];
+        animation.toValue = [NSNumber numberWithFloat: M_PI];
+        animation.duration = .3f;
+        //动画节奏：匀速
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        animation.removedOnCompletion = NO;
+        animation.fillMode = kCAFillModeForwards;
+        [btn.layer addAnimation:animation forKey:nil];
+    }
+}
+
 
 - (void)showPwd:(UIButton *)btn {
     
@@ -188,35 +168,6 @@
     
 }
 
-//按钮旋转动画
--(void)rotateBtn:(UIButton*)btn{
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    animation.fromValue = [NSNumber numberWithFloat:0.f];
-    animation.toValue = [NSNumber numberWithFloat: M_PI];
-    animation.duration = .3f;
-    //动画节奏：匀速
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    animation.autoreverses = NO;
-    animation.removedOnCompletion = NO;
-    animation.fillMode = kCAFillModeForwards;
-    animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
-    [btn.layer addAnimation:animation forKey:nil];
-    if (btn.selected) {
-        return;
-    }
-    //收回账号下拉框伴随的按钮动画
-    else{
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        animation.fromValue = [NSNumber numberWithFloat:M_PI];
-        animation.toValue = [NSNumber numberWithFloat: 0.f];
-        animation.duration = .3f;
-        //动画节奏：匀速
-        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-        animation.removedOnCompletion = NO;
-        animation.fillMode = kCAFillModeForwards;
-        [btn.layer addAnimation:animation forKey:nil];
-    }
-}
 
 - (void)loginBtnDidClick:(UIButton *)btn {
     
@@ -251,6 +202,87 @@
     //    //字符串签名，返回字典格式
     NSDictionary* uploadData = [NSString signDictionaryWithParameters:dict appKey:[MySDKConfig shareInstance].appkey];
     [MySDKNetWorkController requestRegisterAndLoginWithParam:uploadData];
+}
+
+#pragma mark -getter-
+-(UIButton*)switchBtn{
+    if (_switchBtn) {
+        return _switchBtn;
+    }
+    
+    _switchBtn = [UIButton new];
+    return _switchBtn;
+}
+
+
+#pragma mark delegate
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 6;
+}
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    if (indexPath.row==0) {
+        TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
+        cell.backBtn.hidden = YES;
+        cell.titleLabel.text = @"用户登录";
+        return cell;
+    }
+    ////
+    if (indexPath.row==1) {
+        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
+        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
+        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
+        cell.logo.image = logo;
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
+        self.accountCell = cell;
+        return cell;
+    }
+    
+    if (indexPath.row==2) {
+        
+        InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
+        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
+        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
+        cell.logo.image = logo;
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
+        
+        return cell;
+    }
+    //    注册新账号
+    if (indexPath.row==3) {
+        CreateAccountCell* cell = [tableView dequeueReusableCellWithIdentifier:@"CreateAccountCell" forIndexPath:indexPath];
+        [cell.rightBtn addTarget:self action:@selector(newAccount:) forControlEvents:UIControlEventTouchUpInside];
+        
+        return cell;
+    }
+    if (indexPath.row==4) {
+        AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:indexPath];
+        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        return cell;
+    }
+    //
+    if (indexPath.row==5) {
+        
+        LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell" forIndexPath:indexPath];
+        [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        return cell;
+    }
+    
+    return [UITableViewCell new];
+}
+
+
+-(void)historyAccountsDidClickedOutSideFinished:(HistoryAccountsVC *)hisVC{
+    //历史账号下拉框已经展开：此时点击了其他区域
+    NSLog(@"LoginVC:historyAccountsDidClickedOutSideFinished");
+    [self historyAccount:self.switchBtn];
+    
 }
 
 -(void)NetWorkRespondSuccessDelegate:(nullable NetWorkRespondModel*)result {

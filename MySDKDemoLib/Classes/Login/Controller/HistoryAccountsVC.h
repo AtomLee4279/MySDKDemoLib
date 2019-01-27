@@ -10,7 +10,19 @@
 #import "BaseVC.h"
 NS_ASSUME_NONNULL_BEGIN
 
+@class HistoryAccountsVC;
+
+@protocol HistoryAccountsDelegate <NSObject>
+
+@optional
+
+-(void)historyAccountsDidClickedOutSideFinished :(HistoryAccountsVC*)hisVC;
+
+@end
+
 @interface HistoryAccountsVC : UIViewController
+
+@property(weak,nonatomic) id<HistoryAccountsDelegate> delegate;
 
 @property(nonatomic,assign) CGRect containerFrame;
 

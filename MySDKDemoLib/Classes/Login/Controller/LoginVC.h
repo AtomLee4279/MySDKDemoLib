@@ -8,11 +8,11 @@
 
 #import "BaseVC.h"
 #import "MySDKNetWorkController.h"
-
+#import "HistoryAccountsVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginVC : BaseVC<MySDKNetWorkDelegate>
+@interface LoginVC : BaseVC<MySDKNetWorkDelegate,HistoryAccountsDelegate>
 
 @end
 
