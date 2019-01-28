@@ -9,7 +9,7 @@
 // 生成的.bundle文件的文件名
 #define BundleName @"SDKBundle"
 
-#define KK_ImageNamed(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", BundleName, imageName]]
+#define KK_ImageNamed(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@",BundleName,imageName]]
 
 
 
@@ -18,6 +18,7 @@
 #define res_login_pwd KK_ImageNamed(@"密码")
 #define res_login_delete KK_ImageNamed(@"删除")
 #define res_back KK_ImageNamed(@"返回")
+#define res_login_more KK_ImageNamed(@"下拉")
 
 #define res_float_ball KK_ImageNamed(@"浮标")
 #define res_float_ball_down KK_ImageNamed(@"浮标拖动")

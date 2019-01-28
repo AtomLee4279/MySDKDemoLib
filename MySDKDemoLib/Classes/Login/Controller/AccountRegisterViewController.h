@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BaseVC.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AccountRegisterViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface AccountRegisterViewController : BaseVC<UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 //+(void)normalLogin;
 

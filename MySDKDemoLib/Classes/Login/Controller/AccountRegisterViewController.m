@@ -10,6 +10,7 @@
 #import "TitleViewCell.h"
 #import "InputViewCell.h"
 #import "AgreementCell.h"
+#import "LoginBtnCell.h"
 #import "LoginVC.h"
 @interface AccountRegisterViewController () {
     
@@ -22,16 +23,20 @@
     
     [super viewDidLoad];
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    
     //注册nib文件关联的tableviewcell
    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TitleViewCell" bundle:SDKBundle] forCellReuseIdentifier:@"TitleViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"Cells" bundle:SDKBundle] forCellReuseIdentifier:@"InputViewCell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"AgreementCell" bundle:SDKBundle] forCellReuseIdentifier:@"AgreementCell"];
- 
-    // Do any additional setup after loading the view.
+    [self setUpReg];
+}
+
+
+-(void)setUpReg{
+    
+    regNib(self.tableView, @"TitleViewCell", @"TitleViewCell");
+    regNib(self.tableView, @"InputViewCell", @"InputViewCell");
+    regNib(self.tableView, @"AgreementCell", @"AgreementCell");
+    regNib(self.tableView, @"LoginBtnCell", @"LoginBtnCell");
+    
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -47,54 +52,50 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row==0) {
-        Class cls = [TitleViewCell class];
+
         TitleViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TitleViewCell" forIndexPath:indexPath];
         [cell.backBtn addTarget:self action:@selector(backBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
  
     if (indexPath.row==1) {
-        Class cls = [InputViewCell class];
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-        
-        UIImage *logo = KK_ImageNamed(res_login_logo);
-        UIImage *btnImage = KK_ImageNamed(res_login_refresh);
-//        cell.logo.image = logo;
-//        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-//        [cell.rightBtn addTarget:self action:@selector(refreshAccount:) forControlEvents:UIControlEventTouchUpInside];
+        [cell.rightBtn addTarget:self action:@selector(refreshBtnDidClcik:) forControlEvents:UIControlEventTouchUpInside];
+        UIImage *btnImage = res_login_refresh;
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         return cell;
     }
     
     if (indexPath.row==2) {
-        Class cls = [InputViewCell class];
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell"];
-        UIImage *logo = KK_ImageNamed(res_login_pwd);
-        UIImage *btnImage = KK_ImageNamed(res_login_delete);
-//        cell.logo.image = logo;
-//        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
-//        [cell.rightBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
+        UIImage *btnImage = res_login_delete;
+        [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
+        [cell.rightBtn addTarget:self action:@selector(delBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
     if (indexPath.row==3) {
-        Class cls = [InputViewCell class];
-        UIImage *logo = KK_ImageNamed(res_login_pwd);
+        
+        UIImage *logo = res_login_pwd;
         InputViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-//        cell.logo.image = logo;
-//        cell.rightBtn.hidden = YES;
-        //        cell.logo.image = [UIImage imageNamed:@"密码"];
-        //        [cell.moreBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateNormal];
-        //        [cell.moreBtn addTarget:self action:@selector(deleteInput:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
     if (indexPath.row==4) {
-        Class cls = [AgreementCell class];
+        
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
         [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
+    
+    if (indexPath.row==5) {
+        
+    LoginBtnCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginBtnCell"];
+    [cell.loginBtn addTarget:self action:@selector(loginBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        return cell;
+    }
+    
       return [UITableViewCell new];
 }
 
@@ -112,12 +113,12 @@
     }];
 }
 
-- (void)refreshAccount:(UIButton *)btn {
+- (void)refreshBtnDidClcik:(UIButton *)btn {
     
     NSLog(@"===refreshAccount===");
 }
 
-- (void)deleteInput:(UIButton *)btn {
+- (void)delBtnDidClick:(UIButton *)btn {
     
     NSLog(@"===deleteInput===");
 }

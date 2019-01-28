@@ -143,7 +143,7 @@
     UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     
     
-    AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"AccountRegisterView" bundle:SDKBundle];
+    AccountRegisterViewController *baseVC = [[AccountRegisterViewController alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
     [baseVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     [baseVC setModalPresentationStyle:UIModalPresentationCustom];
     
@@ -239,8 +239,8 @@
     ////
     if (indexPath.row==1) {
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"账号"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"下拉"]];
+        UIImage *logo = res_login_logo;
+        UIImage *btnImage = res_login_more;
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         [cell.rightBtn addTarget:self action:@selector(historyAccount:) forControlEvents:UIControlEventTouchUpInside];
@@ -251,8 +251,8 @@
     if (indexPath.row==2) {
         
         InputViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"InputViewCell" forIndexPath:indexPath];
-        UIImage *logo = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"密码"]];
-        UIImage *btnImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", @"SDKBundle", @"删除"]];
+        UIImage *logo = res_login_pwd;
+        UIImage *btnImage = res_login_delete;
         cell.logo.image = logo;
         [cell.rightBtn setImage:btnImage forState:UIControlStateNormal];
         [cell.rightBtn addTarget:self action:@selector(showPwd:) forControlEvents:UIControlEventTouchUpInside];
