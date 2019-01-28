@@ -84,8 +84,10 @@
         NSArray *array = self.childViewControllers;
         if ([array firstObject]&&[[array firstObject] isKindOfClass:[HistoryAccountsVC class]])
         {
+            [[array firstObject] willMoveToParentViewController:nil];
             [[array firstObject] removeFromParentViewController];
-//            [array firstObject].view = nil;
+            HistoryAccountsVC *tmpVC = [array firstObject];
+            [tmpVC.view removeFromSuperview];
         }
     }
    
@@ -97,32 +99,37 @@
 -(void)rotateBtn:(UIButton*)btn{
     //展开了历史账号下拉框，伴随的三角按钮旋转
     if (btn.selected) {
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        animation.fromValue = [NSNumber numberWithFloat:0.f];
-        animation.toValue = [NSNumber numberWithFloat: M_PI];
-        animation.duration = .3f;
-        //动画节奏：匀速
-        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-        animation.autoreverses = NO;
-        animation.removedOnCompletion = NO;
-        animation.fillMode = kCAFillModeForwards;
-        animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
-        [btn.layer addAnimation:animation forKey:nil];
+        [self rotateAnimateWithView:btn fromValue:[NSNumber numberWithFloat:0] toValue:[NSNumber numberWithFloat: M_PI] rotateWay:@"z"];
     }
     //收回账号下拉框伴随的按钮动画
     else{
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        animation.fromValue = [NSNumber numberWithFloat:M_PI];
-        animation.toValue = [NSNumber numberWithFloat: 0.f];
-        animation.duration = .3f;
-        //动画节奏：匀速
-        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-        animation.removedOnCompletion = NO;
-        animation.fillMode = kCAFillModeForwards;
-        [btn.layer addAnimation:animation forKey:nil];
+        
+         [self rotateAnimateWithView:btn fromValue:[NSNumber numberWithFloat:M_PI] toValue:[NSNumber numberWithFloat: 0.f] rotateWay:@"z"];
     }
 }
 
+//** 控件旋转动画的封装
+//view:旋转对象
+//fromValue:旋转起始时数值
+//toValue：旋转结束时数值
+//coordinate:旋转方式，例如绕z轴旋转则传入@"z"
+-(void)rotateAnimateWithView:(UIView*)view fromValue: (NSNumber*)fromValue toValue:(NSNumber*)toValue rotateWay:(NSString*)coordinate{
+    
+    NSString *rotateKeyPath = [NSString stringWithFormat:@"transform.rotation.%@",coordinate];
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:rotateKeyPath];
+    animation.fromValue = fromValue;
+    animation.toValue = toValue;
+    animation.duration = .3f;
+    //动画节奏：匀速
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.repeatCount = 1; //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
+    [view.layer addAnimation:animation forKey:nil];
+    
+    
+}
+ 
 
 - (void)showPwd:(UIButton *)btn {
     
