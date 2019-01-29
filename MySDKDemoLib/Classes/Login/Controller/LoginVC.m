@@ -27,6 +27,8 @@
 
 @property(nonatomic,strong) InputViewCell *pwdCell;
 
+@property(nonatomic, assign) BOOL isCheckboxSelected;
+
 //展开历史账号的三角按钮
 @property(nonatomic,strong)  UIButton *switchBtn;
 
@@ -40,8 +42,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self setUpReg];
-    
-    
+    self.isCheckboxSelected = YES;
 }
 
 -(void)setUpReg{
@@ -152,34 +153,9 @@
     }];
 }
 
-- (void)checkBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===checkBtnDidClick===");
-}
-
-
-- (void)detailBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===detailBtnDidClick===");
-    //    BaseVC *baseVC = [[BaseVC alloc] initWithNibName:@"BaseVC" bundle:SDKBundle];
-    LoginVC *loginVC = [[LoginVC alloc] init];
-    [self addChildViewController:loginVC];
-    [self.view addSubview:loginVC.view];
-    CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:self.view];
-    CGFloat viewX = cellRect.origin.x;
-    CGFloat viewY = CGRectGetMaxY(cellRect);
-    CGFloat viewW = cellRect.size.width;
-    CGFloat viewH = 150;
-    loginVC.view.frame = CGRectMake(viewX,viewY,viewW,viewH);
-    [loginVC didMoveToParentViewController:self];
-    
-    
-}
-
-
 - (void)loginBtnDidClick:(UIButton *)btn {
     
-    NSLog(@"===loginBtnDidClick===");
+    NSLog(@"===loginBtnDidClick:self.isCheckboxSelected:%@=",self.isCheckboxSelected?@"YES":@"NO");
     
     [self dismissViewControllerAnimated:YES completion:^{
         
@@ -212,18 +188,35 @@
     [MySDKNetWorkController requestRegisterAndLoginWithParam:uploadData];
 }
 
+-(void)dealloc{
+    //删除通知
+    AgreementCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:[NSIndexPath indexPathWithIndex:4]];
+    [cell removeObserver:self forKeyPath:@"checkBtn.selected"];
+}
+
 #pragma mark -getter-
 -(UIButton*)switchBtn{
     if (_switchBtn) {
         return _switchBtn;
     }
-    
+     
     _switchBtn = [UIButton new];
     return _switchBtn;
 }
 
 
 #pragma mark delegate
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    
+    if ([keyPath isEqualToString:@"checkBtn.selected"]) {
+        NSLog(@"checkBtn.selected is changed!checkBtn.selected is:%@",[change valueForKey:NSKeyValueChangeNewKey]);
+        self.isCheckboxSelected = NO;
+        return;
+    }
+    [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    
+}
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 6;
@@ -268,8 +261,8 @@
     }
     if (indexPath.row==4) {
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:indexPath];
-        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+        //添加通知
+         [cell addObserver: self forKeyPath:@"checkBtn.selected" options:(NSKeyValueObservingOptionNew) context:nil];
         return cell;
     }
     //

@@ -84,8 +84,6 @@
     if (indexPath.row==4) {
         
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell"];
-        [cell.checkBtn addTarget:self action:@selector(checkBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
-        [cell.detailBtn addTarget:self action:@selector(detailBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     
@@ -124,15 +122,6 @@
 }
 
 
-- (void)checkBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===checkBtnDidClick===");
-}
 
-
-- (void)detailBtnDidClick:(UIButton *)btn {
-    
-    NSLog(@"===detailBtnDidClick===");
-}
 
 @end

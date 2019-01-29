@@ -19,6 +19,8 @@
 #define res_login_delete KK_ImageNamed(@"删除")
 #define res_back KK_ImageNamed(@"返回")
 #define res_login_more KK_ImageNamed(@"下拉")
+#define res_unchecked KK_ImageNamed(@"协议")
+#define res_checked KK_ImageNamed(@"协议勾选")
 
 #define res_float_ball KK_ImageNamed(@"浮标")
 #define res_float_ball_down KK_ImageNamed(@"浮标拖动")

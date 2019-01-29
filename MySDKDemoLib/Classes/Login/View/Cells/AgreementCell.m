@@ -12,14 +12,19 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     // Initialization code
+    
+   
+}
+- (IBAction)checkBtnDidClicked:(UIButton *)sender {
+    
+    NSLog(@"=AgreementCell:checkBtnDidClicked=");
+    sender.selected = !sender.selected;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (IBAction)detailBtnDidClicked:(UIButton *)sender {
+    
+    NSLog(@"=AgreementCell:detailBtnDidClicked=");
 }
 
 @end

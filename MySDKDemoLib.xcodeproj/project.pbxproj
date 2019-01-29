@@ -114,6 +114,8 @@
 		67FCE36621E83EE200BE9501 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FCE36521E83EE200BE9501 /* libSDWebImage.a */; };
 		67FCE36821E83EE200BE9501 /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FCE36721E83EE200BE9501 /* libUICKeyChainStore.a */; };
 		67FCE36A21E8408C00BE9501 /* AutoLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67FCE36921E8408C00BE9501 /* AutoLoginView.xib */; };
+		B74C60FA21FFF67A00FCEB8F /* 协议勾选@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74C60F821FFF67900FCEB8F /* 协议勾选@2x.png */; };
+		B74C60FB21FFF67A00FCEB8F /* 协议勾选@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74C60F921FFF67900FCEB8F /* 协议勾选@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -401,6 +403,8 @@
 		67FCE36921E8408C00BE9501 /* AutoLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLoginView.xib; sourceTree = "<group>"; };
 		6F523C4A52DA65B477BA821C /* Pods-MySDKDemoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoLib/Pods-MySDKDemoLib.release.xcconfig"; sourceTree = "<group>"; };
 		955E0BB801595395887C1866 /* libPods-MySDKDemoLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74C60F821FFF67900FCEB8F /* 协议勾选@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "协议勾选@2x.png"; sourceTree = "<group>"; };
+		B74C60F921FFF67900FCEB8F /* 协议勾选@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "协议勾选@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +481,8 @@
 				67B9DAA521BA305500FD725F /* 协议@2x.png */,
 				67B9DA9E21BA305400FD725F /* 协议@3x.png */,
 				67B9DA9C21BA305400FD725F /* 协议选择@2x.png */,
+				B74C60F821FFF67900FCEB8F /* 协议勾选@2x.png */,
+				B74C60F921FFF67900FCEB8F /* 协议勾选@3x.png */,
 				67B9DA9D21BA305400FD725F /* 协议选择@3x.png */,
 				67B9DAAC21BA305600FD725F /* 隐藏@2x.png */,
 				67B9DAAF21BA305600FD725F /* 隐藏@3x.png */,
@@ -1085,6 +1091,7 @@
 				67B9DAD921BA305600FD725F /* QQ@2x.png in Resources */,
 				67DCC74A21BF6C7C00FAB9F4 /* 边框@2x.png in Resources */,
 				6745076821E094BC00CD1656 /* TitleViewCell.xib in Resources */,
+				B74C60FB21FFF67A00FCEB8F /* 协议勾选@3x.png in Resources */,
 				67B9DAE221BA305600FD725F /* 隐藏点击@3x.png in Resources */,
 				67DCC74B21BF6C7C00FAB9F4 /* 边框@3x.png in Resources */,
 				67AAAB1921BBBBAC00F83EF1 /* 下拉@2x.png in Resources */,
@@ -1108,6 +1115,7 @@
 				67B9DADD21BA305600FD725F /* 刷新@3x.png in Resources */,
 				67B9DADC21BA305600FD725F /* 按钮@2x.png in Resources */,
 				67B9DABA21BA305600FD725F /* 个人中心点击@3X.png in Resources */,
+				B74C60FA21FFF67A00FCEB8F /* 协议勾选@2x.png in Resources */,
 				6745074921E0871800CD1656 /* LoginBtnCell.xib in Resources */,
 				67B9DAC821BA305600FD725F /* 浮标拖动@2X.png in Resources */,
 			);

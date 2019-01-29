@@ -22,10 +22,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT4-9F-fDe" userLabel="ContainerView">
                         <rect key="frame" x="84.5" y="10" width="201.5" height="81.5"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-Qb-a8i" userLabel="checkBtn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-Qb-a8i" userLabel="checkBtn">
                                 <rect key="frame" x="0.0" y="0.0" width="21" height="81.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <state key="normal" backgroundImage="协议.png"/>
+                                <state key="normal" image="协议勾选.png"/>
+                                <state key="selected" image="协议.png"/>
+                                <connections>
+                                    <action selector="checkBtnDidClicked:" destination="SWW-Mx-Jes" eventType="touchUpInside" id="JGg-WU-4AY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-SJ-FiG" userLabel="tipsLabel">
                                 <rect key="frame" x="21" y="36" width="57.5" height="10"/>
@@ -37,6 +40,9 @@
                                 <rect key="frame" x="78.5" y="30" width="123" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <state key="normal" title="《用户注册服务协议及隐私政策》"/>
+                                <connections>
+                                    <action selector="detailBtnDidClicked:" destination="SWW-Mx-Jes" eventType="touchUpInside" id="Fds-1Q-E1i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -69,5 +75,6 @@
     </objects>
     <resources>
         <image name="协议.png" width="21" height="21"/>
+        <image name="协议勾选.png" width="21" height="21"/>
     </resources>
 </document>
