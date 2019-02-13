@@ -28,7 +28,7 @@
 @property(nonatomic,strong) InputViewCell *pwdCell;
 
 @property(nonatomic, assign) BOOL isCheckboxSelected;
-
+@property(nonatomic,strong) AgreementCell *agreeMCell;
 //展开历史账号的三角按钮
 @property(nonatomic,strong)  UIButton *switchBtn;
 
@@ -43,6 +43,12 @@
     [super viewDidLoad];
     [self setUpReg];
     self.isCheckboxSelected = YES;
+    //开启和监听 设备旋转的通知（不开启的话，设备方向一直是UIInterfaceOrientationUnknown）
+    if (![UIDevice currentDevice].generatesDeviceOrientationNotifications) {
+        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    }
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleDeviceOrientationChange:)
+                                                name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 -(void)setUpReg{
@@ -56,7 +62,36 @@
     
 }
 
-
+//设备方向改变的处理
+- (void)handleDeviceOrientationChange:(NSNotification *)notification{
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    switch (deviceOrientation) {
+        case UIDeviceOrientationFaceUp:
+            NSLog(@"屏幕朝上平躺");
+            break;
+        case UIDeviceOrientationFaceDown:
+            NSLog(@"屏幕朝下平躺");
+            break;
+        case UIDeviceOrientationUnknown:
+            NSLog(@"未知方向");
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            NSLog(@"屏幕向左横置");
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            NSLog(@"屏幕向右橫置");
+            break;
+        case UIDeviceOrientationPortrait:
+            NSLog(@"屏幕直立");
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            NSLog(@"屏幕直立，上下顛倒");
+            break;
+        default:
+            NSLog(@"无法辨识");
+            break;
+    }
+}
 
 - (void)historyAccount:(UIButton *)btn {
     
@@ -190,8 +225,12 @@
 
 -(void)dealloc{
     //删除通知
-    AgreementCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:[NSIndexPath indexPathWithIndex:4]];
-    [cell removeObserver:self forKeyPath:@"checkBtn.selected"];
+//    AgreementCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:[NSIndexPath indexPathWithIndex:4]];
+    [self.agreeMCell removeObserver:self forKeyPath:@"checkBtn.selected"];
+    
+    //移除翻转屏幕的通知
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    [[UIDevice currentDevice]endGeneratingDeviceOrientationNotifications];
 }
 
 #pragma mark -getter-
@@ -263,6 +302,7 @@
         AgreementCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AgreementCell" forIndexPath:indexPath];
         //添加通知
          [cell addObserver: self forKeyPath:@"checkBtn.selected" options:(NSKeyValueObservingOptionNew) context:nil];
+        self.agreeMCell = cell;
         return cell;
     }
     //
