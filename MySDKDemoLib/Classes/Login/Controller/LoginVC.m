@@ -30,7 +30,7 @@
 @property(nonatomic, assign) BOOL isCheckboxSelected;
 @property(nonatomic,strong) AgreementCell *agreeMCell;
 //展开历史账号的三角按钮
-@property(nonatomic,strong)  UIButton *switchBtn;
+//@property(nonatomic,strong)  UIButton *switchBtn;
 
 @end
 
@@ -96,7 +96,7 @@
 - (void)historyAccount:(UIButton *)btn {
     
     NSLog(@"===historyAccount===");
-     self.switchBtn = btn;
+//     self.switchBtn = btn;
      btn.selected = !btn.selected;
     //旋转按钮的动画
     [self rotateBtn:btn];
@@ -105,13 +105,25 @@
         HistoryAccountsVC *hisVC = [[HistoryAccountsVC alloc] initWithNibName:@"HistoryAccounts" bundle:SDKBundle];
         hisVC.delegate = self;
         UIView *containerView = [self.view viewWithTag:1000];
-        //把该loginVC控制器下containerView的frame传给hisVC的属性
-        hisVC.containerFrame = containerView.frame;
         //frame转换：得到inputField这个frame在LoginVC-containerView中的情况(x,y,w，h)
         CGRect cellRect = [self.accountCell convertRect:self.accountCell.inputField.frame toView:containerView];
-        hisVC.tableFrame = cellRect;
         [self addChildViewController:hisVC];
         [self.view addSubview:hisVC.view];
+        //设置hisVC的rootview与此父控制器rootView的约束关系
+        CGFloat width = cellRect.size.width;
+        CGFloat height = 100;
+        [hisVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.center.equalTo(self.view);
+//            make.width.equalTo(@(width));
+//            make.height.equalTo(@(height));
+            make.edges.equalTo(containerView);
+        }];
+        [hisVC.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.width.equalTo(@(width));
+            make.height.equalTo(@(height));
+            make.center.equalTo(hisVC.view);
+        }];
         [hisVC didMoveToParentViewController:self];
     }
     //**else:非点击状态:删除账号下拉框
@@ -234,14 +246,14 @@
 }
 
 #pragma mark -getter-
--(UIButton*)switchBtn{
-    if (_switchBtn) {
-        return _switchBtn;
-    }
-     
-    _switchBtn = [UIButton new];
-    return _switchBtn;
-}
+//-(UIButton*)switchBtn{
+//    if (_switchBtn) {
+//        return _switchBtn;
+//    }
+//
+//    _switchBtn = [UIButton new];
+//    return _switchBtn;
+//}
 
 
 #pragma mark delegate
@@ -322,8 +334,8 @@
 -(void)historyAccountsDidClickedOutSideFinished:(HistoryAccountsVC *)hisVC{
     //历史账号下拉框已经展开：此时点击了其他区域
     NSLog(@"LoginVC:historyAccountsDidClickedOutSideFinished");
-    [self historyAccount:self.switchBtn];
-    
+    [self historyAccount:self.accountCell.rightBtn];
+
 }
 
 -(void)NetWorkRespondSuccessDelegate:(nullable NetWorkRespondModel*)result {
@@ -341,6 +353,15 @@
     
     
 }
+
+//-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//
+//    //    //历史账号下拉框已经展开：此时点击了其他区域
+//    if (self.accountCell.rightBtn.isSelected) {
+//        NSLog(@"LoginVC:historyAccountsDidClickedOutSideFinished");
+//        [self historyAccount:self.accountCell.rightBtn];
+//    }
+//}
 
 
 @end

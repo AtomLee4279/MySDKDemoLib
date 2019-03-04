@@ -19,33 +19,10 @@
     [super viewDidLoad];
 //    regNib((UITableView*)self.view, @"HistoryAccountsCell", @"HistoryAccountsCell");
     regNib(self.tableView, @"HistoryAccountsCell", @"HistoryAccountsCell");
-    [self customFrame];
 }
 
 #pragma mark - methods
-//自定义该控制器一些子view的frame*
--(void)customFrame{
-    
-    //**设置tableView父view--containerView的frame*
-    if (!CGRectIsEmpty(self.containerFrame)) {
-        self.view.frame = self.containerFrame;
-    }
-    
-    //*设置taleView的frame*
-    if (!CGRectIsEmpty(self.tableFrame)) {
-        
-        CGFloat viewX = self.tableFrame.origin.x;
-        CGFloat viewY = CGRectGetMaxY(self.tableFrame);
-        CGFloat viewW = self.tableFrame.size.width;
-        CGFloat viewH = 100;
-        _tableView.frame = CGRectMake(viewX,viewY,viewW,viewH);
-    }
-    
 
-    
-    
-    return;
-};
 
 #pragma mark - Table view data source
 
@@ -75,7 +52,7 @@
     if ([self.delegate respondsToSelector:@selector(historyAccountsDidClickedOutSideFinished:)]) {
         [self.delegate historyAccountsDidClickedOutSideFinished:self];
     }
-    
+
 }
 
 
